@@ -604,7 +604,7 @@ public interface ICFSecPubSchema
 		}
 		
 		public static void setBackingCFSecPubSchema(ICFSecPubSchema backingSchema) {
-			ICFSecPubSchema.backingCFSecPub.set(backingSchema);
+			ICFSecPubSchema.backingCFSecPubSchema.set(backingSchema);
 		}
 		
 		public ICFSecPubSchema getCFSecPubSchema();
@@ -627,45 +627,13 @@ public interface ICFSecPubSchema
 				ICFSecPubSchema.entries.add(entry);
 				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "ISOTZone", ICFSecPubISOTZone.CLASS_CODE);
 				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecClusGrp", ICFSecPubSecClusGrp.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecClusGrpMemb", ICFSecPubSecClusGrpMemb.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecClusRole", ICFSecPubSecClusRole.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecClusRoleMemb", ICFSecPubSecClusRoleMemb.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
 				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecSession", ICFSecPubSecSession.CLASS_CODE);
 				ICFSecPubSchema.entries.add(entry);
 				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecSysGrp", ICFSecPubSecSysGrp.CLASS_CODE);
 				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecSysGrpInc", ICFSecPubSecSysGrpInc.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecSysGrpMemb", ICFSecPubSecSysGrpMemb.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
 				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecSysRole", ICFSecPubSecSysRole.CLASS_CODE);
 				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecSysRoleEnables", ICFSecPubSecSysRoleEnables.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecSysRoleMemb", ICFSecPubSecSysRoleMemb.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecTentGrp", ICFSecPubSecTentGrp.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecTentGrpMemb", ICFSecPubSecTentGrpMemb.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecTentRole", ICFSecPubSecTentRole.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecTentRoleMemb", ICFSecPubSecTentRoleMemb.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
 				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecUser", ICFSecPubSecUser.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecUserEMConf", ICFSecPubSecUserEMConf.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecUserPWHistory", ICFSecPubSecUserPWHistory.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecUserPWReset", ICFSecPubSecUserPWReset.CLASS_CODE);
-				ICFSecPubSchema.entries.add(entry);
-				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SecUserPassword", ICFSecPubSecUserPassword.CLASS_CODE);
 				ICFSecPubSchema.entries.add(entry);
 				entry = new ICFSecPubSchema.ClassMapEntry(ICFSecPubSchema.SCHEMA_NAME, "SysCluster", ICFSecPubSysCluster.CLASS_CODE);
 				ICFSecPubSchema.entries.add(entry);
@@ -844,12 +812,12 @@ public interface ICFSecPubSchema
 	/**
 	 *	Get the factory for CFSecPub data objects.
 	 */
-	public ICFSecPubFactory getCFSecPubFactory();
+	// public ICFSecPubFactory getCFSecPubFactory();
 
 	/**
 	 *	Get the buffer factory for CFSecPub data buffers.
 	 */
-	public CFSecPubBuffFactoryService getCFSecPubBuffFactory();
+	// public CFSecPubBuffFactoryService getCFSecPubBuffFactory();
 
 	/**
 	 *	Get the Cluster Table interface for the schema.
