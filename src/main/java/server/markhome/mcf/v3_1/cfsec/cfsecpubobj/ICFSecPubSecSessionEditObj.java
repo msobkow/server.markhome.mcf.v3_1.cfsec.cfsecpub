@@ -132,20 +132,6 @@ public interface ICFSecPubSecSessionEditObj
 	 */
 	void setOptionalFinish(LocalDateTime value);
 
-	/**
-	 *	Get the optional CFLibDbKeyHash256 attribute SecProxyId.
-	 *
-	 *	@return	The optional CFLibDbKeyHash256 attribute SecProxyId.
-	 */
-	CFLibDbKeyHash256 getOptionalSecProxyId();
-
-	/**
-	 *	Set the optional CFLibDbKeyHash256 attribute SecProxyId.
-	 *
-	 *	@param value The optional CFLibDbKeyHash256 attribute SecProxyId value to be applied.
-	 */
-	void setOptionalSecProxyId(CFLibDbKeyHash256 value);
-
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 

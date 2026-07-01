@@ -196,7 +196,7 @@ public interface ICFSecPubSecUserTableObj
 	 *	@return	List of CFSecPubSecUserObj cached instances sorted by their primary keys for the duplicate EMAddrIdx key,
 	 *		which may be an empty set.
 	 */
-	List<ICFSecPubSecUserObj> readSecUserByEMAddrIdx( String EMailAddress );
+	List<ICFSecPubSecUserObj> readSecUserByEMAddrIdx(  EMailAddress );
 
 	/**
 	 *	Get the map of CFSecPubSecUserObj instances sorted by their primary keys for the duplicate EMAddrIdx key.
@@ -206,20 +206,20 @@ public interface ICFSecPubSecUserTableObj
 	 *	@return	List of CFSecPubSecUserObj cached instances sorted by their primary keys for the duplicate EMAddrIdx key,
 	 *		which may be an empty set.
 	 */
-	List<ICFSecPubSecUserObj> readSecUserByEMAddrIdx( String EMailAddress,
+	List<ICFSecPubSecUserObj> readSecUserByEMAddrIdx(  EMailAddress,
 		boolean forceRead );
 
 	ICFSecPubSecUserObj readCachedSecUserByIdIdx( CFLibDbKeyHash256 SecUserId );
 
 	ICFSecPubSecUserObj readCachedSecUserByULoginIdx( String LoginId );
 
-	List<ICFSecPubSecUserObj> readCachedSecUserByEMAddrIdx( String EMailAddress );
+	List<ICFSecPubSecUserObj> readCachedSecUserByEMAddrIdx(  EMailAddress );
 
 	void deepDisposeSecUserByIdIdx( CFLibDbKeyHash256 SecUserId );
 
 	void deepDisposeSecUserByULoginIdx( String LoginId );
 
-	void deepDisposeSecUserByEMAddrIdx( String EMailAddress );
+	void deepDisposeSecUserByEMAddrIdx(  EMailAddress );
 
 	/**
 	 *	Read a page of data as a List of SecUser-derived instances sorted by their primary keys,
@@ -230,7 +230,7 @@ public interface ICFSecPubSecUserTableObj
 	 *	@return	A List of SecUser-derived instances sorted by their primary keys,
 	 *		as identified by the key attributes, which may be an empty set.
 	 */
-	List<ICFSecPubSecUserObj> pageSecUserByEMAddrIdx( String EMailAddress,
+	List<ICFSecPubSecUserObj> pageSecUserByEMAddrIdx(  EMailAddress,
 		CFLibDbKeyHash256 priorSecUserId );
 
 	/**
@@ -262,5 +262,5 @@ public interface ICFSecPubSecUserTableObj
 	 *
 	 *	@param	EMailAddress	The SecUser key attribute of the instance generating the id.
 	 */
-	void deleteSecUserByEMAddrIdx( String EMailAddress );
+	void deleteSecUserByEMAddrIdx(  EMailAddress );
 }

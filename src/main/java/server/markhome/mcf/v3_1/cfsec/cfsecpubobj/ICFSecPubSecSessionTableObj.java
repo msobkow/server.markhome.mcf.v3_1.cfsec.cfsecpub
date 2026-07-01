@@ -250,7 +250,7 @@ public interface ICFSecPubSecSessionTableObj
 	 *	@return	List of CFSecPubSecSessionObj cached instances sorted by their primary keys for the duplicate SecProxyIdx key,
 	 *		which may be an empty set.
 	 */
-	List<ICFSecPubSecSessionObj> readSecSessionBySecProxyIdx( CFLibDbKeyHash256 SecProxyId );
+	List<ICFSecPubSecSessionObj> readSecSessionBySecProxyIdx(  SecProxyId );
 
 	/**
 	 *	Get the map of CFSecPubSecSessionObj instances sorted by their primary keys for the duplicate SecProxyIdx key.
@@ -260,7 +260,7 @@ public interface ICFSecPubSecSessionTableObj
 	 *	@return	List of CFSecPubSecSessionObj cached instances sorted by their primary keys for the duplicate SecProxyIdx key,
 	 *		which may be an empty set.
 	 */
-	List<ICFSecPubSecSessionObj> readSecSessionBySecProxyIdx( CFLibDbKeyHash256 SecProxyId,
+	List<ICFSecPubSecSessionObj> readSecSessionBySecProxyIdx(  SecProxyId,
 		boolean forceRead );
 
 	ICFSecPubSecSessionObj readCachedSecSessionByIdIdx( CFLibDbKeyHash256 SecSessionId );
@@ -273,7 +273,7 @@ public interface ICFSecPubSecSessionTableObj
 	List<ICFSecPubSecSessionObj> readCachedSecSessionByFinishIdx( CFLibDbKeyHash256 SecUserId,
 		LocalDateTime Finish );
 
-	List<ICFSecPubSecSessionObj> readCachedSecSessionBySecProxyIdx( CFLibDbKeyHash256 SecProxyId );
+	List<ICFSecPubSecSessionObj> readCachedSecSessionBySecProxyIdx(  SecProxyId );
 
 	void deepDisposeSecSessionByIdIdx( CFLibDbKeyHash256 SecSessionId );
 
@@ -285,7 +285,7 @@ public interface ICFSecPubSecSessionTableObj
 	void deepDisposeSecSessionByFinishIdx( CFLibDbKeyHash256 SecUserId,
 		LocalDateTime Finish );
 
-	void deepDisposeSecSessionBySecProxyIdx( CFLibDbKeyHash256 SecProxyId );
+	void deepDisposeSecSessionBySecProxyIdx(  SecProxyId );
 
 	/**
 	 *	Read a page of data as a List of SecSession-derived instances sorted by their primary keys,
@@ -323,7 +323,7 @@ public interface ICFSecPubSecSessionTableObj
 	 *	@return	A List of SecSession-derived instances sorted by their primary keys,
 	 *		as identified by the key attributes, which may be an empty set.
 	 */
-	List<ICFSecPubSecSessionObj> pageSecSessionBySecProxyIdx( CFLibDbKeyHash256 SecProxyId,
+	List<ICFSecPubSecSessionObj> pageSecSessionBySecProxyIdx(  SecProxyId,
 		CFLibDbKeyHash256 priorSecSessionId );
 
 	/**
@@ -375,5 +375,5 @@ public interface ICFSecPubSecSessionTableObj
 	 *
 	 *	@param	SecProxyId	The SecSession key attribute of the instance generating the id.
 	 */
-	void deleteSecSessionBySecProxyIdx( CFLibDbKeyHash256 SecProxyId );
+	void deleteSecSessionBySecProxyIdx(  SecProxyId );
 }

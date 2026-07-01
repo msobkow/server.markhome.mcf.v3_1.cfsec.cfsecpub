@@ -214,11 +214,11 @@ public interface ICFSecPubSecSessionObj
 	LocalDateTime getOptionalFinish();
 
 	/**
-	 *	Get the optional CFLibDbKeyHash256 attribute SecProxyId.
+	 *	Get the optional  attribute SecProxyId.
 	 *
-	 *	@return	The optional CFLibDbKeyHash256 attribute SecProxyId.
+	 *	@return	The optional  attribute SecProxyId.
 	 */
-	CFLibDbKeyHash256 getOptionalSecProxyId();
+	 getOptionalSecProxyId();
 
 	/**
 	 *	Internal use only.

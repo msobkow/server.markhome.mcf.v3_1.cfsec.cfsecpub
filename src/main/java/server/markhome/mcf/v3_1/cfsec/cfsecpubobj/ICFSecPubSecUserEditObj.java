@@ -188,20 +188,6 @@ public interface ICFSecPubSecUserEditObj
 	 */
 	void setOptionalDfltTentGrpName(String value);
 
-	/**
-	 *	Get the required String attribute EMailAddress.
-	 *
-	 *	@return	The required String attribute EMailAddress.
-	 */
-	String getRequiredEMailAddress();
-
-	/**
-	 *	Set the required String attribute EMailAddress.
-	 *
-	 *	@param value The required String attribute EMailAddress value to be applied.
-	 */
-	void setRequiredEMailAddress(String value);
-
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 
