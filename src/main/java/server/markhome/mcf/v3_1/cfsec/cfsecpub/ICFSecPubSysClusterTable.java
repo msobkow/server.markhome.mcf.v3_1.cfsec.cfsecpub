@@ -56,7 +56,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFSecPubSysCluster createSysCluster( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster pubcreateSysCluster( ICFSecPubAuthorization Authorization,
 		ICFSecPubSysCluster rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFSecPubSysCluster updateSysCluster( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster pubupdateSysCluster( ICFSecPubAuthorization Authorization,
 		ICFSecPubSysCluster rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteSysCluster( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSysCluster( ICFSecPubAuthorization Authorization,
 		ICFSecPubSysCluster rec );
 	/**
 	 *	Delete the SysCluster instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteSysClusterByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSysClusterByIdIdx( ICFSecPubAuthorization Authorization,
 		Integer argKey );
 	/**
 	 *	Delete the SysCluster instances identified by the key ClusterIdx.
@@ -97,7 +97,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@param	ClusterId	The SysCluster key attribute of the instance generating the id.
 	 */
-	void deleteSysClusterByClusterIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSysClusterByClusterIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argClusterId );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteSysClusterByClusterIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSysClusterByClusterIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubSysClusterByClusterIdxKey argKey );
 
 
@@ -121,7 +121,7 @@ public interface ICFSecPubSysClusterTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubSysCluster readDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster pubreadDerived( ICFSecPubAuthorization Authorization,
 		Integer PKey );
 
 	/**
@@ -134,7 +134,7 @@ public interface ICFSecPubSysClusterTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubSysCluster lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster publockDerived( ICFSecPubAuthorization Authorization,
 		Integer PKey );
 
 	/**
@@ -144,7 +144,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFSecPubSysCluster[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFSecPubSysCluster[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived SysCluster record instance identified by the unique key IdIdx.
@@ -156,7 +156,7 @@ public interface ICFSecPubSysClusterTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubSysCluster readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		int SingletonId );
 
 	/**
@@ -168,7 +168,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFSecPubSysCluster[] readDerivedByClusterIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster[] pubreadDerivedByClusterIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ClusterId );
 
 	/**
@@ -183,7 +183,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubSysCluster readRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster pubreadRec( ICFSecPubAuthorization Authorization,
 		Integer PKey );
 
 	/**
@@ -198,7 +198,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubSysCluster lockRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster publockRec( ICFSecPubAuthorization Authorization,
 		Integer PKey );
 
 	/**
@@ -208,7 +208,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@return All the specific SysCluster instances in the database accessible for the Authorization.
 	 */
-	ICFSecPubSysCluster[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFSecPubSysCluster[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific SysCluster record instance identified by the unique key IdIdx.
@@ -222,7 +222,7 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubSysCluster readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		int SingletonId );
 
 	/**
@@ -236,6 +236,6 @@ public interface ICFSecPubSysClusterTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubSysCluster[] readRecByClusterIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSysCluster[] pubreadRecByClusterIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ClusterId );
 }

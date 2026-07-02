@@ -78,13 +78,13 @@ public interface ICFSecPubISOCtryCcyFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOCtryCcy newRec();
+	public ICFSecPubISOCtryCcy newPubRec();
 
 	/**
 	 *	Allocate a public ISOCtryCcy history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOCtryCcyH newHRec();
+	public ICFSecPubISOCtryCcyH newPubHRec();
 
 }

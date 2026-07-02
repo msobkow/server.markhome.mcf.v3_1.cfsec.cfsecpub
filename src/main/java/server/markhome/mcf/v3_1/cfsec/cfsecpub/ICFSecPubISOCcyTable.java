@@ -56,7 +56,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFSecPubISOCcy createISOCcy( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubcreateISOCcy( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCcy rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFSecPubISOCcy updateISOCcy( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubupdateISOCcy( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCcy rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteISOCcy( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCcy( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCcy rec );
 	/**
 	 *	Delete the ISOCcy instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteISOCcyByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCcyByIdIdx( ICFSecPubAuthorization Authorization,
 		Short argKey );
 	/**
 	 *	Delete the ISOCcy instances identified by the key CcyCdIdx.
@@ -97,7 +97,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@param	ISOCode	The ISOCcy key attribute of the instance generating the id.
 	 */
-	void deleteISOCcyByCcyCdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCcyByCcyCdIdx( ICFSecPubAuthorization Authorization,
 		String argISOCode );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteISOCcyByCcyCdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCcyByCcyCdIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCcyByCcyCdIdxKey argKey );
 	/**
 	 *	Delete the ISOCcy instances identified by the key CcyNmIdx.
@@ -116,7 +116,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@param	Name	The ISOCcy key attribute of the instance generating the id.
 	 */
-	void deleteISOCcyByCcyNmIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCcyByCcyNmIdx( ICFSecPubAuthorization Authorization,
 		String argName );
 
 	/**
@@ -126,7 +126,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteISOCcyByCcyNmIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCcyByCcyNmIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCcyByCcyNmIdxKey argKey );
 
 
@@ -140,7 +140,7 @@ public interface ICFSecPubISOCcyTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubISOCcy readDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubreadDerived( ICFSecPubAuthorization Authorization,
 		Short PKey );
 
 	/**
@@ -153,7 +153,7 @@ public interface ICFSecPubISOCcyTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubISOCcy lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy publockDerived( ICFSecPubAuthorization Authorization,
 		Short PKey );
 
 	/**
@@ -163,7 +163,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFSecPubISOCcy[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFSecPubISOCcy[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived ISOCcy record instance identified by the unique key IdIdx.
@@ -175,7 +175,7 @@ public interface ICFSecPubISOCcyTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubISOCcy readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		short ISOCcyId );
 
 	/**
@@ -188,7 +188,7 @@ public interface ICFSecPubISOCcyTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubISOCcy readDerivedByCcyCdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubreadDerivedByCcyCdIdx( ICFSecPubAuthorization Authorization,
 		String ISOCode );
 
 	/**
@@ -201,7 +201,7 @@ public interface ICFSecPubISOCcyTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubISOCcy readDerivedByCcyNmIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubreadDerivedByCcyNmIdx( ICFSecPubAuthorization Authorization,
 		String Name );
 
 	/**
@@ -216,7 +216,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCcy readRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubreadRec( ICFSecPubAuthorization Authorization,
 		Short PKey );
 
 	/**
@@ -231,7 +231,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCcy lockRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy publockRec( ICFSecPubAuthorization Authorization,
 		Short PKey );
 
 	/**
@@ -241,7 +241,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@return All the specific ISOCcy instances in the database accessible for the Authorization.
 	 */
-	ICFSecPubISOCcy[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFSecPubISOCcy[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific ISOCcy record instance identified by the unique key IdIdx.
@@ -255,7 +255,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCcy readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		short ISOCcyId );
 
 	/**
@@ -270,7 +270,7 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCcy readRecByCcyCdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubreadRecByCcyCdIdx( ICFSecPubAuthorization Authorization,
 		String ISOCode );
 
 	/**
@@ -285,6 +285,6 @@ public interface ICFSecPubISOCcyTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCcy readRecByCcyNmIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCcy pubreadRecByCcyNmIdx( ICFSecPubAuthorization Authorization,
 		String Name );
 }

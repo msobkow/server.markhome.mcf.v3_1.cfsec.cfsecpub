@@ -71,13 +71,13 @@ public interface ICFSecPubClusterFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubCluster newRec();
+	public ICFSecPubCluster newPubRec();
 
 	/**
 	 *	Allocate a public Cluster history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubClusterH newHRec();
+	public ICFSecPubClusterH newPubHRec();
 
 }

@@ -56,7 +56,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFSecPubCluster createCluster( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubcreateCluster( ICFSecPubAuthorization Authorization,
 		ICFSecPubCluster rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFSecPubCluster updateCluster( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubupdateCluster( ICFSecPubAuthorization Authorization,
 		ICFSecPubCluster rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteCluster( ICFSecPubAuthorization Authorization,
+	public void pubdeleteCluster( ICFSecPubAuthorization Authorization,
 		ICFSecPubCluster rec );
 	/**
 	 *	Delete the Cluster instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteClusterByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClusterByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the Cluster instances identified by the key UDomNameIdx.
@@ -97,7 +97,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@param	FullDomName	The Cluster key attribute of the instance generating the id.
 	 */
-	void deleteClusterByUDomNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClusterByUDomNameIdx( ICFSecPubAuthorization Authorization,
 		String argFullDomName );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteClusterByUDomNameIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClusterByUDomNameIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubClusterByUDomNameIdxKey argKey );
 	/**
 	 *	Delete the Cluster instances identified by the key UDescrIdx.
@@ -116,7 +116,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@param	Description	The Cluster key attribute of the instance generating the id.
 	 */
-	void deleteClusterByUDescrIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClusterByUDescrIdx( ICFSecPubAuthorization Authorization,
 		String argDescription );
 
 	/**
@@ -126,7 +126,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteClusterByUDescrIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteClusterByUDescrIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubClusterByUDescrIdxKey argKey );
 
 
@@ -140,7 +140,7 @@ public interface ICFSecPubClusterTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubCluster readDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -153,7 +153,7 @@ public interface ICFSecPubClusterTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubCluster lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -163,7 +163,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFSecPubCluster[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFSecPubCluster[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived Cluster record instance identified by the unique key IdIdx.
@@ -175,7 +175,7 @@ public interface ICFSecPubClusterTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubCluster readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -188,7 +188,7 @@ public interface ICFSecPubClusterTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubCluster readDerivedByUDomNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubreadDerivedByUDomNameIdx( ICFSecPubAuthorization Authorization,
 		String FullDomName );
 
 	/**
@@ -201,7 +201,7 @@ public interface ICFSecPubClusterTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubCluster readDerivedByUDescrIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubreadDerivedByUDescrIdx( ICFSecPubAuthorization Authorization,
 		String Description );
 
 	/**
@@ -216,7 +216,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubCluster readRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -231,7 +231,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubCluster lockRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -241,7 +241,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@return All the specific Cluster instances in the database accessible for the Authorization.
 	 */
-	ICFSecPubCluster[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFSecPubCluster[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read a page of all the specific Cluster record instances.
@@ -250,7 +250,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@return All the specific Cluster instances in the database accessible for the Authorization.
 	 */
-	ICFSecPubCluster[] pageAllRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster[] pubpageAllRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 priorId );
 
 	/**
@@ -265,7 +265,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubCluster readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
 
 	/**
@@ -280,7 +280,7 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubCluster readRecByUDomNameIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubreadRecByUDomNameIdx( ICFSecPubAuthorization Authorization,
 		String FullDomName );
 
 	/**
@@ -295,6 +295,6 @@ public interface ICFSecPubClusterTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubCluster readRecByUDescrIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubCluster pubreadRecByUDescrIdx( ICFSecPubAuthorization Authorization,
 		String Description );
 }

@@ -56,7 +56,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFSecPubISOCtryLang createISOCtryLang( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang pubcreateISOCtryLang( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLang rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFSecPubISOCtryLang updateISOCtryLang( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang pubupdateISOCtryLang( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLang rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteISOCtryLang( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCtryLang( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLang rec );
 	/**
 	 *	Delete the ISOCtryLang instance identified by the primary key attributes.
@@ -90,7 +90,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@param	ISOLangId	The ISOCtryLang key attribute of the instance generating the id.
 	 */
-	void deleteISOCtryLangByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCtryLangByIdIdx( ICFSecPubAuthorization Authorization,
 		short argISOCtryId,
 		short argISOLangId );
 	/**
@@ -100,7 +100,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteISOCtryLangByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCtryLangByIdIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLangPKey argKey );
 	/**
 	 *	Delete the ISOCtryLang instances identified by the key CtryIdx.
@@ -109,7 +109,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@param	ISOCtryId	The ISOCtryLang key attribute of the instance generating the id.
 	 */
-	void deleteISOCtryLangByCtryIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCtryLangByCtryIdx( ICFSecPubAuthorization Authorization,
 		short argISOCtryId );
 
 	/**
@@ -119,7 +119,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteISOCtryLangByCtryIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCtryLangByCtryIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLangByCtryIdxKey argKey );
 	/**
 	 *	Delete the ISOCtryLang instances identified by the key LangIdx.
@@ -128,7 +128,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@param	ISOLangId	The ISOCtryLang key attribute of the instance generating the id.
 	 */
-	void deleteISOCtryLangByLangIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCtryLangByLangIdx( ICFSecPubAuthorization Authorization,
 		short argISOLangId );
 
 	/**
@@ -138,7 +138,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteISOCtryLangByLangIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteISOCtryLangByLangIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLangByLangIdxKey argKey );
 
 
@@ -152,7 +152,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubISOCtryLang readDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang pubreadDerived( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLangPKey PKey );
 
 	/**
@@ -163,7 +163,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubISOCtryLang readDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang pubreadDerived( ICFSecPubAuthorization Authorization,
 		short ISOCtryId,
 		short ISOLangId );
 
@@ -177,7 +177,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubISOCtryLang lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang publockDerived( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLangPKey PKey );
 
 	/**
@@ -187,7 +187,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFSecPubISOCtryLang[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFSecPubISOCtryLang[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived ISOCtryLang record instance identified by the unique key IdIdx.
@@ -201,7 +201,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubISOCtryLang readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		short ISOCtryId,
 		short ISOLangId );
 
@@ -214,7 +214,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFSecPubISOCtryLang[] readDerivedByCtryIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang[] pubreadDerivedByCtryIdx( ICFSecPubAuthorization Authorization,
 		short ISOCtryId );
 
 	/**
@@ -226,7 +226,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
 	 */
-	ICFSecPubISOCtryLang[] readDerivedByLangIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang[] pubreadDerivedByLangIdx( ICFSecPubAuthorization Authorization,
 		short ISOLangId );
 
 	/**
@@ -241,7 +241,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCtryLang readRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang pubreadRec( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLangPKey PKey );
 
 	/**
@@ -256,7 +256,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCtryLang readRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang pubreadRec( ICFSecPubAuthorization Authorization,
 		short ISOCtryId,
 		short ISOLangId );
 
@@ -272,7 +272,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCtryLang lockRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang publockRec( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryLangPKey PKey );
 
 	/**
@@ -282,7 +282,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@return All the specific ISOCtryLang instances in the database accessible for the Authorization.
 	 */
-	ICFSecPubISOCtryLang[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFSecPubISOCtryLang[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the specific ISOCtryLang record instance identified by the unique key IdIdx.
@@ -298,7 +298,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCtryLang readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		short ISOCtryId,
 		short ISOLangId );
 
@@ -313,7 +313,7 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCtryLang[] readRecByCtryIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang[] pubreadRecByCtryIdx( ICFSecPubAuthorization Authorization,
 		short ISOCtryId );
 
 	/**
@@ -327,6 +327,6 @@ public interface ICFSecPubISOCtryLangTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubISOCtryLang[] readRecByLangIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubISOCtryLang[] pubreadRecByLangIdx( ICFSecPubAuthorization Authorization,
 		short ISOLangId );
 }

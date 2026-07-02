@@ -71,13 +71,13 @@ public interface ICFSecPubSecSysGrpFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSecSysGrp newRec();
+	public ICFSecPubSecSysGrp newPubRec();
 
 	/**
 	 *	Allocate a public SecSysGrp history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSecSysGrpH newHRec();
+	public ICFSecPubSecSysGrpH newPubHRec();
 
 }

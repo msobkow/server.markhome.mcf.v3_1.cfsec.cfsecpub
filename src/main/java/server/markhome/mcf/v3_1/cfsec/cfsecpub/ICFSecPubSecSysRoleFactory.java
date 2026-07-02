@@ -64,13 +64,13 @@ public interface ICFSecPubSecSysRoleFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSecSysRole newRec();
+	public ICFSecPubSecSysRole newPubRec();
 
 	/**
 	 *	Allocate a public SecSysRole history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSecSysRoleH newHRec();
+	public ICFSecPubSecSysRoleH newPubHRec();
 
 }

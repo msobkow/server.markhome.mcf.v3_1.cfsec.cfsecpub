@@ -78,13 +78,13 @@ public interface ICFSecPubISOTZoneFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOTZone newRec();
+	public ICFSecPubISOTZone newPubRec();
 
 	/**
 	 *	Allocate a public ISOTZone history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOTZoneH newHRec();
+	public ICFSecPubISOTZoneH newPubHRec();
 
 }

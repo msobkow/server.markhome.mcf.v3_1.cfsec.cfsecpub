@@ -64,13 +64,13 @@ public interface ICFSecPubSysClusterFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSysCluster newRec();
+	public ICFSecPubSysCluster newPubRec();
 
 	/**
 	 *	Allocate a public SysCluster history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSysClusterH newHRec();
+	public ICFSecPubSysClusterH newPubHRec();
 
 }

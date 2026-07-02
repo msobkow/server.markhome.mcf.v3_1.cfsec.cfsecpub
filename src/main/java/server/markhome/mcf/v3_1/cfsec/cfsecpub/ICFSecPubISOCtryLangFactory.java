@@ -78,13 +78,13 @@ public interface ICFSecPubISOCtryLangFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOCtryLang newRec();
+	public ICFSecPubISOCtryLang newPubRec();
 
 	/**
 	 *	Allocate a public ISOCtryLang history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOCtryLangH newHRec();
+	public ICFSecPubISOCtryLangH newPubHRec();
 
 }

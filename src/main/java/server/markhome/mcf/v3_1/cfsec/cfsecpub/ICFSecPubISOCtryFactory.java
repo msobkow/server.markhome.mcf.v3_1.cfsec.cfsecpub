@@ -71,13 +71,13 @@ public interface ICFSecPubISOCtryFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOCtry newRec();
+	public ICFSecPubISOCtry newPubRec();
 
 	/**
 	 *	Allocate a public ISOCtry history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOCtryH newHRec();
+	public ICFSecPubISOCtryH newPubHRec();
 
 }

@@ -71,13 +71,13 @@ public interface ICFSecPubTenantFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubTenant newRec();
+	public ICFSecPubTenant newPubRec();
 
 	/**
 	 *	Allocate a public Tenant history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubTenantH newHRec();
+	public ICFSecPubTenantH newPubHRec();
 
 }

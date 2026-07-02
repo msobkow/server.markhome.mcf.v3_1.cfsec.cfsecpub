@@ -56,7 +56,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@param	rec	The instance interface to be created.
 	 */
-	ICFSecPubSecUser createSecUser( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser pubcreateSecUser( ICFSecPubAuthorization Authorization,
 		ICFSecPubSecUser rec );
 
 
@@ -68,7 +68,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@param	rec	The instance interface to be updated
 	 */
-	ICFSecPubSecUser updateSecUser( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser pubupdateSecUser( ICFSecPubAuthorization Authorization,
 		ICFSecPubSecUser rec );
 
 
@@ -79,7 +79,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@param	rec	The instance interface to be deleted.
 	 */
-	void deleteSecUser( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSecUser( ICFSecPubAuthorization Authorization,
 		ICFSecPubSecUser rec );
 	/**
 	 *	Delete the SecUser instance identified by the primary key.
@@ -88,7 +88,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
-	void deleteSecUserByIdIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSecUserByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
 	/**
 	 *	Delete the SecUser instances identified by the key ULoginIdx.
@@ -97,7 +97,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@param	LoginId	The SecUser key attribute of the instance generating the id.
 	 */
-	void deleteSecUserByULoginIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSecUserByULoginIdx( ICFSecPubAuthorization Authorization,
 		String argLoginId );
 
 	/**
@@ -107,7 +107,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@param	argKey	The key identifying the instances to be deleted.
 	 */
-	void deleteSecUserByULoginIdx( ICFSecPubAuthorization Authorization,
+	public void pubdeleteSecUserByULoginIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubSecUserByULoginIdxKey argKey );
 
 
@@ -121,7 +121,7 @@ public interface ICFSecPubSecUserTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubSecUser readDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser pubreadDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -134,7 +134,7 @@ public interface ICFSecPubSecUserTable
 	 *	@return The record instance for the specified primary key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubSecUser lockDerived( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser publockDerived( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -144,7 +144,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@return An array of derived record instances, potentially with 0 elements in the set.
 	 */
-	ICFSecPubSecUser[] readPubAllDerived( ICFSecPubAuthorization Authorization );
+	public ICFSecPubSecUser[] pubreadPubAllDerived( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read the derived SecUser record instance identified by the unique key IdIdx.
@@ -156,7 +156,7 @@ public interface ICFSecPubSecUserTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubSecUser readDerivedByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SecUserId );
 
 	/**
@@ -169,7 +169,7 @@ public interface ICFSecPubSecUserTable
 	 *	@return The record instance for the specified key, or null if there is
 	 *		no such existing key value.
 	 */
-	ICFSecPubSecUser readDerivedByULoginIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser pubreadDerivedByULoginIdx( ICFSecPubAuthorization Authorization,
 		String LoginId );
 
 	/**
@@ -184,7 +184,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubSecUser readRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser pubreadRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -199,7 +199,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubSecUser lockRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser publockRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 PKey );
 
 	/**
@@ -209,7 +209,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@return All the specific SecUser instances in the database accessible for the Authorization.
 	 */
-	ICFSecPubSecUser[] readAllRec( ICFSecPubAuthorization Authorization );
+	public ICFSecPubSecUser[] pubreadAllRec( ICFSecPubAuthorization Authorization );
 
 	/**
 	 *	Read a page of all the specific SecUser record instances.
@@ -218,7 +218,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@return All the specific SecUser instances in the database accessible for the Authorization.
 	 */
-	ICFSecPubSecUser[] pageAllRec( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser[] pubpageAllRec( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 priorSecUserId );
 
 	/**
@@ -233,7 +233,7 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubSecUser readRecByIdIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SecUserId );
 
 	/**
@@ -248,6 +248,6 @@ public interface ICFSecPubSecUserTable
 	 *
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
-	ICFSecPubSecUser readRecByULoginIdx( ICFSecPubAuthorization Authorization,
+	public ICFSecPubSecUser pubreadRecByULoginIdx( ICFSecPubAuthorization Authorization,
 		String LoginId );
 }

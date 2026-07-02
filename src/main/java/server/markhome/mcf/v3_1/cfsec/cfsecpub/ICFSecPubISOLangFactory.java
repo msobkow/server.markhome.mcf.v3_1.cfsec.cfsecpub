@@ -71,13 +71,13 @@ public interface ICFSecPubISOLangFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOLang newRec();
+	public ICFSecPubISOLang newPubRec();
 
 	/**
 	 *	Allocate a public ISOLang history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubISOLangH newHRec();
+	public ICFSecPubISOLangH newPubHRec();
 
 }

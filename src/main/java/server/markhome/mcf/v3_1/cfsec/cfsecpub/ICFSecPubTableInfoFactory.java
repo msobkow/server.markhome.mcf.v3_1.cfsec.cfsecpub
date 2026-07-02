@@ -92,13 +92,13 @@ public interface ICFSecPubTableInfoFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubTableInfo newRec();
+	public ICFSecPubTableInfo newPubRec();
 
 	/**
 	 *	Allocate a public TableInfo history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubTableInfoH newHRec();
+	public ICFSecPubTableInfoH newPubHRec();
 
 }

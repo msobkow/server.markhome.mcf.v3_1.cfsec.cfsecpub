@@ -64,13 +64,13 @@ public interface ICFSecPubSecUserFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSecUser newRec();
+	public ICFSecPubSecUser newPubRec();
 
 	/**
 	 *	Allocate a public SecUser history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSecUserH newHRec();
+	public ICFSecPubSecUserH newPubHRec();
 
 }

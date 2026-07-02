@@ -78,13 +78,13 @@ public interface ICFSecPubSecSessionFactory
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSecSession newRec();
+	public ICFSecPubSecSession newPubRec();
 
 	/**
 	 *	Allocate a public SecSession history interface implementation.
 	 *
 	 *	@return	The new instance.
 	 */
-	public ICFSecPubSecSessionH newHRec();
+	public ICFSecPubSecSessionH newPubHRec();
 
 }
