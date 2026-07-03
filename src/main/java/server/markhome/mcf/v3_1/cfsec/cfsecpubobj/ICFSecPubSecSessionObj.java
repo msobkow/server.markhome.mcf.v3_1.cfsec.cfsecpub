@@ -214,13 +214,6 @@ public interface ICFSecPubSecSessionObj
 	LocalDateTime getOptionalFinish();
 
 	/**
-	 *	Get the optional  attribute SecProxyId.
-	 *
-	 *	@return	The optional  attribute SecProxyId.
-	 */
-	 getOptionalSecProxyId();
-
-	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

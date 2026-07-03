@@ -255,13 +255,6 @@ public interface ICFSecPubSecUserObj
 	String getOptionalDfltTentGrpName();
 
 	/**
-	 *	Get the required  attribute EMailAddress.
-	 *
-	 *	@return	The required  attribute EMailAddress.
-	 */
-	 getRequiredEMailAddress();
-
-	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

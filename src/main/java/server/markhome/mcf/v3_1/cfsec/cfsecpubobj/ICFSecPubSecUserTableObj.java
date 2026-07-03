@@ -188,50 +188,13 @@ public interface ICFSecPubSecUserTableObj
 	ICFSecPubSecUserObj readSecUserByULoginIdx(String LoginId,
 		boolean forceRead );
 
-	/**
-	 *	Get the map of CFSecPubSecUserObj instances sorted by their primary keys for the duplicate EMAddrIdx key.
-	 *
-	 *	@param	EMailAddress	The SecUser key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFSecPubSecUserObj cached instances sorted by their primary keys for the duplicate EMAddrIdx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFSecPubSecUserObj> readSecUserByEMAddrIdx(  EMailAddress );
-
-	/**
-	 *	Get the map of CFSecPubSecUserObj instances sorted by their primary keys for the duplicate EMAddrIdx key.
-	 *
-	 *	@param	EMailAddress	The SecUser key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFSecPubSecUserObj cached instances sorted by their primary keys for the duplicate EMAddrIdx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFSecPubSecUserObj> readSecUserByEMAddrIdx(  EMailAddress,
-		boolean forceRead );
-
 	ICFSecPubSecUserObj readCachedSecUserByIdIdx( CFLibDbKeyHash256 SecUserId );
 
 	ICFSecPubSecUserObj readCachedSecUserByULoginIdx( String LoginId );
 
-	List<ICFSecPubSecUserObj> readCachedSecUserByEMAddrIdx(  EMailAddress );
-
 	void deepDisposeSecUserByIdIdx( CFLibDbKeyHash256 SecUserId );
 
 	void deepDisposeSecUserByULoginIdx( String LoginId );
-
-	void deepDisposeSecUserByEMAddrIdx(  EMailAddress );
-
-	/**
-	 *	Read a page of data as a List of SecUser-derived instances sorted by their primary keys,
-	 *	as identified by the duplicate EMAddrIdx key attributes.
-	 *
-	 *	@param	EMailAddress	The SecUser key attribute of the instance generating the id.
-	 *
-	 *	@return	A List of SecUser-derived instances sorted by their primary keys,
-	 *		as identified by the key attributes, which may be an empty set.
-	 */
-	List<ICFSecPubSecUserObj> pageSecUserByEMAddrIdx(  EMailAddress,
-		CFLibDbKeyHash256 priorSecUserId );
 
 	/**
 	 *	Internal use only.
@@ -256,11 +219,4 @@ public interface ICFSecPubSecUserTableObj
 	 *	@param	LoginId	The SecUser key attribute of the instance generating the id.
 	 */
 	void deleteSecUserByULoginIdx(String LoginId );
-
-	/**
-	 *	Internal use only.
-	 *
-	 *	@param	EMailAddress	The SecUser key attribute of the instance generating the id.
-	 */
-	void deleteSecUserByEMAddrIdx(  EMailAddress );
 }

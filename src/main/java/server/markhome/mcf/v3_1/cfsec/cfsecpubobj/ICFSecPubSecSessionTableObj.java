@@ -242,27 +242,6 @@ public interface ICFSecPubSecSessionTableObj
 		LocalDateTime Finish,
 		boolean forceRead );
 
-	/**
-	 *	Get the map of CFSecPubSecSessionObj instances sorted by their primary keys for the duplicate SecProxyIdx key.
-	 *
-	 *	@param	SecProxyId	The SecSession key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFSecPubSecSessionObj cached instances sorted by their primary keys for the duplicate SecProxyIdx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFSecPubSecSessionObj> readSecSessionBySecProxyIdx(  SecProxyId );
-
-	/**
-	 *	Get the map of CFSecPubSecSessionObj instances sorted by their primary keys for the duplicate SecProxyIdx key.
-	 *
-	 *	@param	SecProxyId	The SecSession key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFSecPubSecSessionObj cached instances sorted by their primary keys for the duplicate SecProxyIdx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFSecPubSecSessionObj> readSecSessionBySecProxyIdx(  SecProxyId,
-		boolean forceRead );
-
 	ICFSecPubSecSessionObj readCachedSecSessionByIdIdx( CFLibDbKeyHash256 SecSessionId );
 
 	List<ICFSecPubSecSessionObj> readCachedSecSessionBySecUserIdx( CFLibDbKeyHash256 SecUserId );
@@ -273,8 +252,6 @@ public interface ICFSecPubSecSessionTableObj
 	List<ICFSecPubSecSessionObj> readCachedSecSessionByFinishIdx( CFLibDbKeyHash256 SecUserId,
 		LocalDateTime Finish );
 
-	List<ICFSecPubSecSessionObj> readCachedSecSessionBySecProxyIdx(  SecProxyId );
-
 	void deepDisposeSecSessionByIdIdx( CFLibDbKeyHash256 SecSessionId );
 
 	void deepDisposeSecSessionBySecUserIdx( CFLibDbKeyHash256 SecUserId );
@@ -284,8 +261,6 @@ public interface ICFSecPubSecSessionTableObj
 
 	void deepDisposeSecSessionByFinishIdx( CFLibDbKeyHash256 SecUserId,
 		LocalDateTime Finish );
-
-	void deepDisposeSecSessionBySecProxyIdx(  SecProxyId );
 
 	/**
 	 *	Read a page of data as a List of SecSession-derived instances sorted by their primary keys,
@@ -312,18 +287,6 @@ public interface ICFSecPubSecSessionTableObj
 	 */
 	List<ICFSecPubSecSessionObj> pageSecSessionByFinishIdx( CFLibDbKeyHash256 SecUserId,
 		LocalDateTime Finish,
-		CFLibDbKeyHash256 priorSecSessionId );
-
-	/**
-	 *	Read a page of data as a List of SecSession-derived instances sorted by their primary keys,
-	 *	as identified by the duplicate SecProxyIdx key attributes.
-	 *
-	 *	@param	SecProxyId	The SecSession key attribute of the instance generating the id.
-	 *
-	 *	@return	A List of SecSession-derived instances sorted by their primary keys,
-	 *		as identified by the key attributes, which may be an empty set.
-	 */
-	List<ICFSecPubSecSessionObj> pageSecSessionBySecProxyIdx(  SecProxyId,
 		CFLibDbKeyHash256 priorSecSessionId );
 
 	/**
@@ -369,11 +332,4 @@ public interface ICFSecPubSecSessionTableObj
 	 */
 	void deleteSecSessionByFinishIdx( CFLibDbKeyHash256 SecUserId,
 		LocalDateTime Finish );
-
-	/**
-	 *	Internal use only.
-	 *
-	 *	@param	SecProxyId	The SecSession key attribute of the instance generating the id.
-	 */
-	void deleteSecSessionBySecProxyIdx(  SecProxyId );
 }
