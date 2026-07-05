@@ -65,8 +65,8 @@ public interface ICFSecPubISOCtryLang
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public ICFSecPubISOCtryLangPKey getPubPKey();
-	public void setPubPKey(ICFSecPubISOCtryLangPKey pkey );
+	public ICFSecPubISOCtryLangPKey getPKey();
+	public void setPKey(ICFSecPubISOCtryLangPKey pkey );
 	
 	public ICFSecPubISOCtry getRequiredContainerCtry();
 	public void setRequiredContainerCtry(ICFSecPubISOCtry argObj);
@@ -89,9 +89,9 @@ public interface ICFSecPubISOCtryLang
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubISOCtryLang src );
-	public void setPubISOCtryLang( ICFSecPubISOCtryLang src );
+	public void setISOCtryLang( ICFSecPubISOCtryLang src );
 	public void set( ICFSecPubISOCtryLangH src );
-	public void setPubISOCtryLang( ICFSecPubISOCtryLangH src );
+	public void setISOCtryLang( ICFSecPubISOCtryLangH src );
 
 	public String getXmlAttrFragment();
 

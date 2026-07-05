@@ -66,8 +66,8 @@ public interface ICFSecPubISOLang
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public Short getPubPKey();
-	public void setPubPKey(Short requiredISOLangId);
+	public Short getPKey();
+	public void setPKey(Short requiredISOLangId);
 	
 	public List<ICFSecPubISOCtryLang> getOptionalChildrenCtry();
 	public short getRequiredISOLangId();
@@ -91,9 +91,9 @@ public interface ICFSecPubISOLang
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubISOLang src );
-	public void setPubISOLang( ICFSecPubISOLang src );
+	public void setISOLang( ICFSecPubISOLang src );
 	public void set( ICFSecPubISOLangH src );
-	public void setPubISOLang( ICFSecPubISOLangH src );
+	public void setISOLang( ICFSecPubISOLangH src );
 
 	public String getXmlAttrFragment();
 

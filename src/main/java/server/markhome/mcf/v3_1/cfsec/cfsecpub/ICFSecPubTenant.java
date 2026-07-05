@@ -66,8 +66,8 @@ public interface ICFSecPubTenant
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
@@ -90,9 +90,9 @@ public interface ICFSecPubTenant
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubTenant src );
-	public void setPubTenant( ICFSecPubTenant src );
+	public void setTenant( ICFSecPubTenant src );
 	public void set( ICFSecPubTenantH src );
-	public void setPubTenant( ICFSecPubTenantH src );
+	public void setTenant( ICFSecPubTenantH src );
 
 	public String getXmlAttrFragment();
 

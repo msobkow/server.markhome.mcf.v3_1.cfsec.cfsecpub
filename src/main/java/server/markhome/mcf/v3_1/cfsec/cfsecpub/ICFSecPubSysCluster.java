@@ -53,8 +53,8 @@ public interface ICFSecPubSysCluster
 
 	public int getClassCode();
 
-	public Integer getPubPKey();
-	public void setPubPKey(Integer requiredSingletonId);
+	public Integer getPKey();
+	public void setPKey(Integer requiredSingletonId);
 	
 	public int getRequiredSingletonId();
 	public void setRequiredSingletonId( int value );
@@ -75,9 +75,9 @@ public interface ICFSecPubSysCluster
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubSysCluster src );
-	public void setPubSysCluster( ICFSecPubSysCluster src );
+	public void setSysCluster( ICFSecPubSysCluster src );
 	public void set( ICFSecPubSysClusterH src );
-	public void setPubSysCluster( ICFSecPubSysClusterH src );
+	public void setSysCluster( ICFSecPubSysClusterH src );
 
 	public String getXmlAttrFragment();
 

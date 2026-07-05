@@ -73,8 +73,8 @@ public interface ICFSecPubISOTZone
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public Short getPubPKey();
-	public void setPubPKey(Short requiredISOTZoneId);
+	public Short getPKey();
+	public void setPKey(Short requiredISOTZoneId);
 	
 	public short getRequiredISOTZoneId();
 	public void setRequiredISOTZoneId( short value );
@@ -103,9 +103,9 @@ public interface ICFSecPubISOTZone
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubISOTZone src );
-	public void setPubISOTZone( ICFSecPubISOTZone src );
+	public void setISOTZone( ICFSecPubISOTZone src );
 	public void set( ICFSecPubISOTZoneH src );
-	public void setPubISOTZone( ICFSecPubISOTZoneH src );
+	public void setISOTZone( ICFSecPubISOTZoneH src );
 
 	public String getXmlAttrFragment();
 

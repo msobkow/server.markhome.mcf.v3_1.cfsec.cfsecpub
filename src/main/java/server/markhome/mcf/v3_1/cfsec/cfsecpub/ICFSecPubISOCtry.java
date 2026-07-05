@@ -65,8 +65,8 @@ public interface ICFSecPubISOCtry
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public Short getPubPKey();
-	public void setPubPKey(Short requiredISOCtryId);
+	public Short getPKey();
+	public void setPKey(Short requiredISOCtryId);
 	
 	public List<ICFSecPubISOCtryCcy> getOptionalComponentsCcy();
 	public List<ICFSecPubISOCtryLang> getOptionalComponentsLang();
@@ -89,9 +89,9 @@ public interface ICFSecPubISOCtry
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubISOCtry src );
-	public void setPubISOCtry( ICFSecPubISOCtry src );
+	public void setISOCtry( ICFSecPubISOCtry src );
 	public void set( ICFSecPubISOCtryH src );
-	public void setPubISOCtry( ICFSecPubISOCtryH src );
+	public void setISOCtry( ICFSecPubISOCtryH src );
 
 	public String getXmlAttrFragment();
 

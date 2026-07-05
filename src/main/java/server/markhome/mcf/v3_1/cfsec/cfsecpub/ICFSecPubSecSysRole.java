@@ -64,8 +64,8 @@ public interface ICFSecPubSecSysRole
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredSecSysRoleId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredSecSysRoleId);
 	
 	public CFLibDbKeyHash256 getRequiredSecSysRoleId();
 	public void setRequiredSecSysRoleId( CFLibDbKeyHash256 value );
@@ -84,9 +84,9 @@ public interface ICFSecPubSecSysRole
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubSecSysRole src );
-	public void setPubSecSysRole( ICFSecPubSecSysRole src );
+	public void setSecSysRole( ICFSecPubSecSysRole src );
 	public void set( ICFSecPubSecSysRoleH src );
-	public void setPubSecSysRole( ICFSecPubSecSysRoleH src );
+	public void setSecSysRole( ICFSecPubSecSysRoleH src );
 
 	public String getXmlAttrFragment();
 

@@ -61,8 +61,8 @@ public interface ICFSecPubTableInfo
 
 	public int getClassCode();
 
-	public Integer getPubPKey();
-	public void setPubPKey(Integer requiredTableInfoId);
+	public Integer getPKey();
+	public void setPKey(Integer requiredTableInfoId);
 	
 	public int getRequiredTableInfoId();
 	public void setRequiredTableInfoId( int value );
@@ -100,9 +100,9 @@ public interface ICFSecPubTableInfo
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubTableInfo src );
-	public void setPubTableInfo( ICFSecPubTableInfo src );
+	public void setTableInfo( ICFSecPubTableInfo src );
 	public void set( ICFSecPubTableInfoH src );
-	public void setPubTableInfo( ICFSecPubTableInfoH src );
+	public void setTableInfo( ICFSecPubTableInfoH src );
 
 	public String getXmlAttrFragment();
 

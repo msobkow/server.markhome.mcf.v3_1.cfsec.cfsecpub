@@ -65,8 +65,8 @@ public interface ICFSecPubCluster
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredId);
 	
 	public List<ICFSecPubTenant> getOptionalComponentsTenant();
 	public List<ICFSecPubSysCluster> getOptionalComponentsSysCluster();
@@ -89,9 +89,9 @@ public interface ICFSecPubCluster
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubCluster src );
-	public void setPubCluster( ICFSecPubCluster src );
+	public void setCluster( ICFSecPubCluster src );
 	public void set( ICFSecPubClusterH src );
-	public void setPubCluster( ICFSecPubClusterH src );
+	public void setCluster( ICFSecPubClusterH src );
 
 	public String getXmlAttrFragment();
 

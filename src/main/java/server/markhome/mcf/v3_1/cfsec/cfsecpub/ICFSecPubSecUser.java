@@ -70,8 +70,8 @@ public interface ICFSecPubSecUser
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredSecUserId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredSecUserId);
 	
 	public CFLibDbKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( CFLibDbKeyHash256 value );
@@ -98,9 +98,9 @@ public interface ICFSecPubSecUser
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubSecUser src );
-	public void setPubSecUser( ICFSecPubSecUser src );
+	public void setSecUser( ICFSecPubSecUser src );
 	public void set( ICFSecPubSecUserH src );
-	public void setPubSecUser( ICFSecPubSecUserH src );
+	public void setSecUser( ICFSecPubSecUserH src );
 
 	public String getXmlAttrFragment();
 

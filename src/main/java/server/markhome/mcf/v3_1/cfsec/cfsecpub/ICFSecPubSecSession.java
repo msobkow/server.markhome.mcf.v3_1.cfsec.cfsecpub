@@ -53,8 +53,8 @@ public interface ICFSecPubSecSession
 
 	public int getClassCode();
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredSecSessionId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredSecSessionId);
 	
 	public CFLibDbKeyHash256 getRequiredSecSessionId();
 	public void setRequiredSecSessionId( CFLibDbKeyHash256 value );
@@ -77,9 +77,9 @@ public interface ICFSecPubSecSession
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubSecSession src );
-	public void setPubSecSession( ICFSecPubSecSession src );
+	public void setSecSession( ICFSecPubSecSession src );
 	public void set( ICFSecPubSecSessionH src );
-	public void setPubSecSession( ICFSecPubSecSessionH src );
+	public void setSecSession( ICFSecPubSecSessionH src );
 
 	public String getXmlAttrFragment();
 

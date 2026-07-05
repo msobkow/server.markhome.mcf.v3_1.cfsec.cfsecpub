@@ -67,8 +67,8 @@ public interface ICFSecPubSecSysGrp
 	public LocalDateTime getUpdatedAt();
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPubPKey();
-	public void setPubPKey(CFLibDbKeyHash256 requiredSecSysGrpId);
+	public CFLibDbKeyHash256 getPKey();
+	public void setPKey(CFLibDbKeyHash256 requiredSecSysGrpId);
 	
 	public ICFSecPubSecSysRole getOptionalComponentsImplSysRole();
 	public CFLibDbKeyHash256 getRequiredSecSysGrpId();
@@ -90,9 +90,9 @@ public interface ICFSecPubSecSysGrp
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubSecSysGrp src );
-	public void setPubSecSysGrp( ICFSecPubSecSysGrp src );
+	public void setSecSysGrp( ICFSecPubSecSysGrp src );
 	public void set( ICFSecPubSecSysGrpH src );
-	public void setPubSecSysGrp( ICFSecPubSecSysGrpH src );
+	public void setSecSysGrp( ICFSecPubSecSysGrpH src );
 
 	public String getXmlAttrFragment();
 

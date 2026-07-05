@@ -66,7 +66,7 @@ public interface ICFSecPubSchema
 		new CFSecPubTableData("CFSec", "SysCluster", null, false, false, "System", "Public"),
 		new CFSecPubTableData("CFSec", "TableInfo", null, true, false, "Global", "Public"),
 		new CFSecPubTableData("CFSec", "Tenant", null, true, false, "System", "Public")};
-	public static final AtomicReference<CFSecPubTableData[]> consolidatedPubTableData = new AtomicReference<>(null);
+	public static final AtomicReference<CFSecPubTableData[]> consolidatedTableData = new AtomicReference<>(null);
 	public static final CFSecPubRoleInfo ROLE_INFO[] = {new CFSecPubRoleInfo("secclusmanager", "ClusRole", "sectentmanager createsecclusmemb updatesecclusmemb deletesecclusmemb createsecclusrolememb updatesecclusrolememb deletesecclusrolememb", "systemadmin"),
 		new CFSecPubRoleInfo("secclusadmin", "ClusRole", "secclusmanager createsecclusgrp updatesecclusgrp deletesecclusgrp readsecclusrole updatesecclusrole createsecclusrole deletesecclusrole", "systemadmin"),
 		new CFSecPubRoleInfo("secsysmanager", "SysRole", "secuser secclusmanager createsecsysmemb updatesecsysmemb deletesecsysmemb create secsysrolememb updatesecsysrolememb deletesecsysrolememb", "systemadmin"),
@@ -74,13 +74,13 @@ public interface ICFSecPubSchema
 		new CFSecPubRoleInfo("sectentadmin", "TentRole", "sectentmanager createsectentgrp updatesectentgrp deletesectentgrp createsectentrole updatesectentrole deletesectentrole", "systemadmin"),
 		new CFSecPubRoleInfo("secsysadmin", "SysRole", "sectentadmin secclusadmin secsysmanager updatecluster deletecluster updatetenant deletetenant createsecsysgrp updatesecsysgrp deletesecsysgrp createsecsysrole updatesecsysrole deletesecsysrole createsecsysinc updatesecsysinc deletesecsysinc ", "systemadmin"),
 		new CFSecPubRoleInfo("secuser", "SysRole", "readcluster readtenant readsecsysgrp readsecsysinc readsecsysmemb readsecsysrole readsecsysinc readsecsysroleenable readsecsysrolememb readsecclusgrp readsecclusmemb readsecclusrole readsecclusrolememb readsectentgrp readsectentmemb readsectentrole readsectentrolememb", "systemadmin")};
-	public static final AtomicReference<CFSecPubRoleInfo[]> consolidatedPubRoleInfo = new AtomicReference<>(null);
-	public static CFSecPubTableData[] getPubTableData() {
+	public static final AtomicReference<CFSecPubRoleInfo[]> consolidatedRoleInfo = new AtomicReference<>(null);
+	public static CFSecPubTableData[] getTableData() {
 		return TABLE_DATA;
 	}
 
-	public static CFSecPubTableData[] getConsolidatedPubTableData() {
-		if (consolidatedPubTableData.get() == null) {
+	public static CFSecPubTableData[] getConsolidatedTableData() {
+		if (consolidatedTableData.get() == null) {
 			ArrayList<CFSecPubTableData> lst = new ArrayList<>();
 			for( CFSecPubTableData data: TABLE_DATA) {
 				lst.add(data);
@@ -90,17 +90,17 @@ public interface ICFSecPubSchema
 			for(CFSecPubTableData data: lst) {
 				arr[idx++] = data;
 			}
-			consolidatedPubTableData.compareAndSet(null, arr);
+			consolidatedTableData.compareAndSet(null, arr);
 		}
-		return(consolidatedPubTableData.get());
+		return(consolidatedTableData.get());
 	}
 
-	public static CFSecPubRoleInfo[] getPubRoleInfo() {
+	public static CFSecPubRoleInfo[] getRoleInfo() {
 		return ROLE_INFO;
 	}
 
-	public static CFSecPubRoleInfo[] getConsolidatedPubRoleInfo() {
-		if (consolidatedPubRoleInfo.get() == null) {
+	public static CFSecPubRoleInfo[] getConsolidatedRoleInfo() {
+		if (consolidatedRoleInfo.get() == null) {
 			ArrayList<CFSecPubRoleInfo> lst = new ArrayList<>();
 			for( CFSecPubRoleInfo info: ROLE_INFO) {
 				lst.add(info);
@@ -112,9 +112,9 @@ public interface ICFSecPubSchema
 			for(CFSecPubRoleInfo info: lst) {
 				arr[idx++] = info;
 			}
-			consolidatedPubRoleInfo.compareAndSet(null, arr);
+			consolidatedRoleInfo.compareAndSet(null, arr);
 		}
-		return(consolidatedPubRoleInfo.get());
+		return(consolidatedRoleInfo.get());
 	}
 
 	public default void setApplicationContext(final ApplicationContext applicationContext) throws BeansException {
@@ -811,12 +811,12 @@ public interface ICFSecPubSchema
 	/**
 	 *	Get the factory for CFSecPub data objects.
 	 */
-	// public ICFSecPubFactory getCFSecPubFactory();
+	// public ICFSecPubFactory getCFSecFactory();
 
 	/**
 	 *	Get the buffer factory for CFSecPub data buffers.
 	 */
-	// public CFSecPubBuffFactoryService getCFSecPubBuffFactory();
+	// public CFSecPubBuffFactoryService getCFSecBuffFactory();
 
 	/**
 	 *	Get the Cluster Table interface for the schema.
