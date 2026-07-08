@@ -50,12 +50,25 @@ public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializab
 
 	protected CFLibDbKeyHash256 secSessionId;
 	protected CFLibDbKeyHash256 secUserId;
+	protected CFLibDbKeyHash256 secClusterId;
+	protected CFLibDbKeyHash256 secTenantId;
 
 	public CFSecPubAuthorization() {
 		authUuid6 = CFLibUuid6.generateUuid6();
 		authUuid6Str = authUuid6.toString();
 		secSessionId = CFLibDbKeyHash256.nullGet();
 		secUserId = CFLibDbKeyHash256.nullGet();
+		secClusterId = CFLibDbKeyHash256.nullGet();
+		secTenantId = CFLibDbKeyHash256.nullGet();
+	}
+
+	public CFSecPubAuthorization(CFLibUuid6 authUuid6, CFLibDbKeyHash256 secSessionId, CFLibDbKeyHash256 secUserId, CFLibDbKeyHash256 secClusterId, CFLibDbKeyHash256 secTenantId) {
+		this.authUuid6 = authUuid6;
+		this.authUuid6Str = this.authUuid6.toString();
+		this.secSessionId = secSessionId;
+		this.secUserId = secUserId;
+		this.secClusterId = secClusterId;
+		this.secTenantId = secTenantId;
 	}
 
 	public CFSecPubAuthorization(ICFSecPubAuthorization src) {
@@ -63,6 +76,8 @@ public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializab
 		authUuid6Str = authUuid6.toString();
 		secSessionId = new CFLibDbKeyHash256(src.getSecSessionId());
 		secUserId = new CFLibDbKeyHash256(src.getSecUserId());
+		secClusterId = new CFLibDbKeyHash256(src.getSecClusterId());
+		secTenantId = new CFLibDbKeyHash256(src.getSecTenantId());
 	}
 
 	public CFLibUuid6 getAuthUuid6() {
@@ -79,5 +94,13 @@ public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializab
 
 	public CFLibDbKeyHash256 getSecUserId() {
 		return( secUserId );
+	}
+
+	public CFLibDbKeyHash256 getSecClusterId() {
+		return( secClusterId );
+	}
+
+	public CFLibDbKeyHash256 getSecTenantId() {
+		return( secTenantId );
 	}
 }

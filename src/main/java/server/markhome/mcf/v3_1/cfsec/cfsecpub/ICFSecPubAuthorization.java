@@ -49,4 +49,6 @@ public interface ICFSecPubAuthorization
 
 	public CFLibDbKeyHash256 getSecSessionId();
 	public CFLibDbKeyHash256 getSecUserId();
+	public CFLibDbKeyHash256 getSecClusterId();
+	public CFLibDbKeyHash256 getSecTenantId();
 }
