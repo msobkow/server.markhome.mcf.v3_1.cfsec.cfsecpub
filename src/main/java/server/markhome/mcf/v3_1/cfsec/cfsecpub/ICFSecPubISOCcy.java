@@ -44,12 +44,16 @@ import server.markhome.mcf.v3_1.cflib.xml.CFLibXmlUtil;
 public interface ICFSecPubISOCcy
 {
 	public static final short ISOCCYID_MIN_VALUE = (short)0;
+	public static final short PRECIS_MIN_VALUE = (short)0;
+	public static final short PRECIS_MAX_VALUE = (short)5;
 	public static final String S_INIT_CREATED_BY = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 INIT_CREATED_BY = CFLibDbKeyHash256.fromHex(S_INIT_CREATED_BY);
 	public static final String S_INIT_UPDATED_BY = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 INIT_UPDATED_BY = CFLibDbKeyHash256.fromHex(S_INIT_UPDATED_BY);
 	public static final short ISOCCYID_INIT_VALUE = (short)0;
 	public static final String ISOCODE_INIT_VALUE = new String( "" );
+	public static final String NAME_INIT_VALUE = new String( "" );
+	public static final short PRECIS_INIT_VALUE = (short)0;
 	public final static int CLASS_CODE = 0xa003;
 	public final static String S_CLASS_CODE = "a003";
 
@@ -75,6 +79,12 @@ public interface ICFSecPubISOCcy
 
 	public String getRequiredISOCode();
 	public void setRequiredISOCode( String value );
+	public String getRequiredName();
+	public void setRequiredName( String value );
+	public String getOptionalUnitSymbol();
+	public void setOptionalUnitSymbol( String value );
+	public short getRequiredPrecis();
+	public void setRequiredPrecis( short value );
 	@Override
 	public boolean equals( Object obj );
 	

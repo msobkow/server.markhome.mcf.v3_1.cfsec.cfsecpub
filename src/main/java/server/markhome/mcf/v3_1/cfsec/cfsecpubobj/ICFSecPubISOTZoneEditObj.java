@@ -118,6 +118,90 @@ public interface ICFSecPubISOTZoneEditObj
 	 */
 	void setRequiredISOTZoneId(short value);
 
+	/**
+	 *	Get the required String attribute Iso8601.
+	 *
+	 *	@return	The required String attribute Iso8601.
+	 */
+	String getRequiredIso8601();
+
+	/**
+	 *	Set the required String attribute Iso8601.
+	 *
+	 *	@param value The required String attribute Iso8601 value to be applied.
+	 */
+	void setRequiredIso8601(String value);
+
+	/**
+	 *	Get the required String attribute TZName.
+	 *
+	 *	@return	The required String attribute TZName.
+	 */
+	String getRequiredTZName();
+
+	/**
+	 *	Set the required String attribute TZName.
+	 *
+	 *	@param value The required String attribute TZName value to be applied.
+	 */
+	void setRequiredTZName(String value);
+
+	/**
+	 *	Get the required short attribute TZHourOffset.
+	 *
+	 *	@return	The required short attribute TZHourOffset.
+	 */
+	short getRequiredTZHourOffset();
+
+	/**
+	 *	Set the required short attribute TZHourOffset.
+	 *
+	 *	@param value The required short attribute TZHourOffset value to be applied.
+	 */
+	void setRequiredTZHourOffset(short value);
+
+	/**
+	 *	Get the required short attribute TZMinOffset.
+	 *
+	 *	@return	The required short attribute TZMinOffset.
+	 */
+	short getRequiredTZMinOffset();
+
+	/**
+	 *	Set the required short attribute TZMinOffset.
+	 *
+	 *	@param value The required short attribute TZMinOffset value to be applied.
+	 */
+	void setRequiredTZMinOffset(short value);
+
+	/**
+	 *	Get the required String attribute Description.
+	 *
+	 *	@return	The required String attribute Description.
+	 */
+	String getRequiredDescription();
+
+	/**
+	 *	Set the required String attribute Description.
+	 *
+	 *	@param value The required String attribute Description value to be applied.
+	 */
+	void setRequiredDescription(String value);
+
+	/**
+	 *	Get the required boolean attribute Visible.
+	 *
+	 *	@return	The required boolean attribute Visible.
+	 */
+	boolean getRequiredVisible();
+
+	/**
+	 *	Set the required boolean attribute Visible.
+	 *
+	 *	@param value The required boolean attribute Visible value to be applied.
+	 */
+	void setRequiredVisible(boolean value);
+
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 

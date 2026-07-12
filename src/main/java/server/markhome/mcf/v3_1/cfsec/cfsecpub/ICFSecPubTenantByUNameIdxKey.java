@@ -1,5 +1,4 @@
-
-// Description: Java Public Factory interface for Tenant.
+// Description: Java 25 public interface for a Tenant by UNameIdx index key object
 
 /*
  *	server.markhome.mcf.CFSec
@@ -28,56 +27,37 @@
 
 package server.markhome.mcf.v3_1.cfsec.cfsecpub;
 
-import java.lang.reflect.*;
-import java.net.*;
-import java.rmi.*;
-import java.sql.*;
-import java.text.*;
+import java.io.Serializable;
+import java.math.*;
+import java.time.*;
 import java.util.*;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.text.StringEscapeUtils;
 import server.markhome.mcf.v3_1.cflib.*;
 import server.markhome.mcf.v3_1.cflib.dbutil.*;
+import server.markhome.mcf.v3_1.cflib.xml.CFLibXmlUtil;
+//import server.markhome.mcf.v3_1.cfsec.cfsecpub.*;
 
-/*
- *	ICFSecPubTenantFactory public interface for Tenant
+/**
+ *	ICFSecPubTenantByUNameIdxKeys has CodeVis Public, meaning that any user interface or referencing schema can access it.
  */
-public interface ICFSecPubTenantFactory
+public interface ICFSecPubTenantByUNameIdxKey
 {
+	public CFLibDbKeyHash256 getRequiredClusterId();
+	public void setRequiredClusterId( CFLibDbKeyHash256 value );
+	public String getRequiredTenantName();
+	public void setRequiredTenantName( String value );
+	@Override
+	public boolean equals( Object obj );
 
-	/**
-	 *	Allocate a public primary history key for Tenant instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	ICFSecPubTenantHPKey newPubHPKey();
+	@Override
+	public int hashCode();
 
-	/**
-	 *	Allocate a public ClusterIdx key over public Tenant instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFSecPubTenantByClusterIdxKey newPubByClusterIdxKey();
+	//@Override
+	public int compareTo( Object obj );
 
-	/**
-	 *	Allocate a public UNameIdx key over public Tenant instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFSecPubTenantByUNameIdxKey newPubByUNameIdxKey();
+	public String getXmlAttrFragment();
 
-	/**
-	 *	Allocate a public Tenant interface implementation.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFSecPubTenant newPubRec();
-
-	/**
-	 *	Allocate a public Tenant history interface implementation.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFSecPubTenantH newPubHRec();
-
+	@Override
+	public String toString();
 }

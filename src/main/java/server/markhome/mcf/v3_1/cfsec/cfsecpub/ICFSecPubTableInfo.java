@@ -44,7 +44,18 @@ import server.markhome.mcf.v3_1.cflib.xml.CFLibXmlUtil;
 public interface ICFSecPubTableInfo
 {
 	public static final int TABLEINFOID_MIN_VALUE = 0;
+	public static final int BACKINGCLASSCODE_MIN_VALUE = 0;
+	public static final int RUNTIMECLASSCODE_MIN_VALUE = 0;
 	public static final int TABLEINFOID_INIT_VALUE = 0;
+	public static final String SCHEMANAME_INIT_VALUE = new String( "" );
+	public static final String TABLENAME_INIT_VALUE = new String( "" );
+	public static final String SUPERNAME_INIT_VALUE = new String( "" );
+	public static final int BACKINGCLASSCODE_INIT_VALUE = 0;
+	public static final int RUNTIMECLASSCODE_INIT_VALUE = 0;
+	public final static boolean HASHISTORY_INIT_VALUE = false;
+	public final static boolean ISMUTABLE_INIT_VALUE = false;
+	public static final String SECSCOPENAME_INIT_VALUE = new String( "" );
+	public static final String CODEVIS_INIT_VALUE = new String( "" );
 	public final static int CLASS_CODE = 0xa020;
 	public final static String S_CLASS_CODE = "a020";
 
@@ -58,6 +69,27 @@ public interface ICFSecPubTableInfo
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
+	public ICFSecPubTableInfo getOptionalParentSuperRef();
+	public List<ICFSecPubTableInfo> getOptionalChildrenSubRefs();
+	public void setOptionalParentSuperRef(ICFSecPubTableInfo argObj);
+	public void setOptionalParentSuperRef(String argSuperName);
+	public String getRequiredSchemaName();
+	public void setRequiredSchemaName( String value );
+	public String getRequiredTableName();
+	public void setRequiredTableName( String value );
+	public String getOptionalSuperName();
+	public int getRequiredBackingClassCode();
+	public void setRequiredBackingClassCode( int value );
+	public int getRequiredRuntimeClassCode();
+	public void setRequiredRuntimeClassCode( int value );
+	public boolean getRequiredHasHistory();
+	public void setRequiredHasHistory( boolean value );
+	public boolean getRequiredIsMutable();
+	public void setRequiredIsMutable( boolean value );
+	public String getRequiredSecScopeName();
+	public void setRequiredSecScopeName( String value );
+	public String getRequiredCodeVis();
+	public void setRequiredCodeVis( String value );
 	@Override
 	public boolean equals( Object obj );
 	

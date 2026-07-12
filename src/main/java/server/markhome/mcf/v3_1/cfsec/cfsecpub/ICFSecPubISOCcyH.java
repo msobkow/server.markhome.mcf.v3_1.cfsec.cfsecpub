@@ -72,6 +72,12 @@ public interface ICFSecPubISOCcyH
 
 	public String getRequiredISOCode();
 	public void setRequiredISOCode( String value );
+	public String getRequiredName();
+	public void setRequiredName( String value );
+	public String getOptionalUnitSymbol();
+	public void setOptionalUnitSymbol( String value );
+	public short getRequiredPrecis();
+	public void setRequiredPrecis( short value );
 	@Override
 	public boolean equals( Object obj );
 

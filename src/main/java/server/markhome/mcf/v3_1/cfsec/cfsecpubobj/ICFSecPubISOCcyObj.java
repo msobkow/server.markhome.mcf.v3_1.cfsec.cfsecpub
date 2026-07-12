@@ -241,6 +241,27 @@ public interface ICFSecPubISOCcyObj
 	String getRequiredISOCode();
 
 	/**
+	 *	Get the required String attribute Name.
+	 *
+	 *	@return	The required String attribute Name.
+	 */
+	String getRequiredName();
+
+	/**
+	 *	Get the optional String attribute UnitSymbol.
+	 *
+	 *	@return	The optional String attribute UnitSymbol.
+	 */
+	String getOptionalUnitSymbol();
+
+	/**
+	 *	Get the required short attribute Precis.
+	 *
+	 *	@return	The required short attribute Precis.
+	 */
+	short getRequiredPrecis();
+
+	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

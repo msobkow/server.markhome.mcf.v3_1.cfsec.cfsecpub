@@ -109,6 +109,25 @@ public interface ICFSecPubISOCtryTable
 	 */
 	public void pubdeleteISOCtryByISOCodeIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCtryByISOCodeIdxKey argKey );
+	/**
+	 *	Delete the ISOCtry instances identified by the key NameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	Name	The ISOCtry key attribute of the instance generating the id.
+	 */
+	public void pubdeleteISOCtryByNameIdx( ICFSecPubAuthorization Authorization,
+		String argName );
+
+	/**
+	 *	Delete the ISOCtry instances identified by the key NameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteISOCtryByNameIdx( ICFSecPubAuthorization Authorization,
+		ICFSecPubISOCtryByNameIdxKey argKey );
 
 
 	/**
@@ -171,6 +190,19 @@ public interface ICFSecPubISOCtryTable
 	 */
 	public ICFSecPubISOCtry pubreadDerivedByISOCodeIdx( ICFSecPubAuthorization Authorization,
 		String ISOCode );
+
+	/**
+	 *	Read the derived ISOCtry record instance identified by the unique key NameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	Name	The ISOCtry key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 */
+	public ICFSecPubISOCtry pubreadDerivedByNameIdx( ICFSecPubAuthorization Authorization,
+		String Name );
 
 	/**
 	 *	Read the specific ISOCtry record instance identified by the primary key.
@@ -240,4 +272,19 @@ public interface ICFSecPubISOCtryTable
 	 */
 	public ICFSecPubISOCtry pubreadRecByISOCodeIdx( ICFSecPubAuthorization Authorization,
 		String ISOCode );
+
+	/**
+	 *	Read the specific ISOCtry record instance identified by the unique key NameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	Name	The ISOCtry key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFSecPubISOCtry pubreadRecByNameIdx( ICFSecPubAuthorization Authorization,
+		String Name );
 }

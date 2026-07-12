@@ -167,9 +167,59 @@ public interface ICFSecPubClusterTableObj
 	ICFSecPubClusterObj readClusterByIdIdx( CFLibDbKeyHash256 Id,
 		boolean forceRead );
 
+	/**
+	 *	Get the CFSecPubClusterObj instance for the unique UDomNameIdx key.
+	 *
+	 *	@param	FullDomName	The Cluster key attribute of the instance generating the id.
+	 *
+	 *	@return	CFSecPubClusterObj cached instance for the unique UDomNameIdx key, or
+	 *		null if no such instance exists.
+	 */
+	ICFSecPubClusterObj readClusterByUDomNameIdx(String FullDomName );
+
+	/**
+	 *	Get the CFSecPubClusterObj instance for the unique UDomNameIdx key.
+	 *
+	 *	@param	FullDomName	The Cluster key attribute of the instance generating the id.
+	 *
+	 *	@return	CFSecPubClusterObj refreshed instance for the unique UDomNameIdx key, or
+	 *		null if no such instance exists.
+	 */
+	ICFSecPubClusterObj readClusterByUDomNameIdx(String FullDomName,
+		boolean forceRead );
+
+	/**
+	 *	Get the CFSecPubClusterObj instance for the unique UDescrIdx key.
+	 *
+	 *	@param	Description	The Cluster key attribute of the instance generating the id.
+	 *
+	 *	@return	CFSecPubClusterObj cached instance for the unique UDescrIdx key, or
+	 *		null if no such instance exists.
+	 */
+	ICFSecPubClusterObj readClusterByUDescrIdx(String Description );
+
+	/**
+	 *	Get the CFSecPubClusterObj instance for the unique UDescrIdx key.
+	 *
+	 *	@param	Description	The Cluster key attribute of the instance generating the id.
+	 *
+	 *	@return	CFSecPubClusterObj refreshed instance for the unique UDescrIdx key, or
+	 *		null if no such instance exists.
+	 */
+	ICFSecPubClusterObj readClusterByUDescrIdx(String Description,
+		boolean forceRead );
+
 	ICFSecPubClusterObj readCachedClusterByIdIdx( CFLibDbKeyHash256 Id );
 
+	ICFSecPubClusterObj readCachedClusterByUDomNameIdx( String FullDomName );
+
+	ICFSecPubClusterObj readCachedClusterByUDescrIdx( String Description );
+
 	void deepDisposeClusterByIdIdx( CFLibDbKeyHash256 Id );
+
+	void deepDisposeClusterByUDomNameIdx( String FullDomName );
+
+	void deepDisposeClusterByUDescrIdx( String Description );
 
 	/**
 	 *	Internal use only.
@@ -187,4 +237,18 @@ public interface ICFSecPubClusterTableObj
 	 *	@param	Id	The Cluster key attribute of the instance generating the id.
 	 */
 	void deleteClusterByIdIdx( CFLibDbKeyHash256 Id );
+
+	/**
+	 *	Internal use only.
+	 *
+	 *	@param	FullDomName	The Cluster key attribute of the instance generating the id.
+	 */
+	void deleteClusterByUDomNameIdx(String FullDomName );
+
+	/**
+	 *	Internal use only.
+	 *
+	 *	@param	Description	The Cluster key attribute of the instance generating the id.
+	 */
+	void deleteClusterByUDescrIdx(String Description );
 }

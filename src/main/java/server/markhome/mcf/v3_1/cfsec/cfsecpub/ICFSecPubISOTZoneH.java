@@ -70,6 +70,18 @@ public interface ICFSecPubISOTZoneH
 	public short getRequiredISOTZoneId();
 	public void setRequiredISOTZoneId( short requiredISOTZoneId );
 
+	public String getRequiredIso8601();
+	public void setRequiredIso8601( String value );
+	public String getRequiredTZName();
+	public void setRequiredTZName( String value );
+	public short getRequiredTZHourOffset();
+	public void setRequiredTZHourOffset( short value );
+	public short getRequiredTZMinOffset();
+	public void setRequiredTZMinOffset( short value );
+	public String getRequiredDescription();
+	public void setRequiredDescription( String value );
+	public boolean getRequiredVisible();
+	public void setRequiredVisible( boolean value );
 	@Override
 	public boolean equals( Object obj );
 

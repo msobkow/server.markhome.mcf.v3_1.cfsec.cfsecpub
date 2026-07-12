@@ -255,6 +255,13 @@ public interface ICFSecPubISOCtryObj
 	String getRequiredISOCode();
 
 	/**
+	 *	Get the required String attribute Name.
+	 *
+	 *	@return	The required String attribute Name.
+	 */
+	String getRequiredName();
+
+	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

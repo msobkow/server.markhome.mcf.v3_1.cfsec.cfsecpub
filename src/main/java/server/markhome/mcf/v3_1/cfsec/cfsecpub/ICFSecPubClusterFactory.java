@@ -53,6 +53,20 @@ public interface ICFSecPubClusterFactory
 	ICFSecPubClusterHPKey newPubHPKey();
 
 	/**
+	 *	Allocate a public UDomNameIdx key over public Cluster instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubClusterByUDomNameIdxKey newPubByUDomNameIdxKey();
+
+	/**
+	 *	Allocate a public UDescrIdx key over public Cluster instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubClusterByUDescrIdxKey newPubByUDescrIdxKey();
+
+	/**
 	 *	Allocate a public Cluster interface implementation.
 	 *
 	 *	@return	The new instance.

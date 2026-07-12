@@ -60,6 +60,20 @@ public interface ICFSecPubSecSessionFactory
 	public ICFSecPubSecSessionBySecUserIdxKey newPubBySecUserIdxKey();
 
 	/**
+	 *	Allocate a public StartIdx key over public SecSession instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubSecSessionByStartIdxKey newPubByStartIdxKey();
+
+	/**
+	 *	Allocate a public FinishIdx key over public SecSession instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubSecSessionByFinishIdxKey newPubByFinishIdxKey();
+
+	/**
 	 *	Allocate a public SecSession interface implementation.
 	 *
 	 *	@return	The new instance.

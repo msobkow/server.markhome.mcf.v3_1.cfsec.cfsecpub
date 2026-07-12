@@ -109,6 +109,50 @@ public interface ICFSecPubSecSessionTable
 	 */
 	public void pubdeleteSecSessionBySecUserIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubSecSessionBySecUserIdxKey argKey );
+	/**
+	 *	Delete the SecSession instances identified by the key StartIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	SecUserId	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@param	Start	The SecSession key attribute of the instance generating the id.
+	 */
+	public void pubdeleteSecSessionByStartIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 argSecUserId,
+		LocalDateTime argStart );
+
+	/**
+	 *	Delete the SecSession instances identified by the key StartIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteSecSessionByStartIdx( ICFSecPubAuthorization Authorization,
+		ICFSecPubSecSessionByStartIdxKey argKey );
+	/**
+	 *	Delete the SecSession instances identified by the key FinishIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	SecUserId	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@param	Finish	The SecSession key attribute of the instance generating the id.
+	 */
+	public void pubdeleteSecSessionByFinishIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 argSecUserId,
+		LocalDateTime argFinish );
+
+	/**
+	 *	Delete the SecSession instances identified by the key FinishIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteSecSessionByFinishIdx( ICFSecPubAuthorization Authorization,
+		ICFSecPubSecSessionByFinishIdxKey argKey );
 
 
 	/**
@@ -170,6 +214,37 @@ public interface ICFSecPubSecSessionTable
 	 */
 	public ICFSecPubSecSession[] pubreadDerivedBySecUserIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SecUserId );
+
+	/**
+	 *	Read the derived SecSession record instance identified by the unique key StartIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	SecUserId	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@param	Start	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 */
+	public ICFSecPubSecSession pubreadDerivedByStartIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 SecUserId,
+		LocalDateTime Start );
+
+	/**
+	 *	Read an array of the derived SecSession record instances identified by the duplicate key FinishIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	SecUserId	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@param	Finish	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
+	 */
+	public ICFSecPubSecSession[] pubreadDerivedByFinishIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 SecUserId,
+		LocalDateTime Finish );
 
 	/**
 	 *	Read the specific SecSession record instance identified by the primary key.
@@ -250,6 +325,41 @@ public interface ICFSecPubSecSessionTable
 		CFLibDbKeyHash256 SecUserId );
 
 	/**
+	 *	Read the specific SecSession record instance identified by the unique key StartIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	SecUserId	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@param	Start	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFSecPubSecSession pubreadRecByStartIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 SecUserId,
+		LocalDateTime Start );
+
+	/**
+	 *	Read an array of the specific SecSession record instances identified by the duplicate key FinishIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	SecUserId	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@param	Finish	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived record instances for the specified key, potentially with 0 elements in the set.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFSecPubSecSession[] pubreadRecByFinishIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 SecUserId,
+		LocalDateTime Finish );
+
+	/**
 	 *	Read a page array of the specific SecSession record instances identified by the duplicate key SecUserIdx.
 	 *
 	 *	@param	Authorization	The session authorization information.
@@ -262,5 +372,23 @@ public interface ICFSecPubSecSessionTable
 	 */
 	public ICFSecPubSecSession[] pubpageRecBySecUserIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 SecUserId,
+		CFLibDbKeyHash256 priorSecSessionId );
+
+	/**
+	 *	Read a page array of the specific SecSession record instances identified by the duplicate key FinishIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	SecUserId	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@param	Finish	The SecSession key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived record instances for the specified key, potentially with 0 elements in the set.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFSecPubSecSession[] pubpageRecByFinishIdx( ICFSecPubAuthorization Authorization,
+		CFLibDbKeyHash256 SecUserId,
+		LocalDateTime Finish,
 		CFLibDbKeyHash256 priorSecSessionId );
 }

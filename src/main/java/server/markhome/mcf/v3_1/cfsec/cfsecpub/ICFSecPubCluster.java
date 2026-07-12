@@ -49,6 +49,8 @@ public interface ICFSecPubCluster
 	public static final CFLibDbKeyHash256 INIT_UPDATED_BY = CFLibDbKeyHash256.fromHex(S_INIT_UPDATED_BY);
 	public static final String S_ID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 ID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_ID_INIT_VALUE );
+	public static final String FULLDOMNAME_INIT_VALUE = new String( "" );
+	public static final String DESCRIPTION_INIT_VALUE = new String( "" );
 	public final static int CLASS_CODE = 0xa001;
 	public final static String S_CLASS_CODE = "a001";
 
@@ -73,6 +75,10 @@ public interface ICFSecPubCluster
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
+	public String getRequiredFullDomName();
+	public void setRequiredFullDomName( String value );
+	public String getRequiredDescription();
+	public void setRequiredDescription( String value );
 	@Override
 	public boolean equals( Object obj );
 	

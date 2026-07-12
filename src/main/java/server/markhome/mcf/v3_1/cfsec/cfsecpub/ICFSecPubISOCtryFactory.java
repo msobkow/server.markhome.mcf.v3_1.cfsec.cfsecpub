@@ -60,6 +60,13 @@ public interface ICFSecPubISOCtryFactory
 	public ICFSecPubISOCtryByISOCodeIdxKey newPubByISOCodeIdxKey();
 
 	/**
+	 *	Allocate a public NameIdx key over public ISOCtry instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubISOCtryByNameIdxKey newPubByNameIdxKey();
+
+	/**
 	 *	Allocate a public ISOCtry interface implementation.
 	 *
 	 *	@return	The new instance.

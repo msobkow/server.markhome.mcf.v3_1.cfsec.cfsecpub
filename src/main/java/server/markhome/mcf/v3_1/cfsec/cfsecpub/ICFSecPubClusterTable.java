@@ -90,6 +90,44 @@ public interface ICFSecPubClusterTable
 	 */
 	public void pubdeleteClusterByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 argKey );
+	/**
+	 *	Delete the Cluster instances identified by the key UDomNameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	FullDomName	The Cluster key attribute of the instance generating the id.
+	 */
+	public void pubdeleteClusterByUDomNameIdx( ICFSecPubAuthorization Authorization,
+		String argFullDomName );
+
+	/**
+	 *	Delete the Cluster instances identified by the key UDomNameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteClusterByUDomNameIdx( ICFSecPubAuthorization Authorization,
+		ICFSecPubClusterByUDomNameIdxKey argKey );
+	/**
+	 *	Delete the Cluster instances identified by the key UDescrIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	Description	The Cluster key attribute of the instance generating the id.
+	 */
+	public void pubdeleteClusterByUDescrIdx( ICFSecPubAuthorization Authorization,
+		String argDescription );
+
+	/**
+	 *	Delete the Cluster instances identified by the key UDescrIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteClusterByUDescrIdx( ICFSecPubAuthorization Authorization,
+		ICFSecPubClusterByUDescrIdxKey argKey );
 
 
 	/**
@@ -139,6 +177,32 @@ public interface ICFSecPubClusterTable
 	 */
 	public ICFSecPubCluster pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
+
+	/**
+	 *	Read the derived Cluster record instance identified by the unique key UDomNameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	FullDomName	The Cluster key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 */
+	public ICFSecPubCluster pubreadDerivedByUDomNameIdx( ICFSecPubAuthorization Authorization,
+		String FullDomName );
+
+	/**
+	 *	Read the derived Cluster record instance identified by the unique key UDescrIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	Description	The Cluster key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 */
+	public ICFSecPubCluster pubreadDerivedByUDescrIdx( ICFSecPubAuthorization Authorization,
+		String Description );
 
 	/**
 	 *	Read the specific Cluster record instance identified by the primary key.
@@ -203,4 +267,34 @@ public interface ICFSecPubClusterTable
 	 */
 	public ICFSecPubCluster pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 Id );
+
+	/**
+	 *	Read the specific Cluster record instance identified by the unique key UDomNameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	FullDomName	The Cluster key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFSecPubCluster pubreadRecByUDomNameIdx( ICFSecPubAuthorization Authorization,
+		String FullDomName );
+
+	/**
+	 *	Read the specific Cluster record instance identified by the unique key UDescrIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	Description	The Cluster key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFSecPubCluster pubreadRecByUDescrIdx( ICFSecPubAuthorization Authorization,
+		String Description );
 }

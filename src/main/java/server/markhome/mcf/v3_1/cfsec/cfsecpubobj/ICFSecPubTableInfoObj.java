@@ -186,11 +186,102 @@ public interface ICFSecPubTableInfoObj
 	void setIsNew( boolean value );
 
 	/**
+	 *	Get the optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 *
+	 *	@return	The optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 */
+	ICFSecPubTableInfoObj getOptionalParentSuperRef();
+
+	/**
+	 *	Get the optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 *
+	 *	@return	The optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 */
+	ICFSecPubTableInfoObj getOptionalParentSuperRef( boolean forceRead );
+
+	/**
+	 *	Get the array of optional ICFSecPubTableInfoObj array of instances referenced by the SubRefs key.
+	 *
+	 *	@return	The optional ICFSecPubTableInfoObj[] array of instances referenced by the SubRefs key.
+	 */
+	List<ICFSecPubTableInfoObj> getOptionalChildrenSubRefs();
+
+	/**
+	 *	Get the array of optional ICFSecPubTableInfoObj array of instances referenced by the SubRefs key.
+	 *
+	 *	@return	The optional ICFSecPubTableInfoObj[] array of instances referenced by the SubRefs key.
+	 */
+	List<ICFSecPubTableInfoObj> getOptionalChildrenSubRefs( boolean forceRead );
+
+	/**
 	 *	Get the required int attribute TableInfoId.
 	 *
 	 *	@return	The required int attribute TableInfoId.
 	 */
 	int getRequiredTableInfoId();
+
+	/**
+	 *	Get the required String attribute SchemaName.
+	 *
+	 *	@return	The required String attribute SchemaName.
+	 */
+	String getRequiredSchemaName();
+
+	/**
+	 *	Get the required String attribute TableName.
+	 *
+	 *	@return	The required String attribute TableName.
+	 */
+	String getRequiredTableName();
+
+	/**
+	 *	Get the optional String attribute SuperName.
+	 *
+	 *	@return	The optional String attribute SuperName.
+	 */
+	String getOptionalSuperName();
+
+	/**
+	 *	Get the required int attribute BackingClassCode.
+	 *
+	 *	@return	The required int attribute BackingClassCode.
+	 */
+	int getRequiredBackingClassCode();
+
+	/**
+	 *	Get the required int attribute RuntimeClassCode.
+	 *
+	 *	@return	The required int attribute RuntimeClassCode.
+	 */
+	int getRequiredRuntimeClassCode();
+
+	/**
+	 *	Get the required boolean attribute HasHistory.
+	 *
+	 *	@return	The required boolean attribute HasHistory.
+	 */
+	boolean getRequiredHasHistory();
+
+	/**
+	 *	Get the required boolean attribute IsMutable.
+	 *
+	 *	@return	The required boolean attribute IsMutable.
+	 */
+	boolean getRequiredIsMutable();
+
+	/**
+	 *	Get the required String attribute SecScopeName.
+	 *
+	 *	@return	The required String attribute SecScopeName.
+	 */
+	String getRequiredSecScopeName();
+
+	/**
+	 *	Get the required String attribute CodeVis.
+	 *
+	 *	@return	The required String attribute CodeVis.
+	 */
+	String getRequiredCodeVis();
 
 	/**
 	 *	Internal use only.

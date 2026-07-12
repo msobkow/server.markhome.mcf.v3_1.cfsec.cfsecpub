@@ -200,6 +200,20 @@ public interface ICFSecPubSecSessionObj
 	CFLibDbKeyHash256 getRequiredSecUserId();
 
 	/**
+	 *	Get the required LocalDateTime attribute Start.
+	 *
+	 *	@return	The required LocalDateTime attribute Start.
+	 */
+	LocalDateTime getRequiredStart();
+
+	/**
+	 *	Get the optional LocalDateTime attribute Finish.
+	 *
+	 *	@return	The optional LocalDateTime attribute Finish.
+	 */
+	LocalDateTime getOptionalFinish();
+
+	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

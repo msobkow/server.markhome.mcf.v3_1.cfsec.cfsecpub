@@ -90,6 +90,66 @@ public interface ICFSecPubISOTZoneTable
 	 */
 	public void pubdeleteISOTZoneByIdIdx( ICFSecPubAuthorization Authorization,
 		Short argKey );
+	/**
+	 *	Delete the ISOTZone instances identified by the key OffsetIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	TZHourOffset	The ISOTZone key attribute of the instance generating the id.
+	 *
+	 *	@param	TZMinOffset	The ISOTZone key attribute of the instance generating the id.
+	 */
+	public void pubdeleteISOTZoneByOffsetIdx( ICFSecPubAuthorization Authorization,
+		short argTZHourOffset,
+		short argTZMinOffset );
+
+	/**
+	 *	Delete the ISOTZone instances identified by the key OffsetIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteISOTZoneByOffsetIdx( ICFSecPubAuthorization Authorization,
+		ICFSecPubISOTZoneByOffsetIdxKey argKey );
+	/**
+	 *	Delete the ISOTZone instances identified by the key UTZNameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	TZName	The ISOTZone key attribute of the instance generating the id.
+	 */
+	public void pubdeleteISOTZoneByUTZNameIdx( ICFSecPubAuthorization Authorization,
+		String argTZName );
+
+	/**
+	 *	Delete the ISOTZone instances identified by the key UTZNameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteISOTZoneByUTZNameIdx( ICFSecPubAuthorization Authorization,
+		ICFSecPubISOTZoneByUTZNameIdxKey argKey );
+	/**
+	 *	Delete the ISOTZone instances identified by the key Iso8601Idx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	Iso8601	The ISOTZone key attribute of the instance generating the id.
+	 */
+	public void pubdeleteISOTZoneByIso8601Idx( ICFSecPubAuthorization Authorization,
+		String argIso8601 );
+
+	/**
+	 *	Delete the ISOTZone instances identified by the key Iso8601Idx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	argKey	The key identifying the instances to be deleted.
+	 */
+	public void pubdeleteISOTZoneByIso8601Idx( ICFSecPubAuthorization Authorization,
+		ICFSecPubISOTZoneByIso8601IdxKey argKey );
 
 
 	/**
@@ -139,6 +199,46 @@ public interface ICFSecPubISOTZoneTable
 	 */
 	public ICFSecPubISOTZone pubreadDerivedByIdIdx( ICFSecPubAuthorization Authorization,
 		short ISOTZoneId );
+
+	/**
+	 *	Read an array of the derived ISOTZone record instances identified by the duplicate key OffsetIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	TZHourOffset	The ISOTZone key attribute of the instance generating the id.
+	 *
+	 *	@param	TZMinOffset	The ISOTZone key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
+	 */
+	public ICFSecPubISOTZone[] pubreadDerivedByOffsetIdx( ICFSecPubAuthorization Authorization,
+		short TZHourOffset,
+		short TZMinOffset );
+
+	/**
+	 *	Read the derived ISOTZone record instance identified by the unique key UTZNameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	TZName	The ISOTZone key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 */
+	public ICFSecPubISOTZone pubreadDerivedByUTZNameIdx( ICFSecPubAuthorization Authorization,
+		String TZName );
+
+	/**
+	 *	Read an array of the derived ISOTZone record instances identified by the duplicate key Iso8601Idx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	Iso8601	The ISOTZone key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived instances for the specified key, potentially with 0 elements in the set.
+	 */
+	public ICFSecPubISOTZone[] pubreadDerivedByIso8601Idx( ICFSecPubAuthorization Authorization,
+		String Iso8601 );
 
 	/**
 	 *	Read the specific ISOTZone record instance identified by the primary key.
@@ -193,4 +293,50 @@ public interface ICFSecPubISOTZoneTable
 	 */
 	public ICFSecPubISOTZone pubreadRecByIdIdx( ICFSecPubAuthorization Authorization,
 		short ISOTZoneId );
+
+	/**
+	 *	Read an array of the specific ISOTZone record instances identified by the duplicate key OffsetIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	TZHourOffset	The ISOTZone key attribute of the instance generating the id.
+	 *
+	 *	@param	TZMinOffset	The ISOTZone key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived record instances for the specified key, potentially with 0 elements in the set.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFSecPubISOTZone[] pubreadRecByOffsetIdx( ICFSecPubAuthorization Authorization,
+		short TZHourOffset,
+		short TZMinOffset );
+
+	/**
+	 *	Read the specific ISOTZone record instance identified by the unique key UTZNameIdx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	TZName	The ISOTZone key attribute of the instance generating the id.
+	 *
+	 *	@return The record instance for the specified key, or null if there is
+	 *		no such existing key value.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFSecPubISOTZone pubreadRecByUTZNameIdx( ICFSecPubAuthorization Authorization,
+		String TZName );
+
+	/**
+	 *	Read an array of the specific ISOTZone record instances identified by the duplicate key Iso8601Idx.
+	 *
+	 *	@param	Authorization	The session authorization information.
+	 *
+	 *	@param	Iso8601	The ISOTZone key attribute of the instance generating the id.
+	 *
+	 *	@return An array of derived record instances for the specified key, potentially with 0 elements in the set.
+	 *
+	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
+	 */
+	public ICFSecPubISOTZone[] pubreadRecByIso8601Idx( ICFSecPubAuthorization Authorization,
+		String Iso8601 );
 }

@@ -77,6 +77,34 @@ public interface ICFSecPubTableInfoEditObj
 	ICFSecPubTableInfoEditObj deleteInstance();
 
 	/**
+	 *	Get the ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 *
+	 *	@return	The ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 */
+	ICFSecPubTableInfoObj getOptionalParentSuperRef();
+
+	/**
+	 *	Get the optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 *
+	 *	@return	The optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 */
+	ICFSecPubTableInfoObj getOptionalParentSuperRef( boolean forceRead );
+
+	/**
+	 *	Set the ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 *
+	 *	@param	value	the ICFSecPubTableInfoObj instance to be referenced by the SuperRef key.
+	 */
+	void setOptionalParentSuperRef( ICFSecPubTableInfoObj value );
+
+	/**
+	 *	Get a list ICFSecPubTableInfoObj instances referenced by the SubRefs key.
+	 *
+	 *	@return	The (potentially empty) list of ICFSecPubTableInfoObj instances referenced by the SubRefs key.
+	 */
+	List<ICFSecPubTableInfoObj> getOptionalChildrenSubRefs();
+
+	/**
 	 *	Get the required int attribute TableInfoId.
 	 *
 	 *	@return	The required int attribute TableInfoId.
@@ -89,6 +117,125 @@ public interface ICFSecPubTableInfoEditObj
 	 *	@param value The required int attribute TableInfoId value to be applied.
 	 */
 	void setRequiredTableInfoId(int value);
+
+	/**
+	 *	Get the required String attribute SchemaName.
+	 *
+	 *	@return	The required String attribute SchemaName.
+	 */
+	String getRequiredSchemaName();
+
+	/**
+	 *	Set the required String attribute SchemaName.
+	 *
+	 *	@param value The required String attribute SchemaName value to be applied.
+	 */
+	void setRequiredSchemaName(String value);
+
+	/**
+	 *	Get the required String attribute TableName.
+	 *
+	 *	@return	The required String attribute TableName.
+	 */
+	String getRequiredTableName();
+
+	/**
+	 *	Set the required String attribute TableName.
+	 *
+	 *	@param value The required String attribute TableName value to be applied.
+	 */
+	void setRequiredTableName(String value);
+
+	/**
+	 *	Get the optional String attribute SuperName.
+	 *
+	 *	@return	The optional String attribute SuperName.
+	 */
+	String getOptionalSuperName();
+
+	/**
+	 *	Get the required int attribute BackingClassCode.
+	 *
+	 *	@return	The required int attribute BackingClassCode.
+	 */
+	int getRequiredBackingClassCode();
+
+	/**
+	 *	Set the required int attribute BackingClassCode.
+	 *
+	 *	@param value The required int attribute BackingClassCode value to be applied.
+	 */
+	void setRequiredBackingClassCode(int value);
+
+	/**
+	 *	Get the required int attribute RuntimeClassCode.
+	 *
+	 *	@return	The required int attribute RuntimeClassCode.
+	 */
+	int getRequiredRuntimeClassCode();
+
+	/**
+	 *	Set the required int attribute RuntimeClassCode.
+	 *
+	 *	@param value The required int attribute RuntimeClassCode value to be applied.
+	 */
+	void setRequiredRuntimeClassCode(int value);
+
+	/**
+	 *	Get the required boolean attribute HasHistory.
+	 *
+	 *	@return	The required boolean attribute HasHistory.
+	 */
+	boolean getRequiredHasHistory();
+
+	/**
+	 *	Set the required boolean attribute HasHistory.
+	 *
+	 *	@param value The required boolean attribute HasHistory value to be applied.
+	 */
+	void setRequiredHasHistory(boolean value);
+
+	/**
+	 *	Get the required boolean attribute IsMutable.
+	 *
+	 *	@return	The required boolean attribute IsMutable.
+	 */
+	boolean getRequiredIsMutable();
+
+	/**
+	 *	Set the required boolean attribute IsMutable.
+	 *
+	 *	@param value The required boolean attribute IsMutable value to be applied.
+	 */
+	void setRequiredIsMutable(boolean value);
+
+	/**
+	 *	Get the required String attribute SecScopeName.
+	 *
+	 *	@return	The required String attribute SecScopeName.
+	 */
+	String getRequiredSecScopeName();
+
+	/**
+	 *	Set the required String attribute SecScopeName.
+	 *
+	 *	@param value The required String attribute SecScopeName value to be applied.
+	 */
+	void setRequiredSecScopeName(String value);
+
+	/**
+	 *	Get the required String attribute CodeVis.
+	 *
+	 *	@return	The required String attribute CodeVis.
+	 */
+	String getRequiredCodeVis();
+
+	/**
+	 *	Set the required String attribute CodeVis.
+	 *
+	 *	@param value The required String attribute CodeVis value to be applied.
+	 */
+	void setRequiredCodeVis(String value);
 
 	public void copyRecToOrig();
 	public void copyOrigToRec();

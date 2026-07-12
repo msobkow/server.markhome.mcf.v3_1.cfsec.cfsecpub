@@ -146,6 +146,20 @@ public interface ICFSecPubTenantEditObj
 	 */
 	CFLibDbKeyHash256 getRequiredClusterId();
 
+	/**
+	 *	Get the required String attribute TenantName.
+	 *
+	 *	@return	The required String attribute TenantName.
+	 */
+	String getRequiredTenantName();
+
+	/**
+	 *	Set the required String attribute TenantName.
+	 *
+	 *	@param value The required String attribute TenantName value to be applied.
+	 */
+	void setRequiredTenantName(String value);
+
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 

@@ -53,6 +53,41 @@ public interface ICFSecPubTableInfoFactory
 	ICFSecPubTableInfoHPKey newPubHPKey();
 
 	/**
+	 *	Allocate a public TableNameIdx key over public TableInfo instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubTableInfoByTableNameIdxKey newPubByTableNameIdxKey();
+
+	/**
+	 *	Allocate a public SuperNameIdx key over public TableInfo instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubTableInfoBySuperNameIdxKey newPubBySuperNameIdxKey();
+
+	/**
+	 *	Allocate a public SchemaNameIdx key over public TableInfo instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubTableInfoBySchemaNameIdxKey newPubBySchemaNameIdxKey();
+
+	/**
+	 *	Allocate a public SchemaBkCodeIdx key over public TableInfo instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubTableInfoBySchemaBkCodeIdxKey newPubBySchemaBkCodeIdxKey();
+
+	/**
+	 *	Allocate a public SchemaRTCodeIdx key over public TableInfo instances.
+	 *
+	 *	@return	The new instance.
+	 */
+	public ICFSecPubTableInfoBySchemaRTCodeIdxKey newPubBySchemaRTCodeIdxKey();
+
+	/**
 	 *	Allocate a public TableInfo interface implementation.
 	 *
 	 *	@return	The new instance.
