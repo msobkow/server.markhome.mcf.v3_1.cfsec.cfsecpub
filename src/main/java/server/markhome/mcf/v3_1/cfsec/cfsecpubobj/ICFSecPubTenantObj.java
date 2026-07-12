@@ -241,13 +241,6 @@ public interface ICFSecPubTenantObj
 	CFLibDbKeyHash256 getRequiredClusterId();
 
 	/**
-	 *	Get the required String attribute TenantName.
-	 *
-	 *	@return	The required String attribute TenantName.
-	 */
-	String getRequiredTenantName();
-
-	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

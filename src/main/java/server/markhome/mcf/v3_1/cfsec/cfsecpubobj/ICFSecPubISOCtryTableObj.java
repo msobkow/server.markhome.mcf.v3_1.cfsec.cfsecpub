@@ -180,38 +180,13 @@ public interface ICFSecPubISOCtryTableObj
 	ICFSecPubISOCtryObj readISOCtryByISOCodeIdx(String ISOCode,
 		boolean forceRead );
 
-	/**
-	 *	Get the CFSecPubISOCtryObj instance for the unique NameIdx key.
-	 *
-	 *	@param	Name	The ISOCtry key attribute of the instance generating the id.
-	 *
-	 *	@return	CFSecPubISOCtryObj cached instance for the unique NameIdx key, or
-	 *		null if no such instance exists.
-	 */
-	ICFSecPubISOCtryObj readISOCtryByNameIdx(String Name );
-
-	/**
-	 *	Get the CFSecPubISOCtryObj instance for the unique NameIdx key.
-	 *
-	 *	@param	Name	The ISOCtry key attribute of the instance generating the id.
-	 *
-	 *	@return	CFSecPubISOCtryObj refreshed instance for the unique NameIdx key, or
-	 *		null if no such instance exists.
-	 */
-	ICFSecPubISOCtryObj readISOCtryByNameIdx(String Name,
-		boolean forceRead );
-
 	ICFSecPubISOCtryObj readCachedISOCtryByIdIdx( short ISOCtryId );
 
 	ICFSecPubISOCtryObj readCachedISOCtryByISOCodeIdx( String ISOCode );
 
-	ICFSecPubISOCtryObj readCachedISOCtryByNameIdx( String Name );
-
 	void deepDisposeISOCtryByIdIdx( short ISOCtryId );
 
 	void deepDisposeISOCtryByISOCodeIdx( String ISOCode );
-
-	void deepDisposeISOCtryByNameIdx( String Name );
 
 	/**
 	 *	Internal use only.
@@ -236,11 +211,4 @@ public interface ICFSecPubISOCtryTableObj
 	 *	@param	ISOCode	The ISOCtry key attribute of the instance generating the id.
 	 */
 	void deleteISOCtryByISOCodeIdx(String ISOCode );
-
-	/**
-	 *	Internal use only.
-	 *
-	 *	@param	Name	The ISOCtry key attribute of the instance generating the id.
-	 */
-	void deleteISOCtryByNameIdx(String Name );
 }

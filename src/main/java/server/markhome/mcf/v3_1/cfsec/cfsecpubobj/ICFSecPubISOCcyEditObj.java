@@ -139,48 +139,6 @@ public interface ICFSecPubISOCcyEditObj
 	 */
 	void setRequiredISOCode(String value);
 
-	/**
-	 *	Get the required String attribute Name.
-	 *
-	 *	@return	The required String attribute Name.
-	 */
-	String getRequiredName();
-
-	/**
-	 *	Set the required String attribute Name.
-	 *
-	 *	@param value The required String attribute Name value to be applied.
-	 */
-	void setRequiredName(String value);
-
-	/**
-	 *	Get the optional String attribute UnitSymbol.
-	 *
-	 *	@return	The optional String attribute UnitSymbol.
-	 */
-	String getOptionalUnitSymbol();
-
-	/**
-	 *	Set the optional String attribute UnitSymbol.
-	 *
-	 *	@param value The optional String attribute UnitSymbol value to be applied.
-	 */
-	void setOptionalUnitSymbol(String value);
-
-	/**
-	 *	Get the required short attribute Precis.
-	 *
-	 *	@return	The required short attribute Precis.
-	 */
-	short getRequiredPrecis();
-
-	/**
-	 *	Set the required short attribute Precis.
-	 *
-	 *	@param value The required short attribute Precis value to be applied.
-	 */
-	void setRequiredPrecis(short value);
-
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 

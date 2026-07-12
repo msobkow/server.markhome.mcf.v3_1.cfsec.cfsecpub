@@ -109,28 +109,6 @@ public interface ICFSecPubTenantTable
 	 */
 	public void pubdeleteTenantByClusterIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubTenantByClusterIdxKey argKey );
-	/**
-	 *	Delete the Tenant instances identified by the key UNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	ClusterId	The Tenant key attribute of the instance generating the id.
-	 *
-	 *	@param	TenantName	The Tenant key attribute of the instance generating the id.
-	 */
-	public void pubdeleteTenantByUNameIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argClusterId,
-		String argTenantName );
-
-	/**
-	 *	Delete the Tenant instances identified by the key UNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	argKey	The key identifying the instances to be deleted.
-	 */
-	public void pubdeleteTenantByUNameIdx( ICFSecPubAuthorization Authorization,
-		ICFSecPubTenantByUNameIdxKey argKey );
 
 
 	/**
@@ -192,22 +170,6 @@ public interface ICFSecPubTenantTable
 	 */
 	public ICFSecPubTenant[] pubreadDerivedByClusterIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ClusterId );
-
-	/**
-	 *	Read the derived Tenant record instance identified by the unique key UNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	ClusterId	The Tenant key attribute of the instance generating the id.
-	 *
-	 *	@param	TenantName	The Tenant key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 */
-	public ICFSecPubTenant pubreadDerivedByUNameIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 ClusterId,
-		String TenantName );
 
 	/**
 	 *	Read the specific Tenant record instance identified by the primary key.
@@ -286,24 +248,6 @@ public interface ICFSecPubTenantTable
 	 */
 	public ICFSecPubTenant[] pubreadRecByClusterIdx( ICFSecPubAuthorization Authorization,
 		CFLibDbKeyHash256 ClusterId );
-
-	/**
-	 *	Read the specific Tenant record instance identified by the unique key UNameIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	ClusterId	The Tenant key attribute of the instance generating the id.
-	 *
-	 *	@param	TenantName	The Tenant key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 *
-	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
-	 */
-	public ICFSecPubTenant pubreadRecByUNameIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 ClusterId,
-		String TenantName );
 
 	/**
 	 *	Read a page array of the specific Tenant record instances identified by the duplicate key ClusterIdx.

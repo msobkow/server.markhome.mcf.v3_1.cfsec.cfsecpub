@@ -104,34 +104,6 @@ public interface ICFSecPubSecSessionEditObj
 	 */
 	void setRequiredSecUserId(CFLibDbKeyHash256 value);
 
-	/**
-	 *	Get the required LocalDateTime attribute Start.
-	 *
-	 *	@return	The required LocalDateTime attribute Start.
-	 */
-	LocalDateTime getRequiredStart();
-
-	/**
-	 *	Set the required LocalDateTime attribute Start.
-	 *
-	 *	@param value The required LocalDateTime attribute Start value to be applied.
-	 */
-	void setRequiredStart(LocalDateTime value);
-
-	/**
-	 *	Get the optional LocalDateTime attribute Finish.
-	 *
-	 *	@return	The optional LocalDateTime attribute Finish.
-	 */
-	LocalDateTime getOptionalFinish();
-
-	/**
-	 *	Set the optional LocalDateTime attribute Finish.
-	 *
-	 *	@param value The optional LocalDateTime attribute Finish value to be applied.
-	 */
-	void setOptionalFinish(LocalDateTime value);
-
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 

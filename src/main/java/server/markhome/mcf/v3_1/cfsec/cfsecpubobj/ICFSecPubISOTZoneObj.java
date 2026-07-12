@@ -220,48 +220,6 @@ public interface ICFSecPubISOTZoneObj
 	short getRequiredISOTZoneId();
 
 	/**
-	 *	Get the required String attribute Iso8601.
-	 *
-	 *	@return	The required String attribute Iso8601.
-	 */
-	String getRequiredIso8601();
-
-	/**
-	 *	Get the required String attribute TZName.
-	 *
-	 *	@return	The required String attribute TZName.
-	 */
-	String getRequiredTZName();
-
-	/**
-	 *	Get the required short attribute TZHourOffset.
-	 *
-	 *	@return	The required short attribute TZHourOffset.
-	 */
-	short getRequiredTZHourOffset();
-
-	/**
-	 *	Get the required short attribute TZMinOffset.
-	 *
-	 *	@return	The required short attribute TZMinOffset.
-	 */
-	short getRequiredTZMinOffset();
-
-	/**
-	 *	Get the required String attribute Description.
-	 *
-	 *	@return	The required String attribute Description.
-	 */
-	String getRequiredDescription();
-
-	/**
-	 *	Get the required boolean attribute Visible.
-	 *
-	 *	@return	The required boolean attribute Visible.
-	 */
-	boolean getRequiredVisible();
-
-	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

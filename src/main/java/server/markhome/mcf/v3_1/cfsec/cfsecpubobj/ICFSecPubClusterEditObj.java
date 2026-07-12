@@ -132,34 +132,6 @@ public interface ICFSecPubClusterEditObj
 	 */
 	void setRequiredId(CFLibDbKeyHash256 value);
 
-	/**
-	 *	Get the required String attribute FullDomName.
-	 *
-	 *	@return	The required String attribute FullDomName.
-	 */
-	String getRequiredFullDomName();
-
-	/**
-	 *	Set the required String attribute FullDomName.
-	 *
-	 *	@param value The required String attribute FullDomName value to be applied.
-	 */
-	void setRequiredFullDomName(String value);
-
-	/**
-	 *	Get the required String attribute Description.
-	 *
-	 *	@return	The required String attribute Description.
-	 */
-	String getRequiredDescription();
-
-	/**
-	 *	Set the required String attribute Description.
-	 *
-	 *	@param value The required String attribute Description value to be applied.
-	 */
-	void setRequiredDescription(String value);
-
 	public void copyRecToOrig();
 	public void copyOrigToRec();
 

@@ -47,7 +47,6 @@ public interface ICFSecPubSecSession
 	public static final CFLibDbKeyHash256 SECSESSIONID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_SECSESSIONID_INIT_VALUE );
 	public static final String S_SECUSERID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 SECUSERID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_SECUSERID_INIT_VALUE );
-	public static final LocalDateTime START_INIT_VALUE = CFLibXmlUtil.parseTimestamp("2020-01-01T00:00:00");
 	public final static int CLASS_CODE = 0xa01e;
 	public final static String S_CLASS_CODE = "a01e";
 
@@ -63,10 +62,6 @@ public interface ICFSecPubSecSession
 
 	public CFLibDbKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( CFLibDbKeyHash256 value );
-	public LocalDateTime getRequiredStart();
-	public void setRequiredStart( LocalDateTime value );
-	public LocalDateTime getOptionalFinish();
-	public void setOptionalFinish( LocalDateTime value );
 	@Override
 	public boolean equals( Object obj );
 	

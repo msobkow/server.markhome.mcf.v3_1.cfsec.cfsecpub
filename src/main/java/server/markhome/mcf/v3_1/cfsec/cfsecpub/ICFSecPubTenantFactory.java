@@ -60,13 +60,6 @@ public interface ICFSecPubTenantFactory
 	public ICFSecPubTenantByClusterIdxKey newPubByClusterIdxKey();
 
 	/**
-	 *	Allocate a public UNameIdx key over public Tenant instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFSecPubTenantByUNameIdxKey newPubByUNameIdxKey();
-
-	/**
 	 *	Allocate a public Tenant interface implementation.
 	 *
 	 *	@return	The new instance.

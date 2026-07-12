@@ -248,20 +248,6 @@ public interface ICFSecPubClusterObj
 	CFLibDbKeyHash256 getRequiredId();
 
 	/**
-	 *	Get the required String attribute FullDomName.
-	 *
-	 *	@return	The required String attribute FullDomName.
-	 */
-	String getRequiredFullDomName();
-
-	/**
-	 *	Get the required String attribute Description.
-	 *
-	 *	@return	The required String attribute Description.
-	 */
-	String getRequiredDescription();
-
-	/**
 	 *	Internal use only.
 	 */
 	void copyPKeyToRec();

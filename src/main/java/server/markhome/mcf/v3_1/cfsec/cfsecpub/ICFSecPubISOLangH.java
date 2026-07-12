@@ -74,8 +74,6 @@ public interface ICFSecPubISOLangH
 	public void setRequiredISO6392Code( String value );
 	public String getOptionalISO6391Code();
 	public void setOptionalISO6391Code( String value );
-	public String getRequiredEnglishName();
-	public void setRequiredEnglishName( String value );
 	@Override
 	public boolean equals( Object obj );
 

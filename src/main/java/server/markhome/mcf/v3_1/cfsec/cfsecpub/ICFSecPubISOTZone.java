@@ -44,21 +44,11 @@ import server.markhome.mcf.v3_1.cflib.xml.CFLibXmlUtil;
 public interface ICFSecPubISOTZone
 {
 	public static final short ISOTZONEID_MIN_VALUE = (short)0;
-	public static final short TZHOUROFFSET_MIN_VALUE = (short)-12;
-	public static final short TZMINOFFSET_MIN_VALUE = (short)-59;
-	public static final short TZHOUROFFSET_MAX_VALUE = (short)12;
-	public static final short TZMINOFFSET_MAX_VALUE = (short)59;
 	public static final String S_INIT_CREATED_BY = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 INIT_CREATED_BY = CFLibDbKeyHash256.fromHex(S_INIT_CREATED_BY);
 	public static final String S_INIT_UPDATED_BY = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 INIT_UPDATED_BY = CFLibDbKeyHash256.fromHex(S_INIT_UPDATED_BY);
 	public static final short ISOTZONEID_INIT_VALUE = (short)0;
-	public static final String ISO8601_INIT_VALUE = new String( "" );
-	public static final String TZNAME_INIT_VALUE = new String( "" );
-	public static final short TZHOUROFFSET_INIT_VALUE = (short)0;
-	public static final short TZMINOFFSET_INIT_VALUE = (short)0;
-	public static final String DESCRIPTION_INIT_VALUE = new String( "" );
-	public final static boolean VISIBLE_INIT_VALUE = true;
 	public final static int CLASS_CODE = 0xa008;
 	public final static String S_CLASS_CODE = "a008";
 
@@ -81,18 +71,6 @@ public interface ICFSecPubISOTZone
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public String getRequiredIso8601();
-	public void setRequiredIso8601( String value );
-	public String getRequiredTZName();
-	public void setRequiredTZName( String value );
-	public short getRequiredTZHourOffset();
-	public void setRequiredTZHourOffset( short value );
-	public short getRequiredTZMinOffset();
-	public void setRequiredTZMinOffset( short value );
-	public String getRequiredDescription();
-	public void setRequiredDescription( String value );
-	public boolean getRequiredVisible();
-	public void setRequiredVisible( boolean value );
 	@Override
 	public boolean equals( Object obj );
 	

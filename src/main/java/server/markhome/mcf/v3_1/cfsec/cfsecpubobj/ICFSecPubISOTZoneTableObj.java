@@ -159,92 +159,9 @@ public interface ICFSecPubISOTZoneTableObj
 	ICFSecPubISOTZoneObj readISOTZoneByIdIdx( short ISOTZoneId,
 		boolean forceRead );
 
-	/**
-	 *	Get the map of CFSecPubISOTZoneObj instances sorted by their primary keys for the duplicate OffsetIdx key.
-	 *
-	 *	@param	TZHourOffset	The ISOTZone key attribute of the instance generating the id.
-	 *
-	 *	@param	TZMinOffset	The ISOTZone key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFSecPubISOTZoneObj cached instances sorted by their primary keys for the duplicate OffsetIdx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFSecPubISOTZoneObj> readISOTZoneByOffsetIdx( short TZHourOffset,
-		short TZMinOffset );
-
-	/**
-	 *	Get the map of CFSecPubISOTZoneObj instances sorted by their primary keys for the duplicate OffsetIdx key.
-	 *
-	 *	@param	TZHourOffset	The ISOTZone key attribute of the instance generating the id.
-	 *
-	 *	@param	TZMinOffset	The ISOTZone key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFSecPubISOTZoneObj cached instances sorted by their primary keys for the duplicate OffsetIdx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFSecPubISOTZoneObj> readISOTZoneByOffsetIdx( short TZHourOffset,
-		short TZMinOffset,
-		boolean forceRead );
-
-	/**
-	 *	Get the CFSecPubISOTZoneObj instance for the unique UTZNameIdx key.
-	 *
-	 *	@param	TZName	The ISOTZone key attribute of the instance generating the id.
-	 *
-	 *	@return	CFSecPubISOTZoneObj cached instance for the unique UTZNameIdx key, or
-	 *		null if no such instance exists.
-	 */
-	ICFSecPubISOTZoneObj readISOTZoneByUTZNameIdx(String TZName );
-
-	/**
-	 *	Get the CFSecPubISOTZoneObj instance for the unique UTZNameIdx key.
-	 *
-	 *	@param	TZName	The ISOTZone key attribute of the instance generating the id.
-	 *
-	 *	@return	CFSecPubISOTZoneObj refreshed instance for the unique UTZNameIdx key, or
-	 *		null if no such instance exists.
-	 */
-	ICFSecPubISOTZoneObj readISOTZoneByUTZNameIdx(String TZName,
-		boolean forceRead );
-
-	/**
-	 *	Get the map of CFSecPubISOTZoneObj instances sorted by their primary keys for the duplicate Iso8601Idx key.
-	 *
-	 *	@param	Iso8601	The ISOTZone key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFSecPubISOTZoneObj cached instances sorted by their primary keys for the duplicate Iso8601Idx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFSecPubISOTZoneObj> readISOTZoneByIso8601Idx( String Iso8601 );
-
-	/**
-	 *	Get the map of CFSecPubISOTZoneObj instances sorted by their primary keys for the duplicate Iso8601Idx key.
-	 *
-	 *	@param	Iso8601	The ISOTZone key attribute of the instance generating the id.
-	 *
-	 *	@return	List of CFSecPubISOTZoneObj cached instances sorted by their primary keys for the duplicate Iso8601Idx key,
-	 *		which may be an empty set.
-	 */
-	List<ICFSecPubISOTZoneObj> readISOTZoneByIso8601Idx( String Iso8601,
-		boolean forceRead );
-
 	ICFSecPubISOTZoneObj readCachedISOTZoneByIdIdx( short ISOTZoneId );
 
-	List<ICFSecPubISOTZoneObj> readCachedISOTZoneByOffsetIdx( short TZHourOffset,
-		short TZMinOffset );
-
-	ICFSecPubISOTZoneObj readCachedISOTZoneByUTZNameIdx( String TZName );
-
-	List<ICFSecPubISOTZoneObj> readCachedISOTZoneByIso8601Idx( String Iso8601 );
-
 	void deepDisposeISOTZoneByIdIdx( short ISOTZoneId );
-
-	void deepDisposeISOTZoneByOffsetIdx( short TZHourOffset,
-		short TZMinOffset );
-
-	void deepDisposeISOTZoneByUTZNameIdx( String TZName );
-
-	void deepDisposeISOTZoneByIso8601Idx( String Iso8601 );
 
 	/**
 	 *	Internal use only.
@@ -262,28 +179,4 @@ public interface ICFSecPubISOTZoneTableObj
 	 *	@param	ISOTZoneId	The ISOTZone key attribute of the instance generating the id.
 	 */
 	void deleteISOTZoneByIdIdx( short ISOTZoneId );
-
-	/**
-	 *	Internal use only.
-	 *
-	 *	@param	TZHourOffset	The ISOTZone key attribute of the instance generating the id.
-	 *
-	 *	@param	TZMinOffset	The ISOTZone key attribute of the instance generating the id.
-	 */
-	void deleteISOTZoneByOffsetIdx( short TZHourOffset,
-		short TZMinOffset );
-
-	/**
-	 *	Internal use only.
-	 *
-	 *	@param	TZName	The ISOTZone key attribute of the instance generating the id.
-	 */
-	void deleteISOTZoneByUTZNameIdx(String TZName );
-
-	/**
-	 *	Internal use only.
-	 *
-	 *	@param	Iso8601	The ISOTZone key attribute of the instance generating the id.
-	 */
-	void deleteISOTZoneByIso8601Idx( String Iso8601 );
 }

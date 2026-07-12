@@ -109,25 +109,6 @@ public interface ICFSecPubISOCcyTable
 	 */
 	public void pubdeleteISOCcyByCcyCdIdx( ICFSecPubAuthorization Authorization,
 		ICFSecPubISOCcyByCcyCdIdxKey argKey );
-	/**
-	 *	Delete the ISOCcy instances identified by the key CcyNmIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	Name	The ISOCcy key attribute of the instance generating the id.
-	 */
-	public void pubdeleteISOCcyByCcyNmIdx( ICFSecPubAuthorization Authorization,
-		String argName );
-
-	/**
-	 *	Delete the ISOCcy instances identified by the key CcyNmIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	argKey	The key identifying the instances to be deleted.
-	 */
-	public void pubdeleteISOCcyByCcyNmIdx( ICFSecPubAuthorization Authorization,
-		ICFSecPubISOCcyByCcyNmIdxKey argKey );
 
 
 	/**
@@ -190,19 +171,6 @@ public interface ICFSecPubISOCcyTable
 	 */
 	public ICFSecPubISOCcy pubreadDerivedByCcyCdIdx( ICFSecPubAuthorization Authorization,
 		String ISOCode );
-
-	/**
-	 *	Read the derived ISOCcy record instance identified by the unique key CcyNmIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	Name	The ISOCcy key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 */
-	public ICFSecPubISOCcy pubreadDerivedByCcyNmIdx( ICFSecPubAuthorization Authorization,
-		String Name );
 
 	/**
 	 *	Read the specific ISOCcy record instance identified by the primary key.
@@ -272,19 +240,4 @@ public interface ICFSecPubISOCcyTable
 	 */
 	public ICFSecPubISOCcy pubreadRecByCcyCdIdx( ICFSecPubAuthorization Authorization,
 		String ISOCode );
-
-	/**
-	 *	Read the specific ISOCcy record instance identified by the unique key CcyNmIdx.
-	 *
-	 *	@param	Authorization	The session authorization information.
-	 *
-	 *	@param	Name	The ISOCcy key attribute of the instance generating the id.
-	 *
-	 *	@return The record instance for the specified key, or null if there is
-	 *		no such existing key value.
-	 *
-	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
-	 */
-	public ICFSecPubISOCcy pubreadRecByCcyNmIdx( ICFSecPubAuthorization Authorization,
-		String Name );
 }

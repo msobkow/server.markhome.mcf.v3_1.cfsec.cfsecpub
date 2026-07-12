@@ -60,13 +60,6 @@ public interface ICFSecPubISOCcyFactory
 	public ICFSecPubISOCcyByCcyCdIdxKey newPubByCcyCdIdxKey();
 
 	/**
-	 *	Allocate a public CcyNmIdx key over public ISOCcy instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFSecPubISOCcyByCcyNmIdxKey newPubByCcyNmIdxKey();
-
-	/**
 	 *	Allocate a public ISOCcy interface implementation.
 	 *
 	 *	@return	The new instance.

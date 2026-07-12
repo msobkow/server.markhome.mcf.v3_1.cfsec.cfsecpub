@@ -63,10 +63,6 @@ public interface ICFSecPubSecSessionH
 
 	public CFLibDbKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( CFLibDbKeyHash256 value );
-	public LocalDateTime getRequiredStart();
-	public void setRequiredStart( LocalDateTime value );
-	public LocalDateTime getOptionalFinish();
-	public void setOptionalFinish( LocalDateTime value );
 	@Override
 	public boolean equals( Object obj );
 

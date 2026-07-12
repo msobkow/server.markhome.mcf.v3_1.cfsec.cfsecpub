@@ -53,27 +53,6 @@ public interface ICFSecPubISOTZoneFactory
 	ICFSecPubISOTZoneHPKey newPubHPKey();
 
 	/**
-	 *	Allocate a public OffsetIdx key over public ISOTZone instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFSecPubISOTZoneByOffsetIdxKey newPubByOffsetIdxKey();
-
-	/**
-	 *	Allocate a public UTZNameIdx key over public ISOTZone instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFSecPubISOTZoneByUTZNameIdxKey newPubByUTZNameIdxKey();
-
-	/**
-	 *	Allocate a public Iso8601Idx key over public ISOTZone instances.
-	 *
-	 *	@return	The new instance.
-	 */
-	public ICFSecPubISOTZoneByIso8601IdxKey newPubByIso8601IdxKey();
-
-	/**
 	 *	Allocate a public ISOTZone interface implementation.
 	 *
 	 *	@return	The new instance.

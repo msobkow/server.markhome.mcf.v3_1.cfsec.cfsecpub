@@ -61,24 +61,6 @@ public interface ICFSecPubTableInfoH
 	public int getRequiredTableInfoId();
 	public void setRequiredTableInfoId( int requiredTableInfoId );
 
-	public String getRequiredSchemaName();
-	public void setRequiredSchemaName( String value );
-	public String getRequiredTableName();
-	public void setRequiredTableName( String value );
-	public String getOptionalSuperName();
-	public void setOptionalSuperName( String value );
-	public int getRequiredBackingClassCode();
-	public void setRequiredBackingClassCode( int value );
-	public int getRequiredRuntimeClassCode();
-	public void setRequiredRuntimeClassCode( int value );
-	public boolean getRequiredHasHistory();
-	public void setRequiredHasHistory( boolean value );
-	public boolean getRequiredIsMutable();
-	public void setRequiredIsMutable( boolean value );
-	public String getRequiredSecScopeName();
-	public void setRequiredSecScopeName( String value );
-	public String getRequiredCodeVis();
-	public void setRequiredCodeVis( String value );
 	@Override
 	public boolean equals( Object obj );
 
