@@ -63,16 +63,18 @@ public interface ICFSecPubTableInfo
 
 	public Integer getPKey();
 	public void setPKey(Integer requiredTableInfoId);
-	
 	public int getRequiredTableInfoId();
 	public void setRequiredTableInfoId( int value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
 	public ICFSecPubTableInfo getOptionalParentSuperRef();
-	public List<ICFSecPubTableInfo> getOptionalChildrenSubRefs();
+
 	public void setOptionalParentSuperRef(ICFSecPubTableInfo argObj);
 	public void setOptionalParentSuperRef(String argSuperName);
+
+	public List<ICFSecPubTableInfo> getOptionalChildrenSubRefs();
+
 	public String getRequiredSchemaName();
 	public void setRequiredSchemaName( String value );
 	public String getRequiredTableName();
@@ -90,22 +92,21 @@ public interface ICFSecPubTableInfo
 	public void setRequiredSecScopeName( String value );
 	public String getRequiredCodeVis();
 	public void setRequiredCodeVis( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubTableInfo src );
+
 	public void setTableInfo( ICFSecPubTableInfo src );
+
 	public void set( ICFSecPubTableInfoH src );
+
 	public void setTableInfo( ICFSecPubTableInfoH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

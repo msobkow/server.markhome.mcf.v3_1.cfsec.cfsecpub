@@ -55,32 +55,32 @@ public interface ICFSecPubSysCluster
 
 	public Integer getPKey();
 	public void setPKey(Integer requiredSingletonId);
-	
 	public int getRequiredSingletonId();
 	public void setRequiredSingletonId( int value );
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
 	public ICFSecPubCluster getRequiredContainerCluster();
+
 	public void setRequiredContainerCluster(ICFSecPubCluster argObj);
 	public void setRequiredContainerCluster(CFLibDbKeyHash256 argClusterId);
+
 	public CFLibDbKeyHash256 getRequiredClusterId();
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubSysCluster src );
+
 	public void setSysCluster( ICFSecPubSysCluster src );
+
 	public void set( ICFSecPubSysClusterH src );
+
 	public void setSysCluster( ICFSecPubSysClusterH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

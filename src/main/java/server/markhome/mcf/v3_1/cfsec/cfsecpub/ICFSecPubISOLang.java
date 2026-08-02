@@ -58,18 +58,25 @@ public interface ICFSecPubISOLang
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public Short getPKey();
 	public void setPKey(Short requiredISOLangId);
-	
 	public List<ICFSecPubISOCtryLang> getOptionalChildrenCtry();
+
 	public short getRequiredISOLangId();
 	public void setRequiredISOLangId( short value );
 	public int getRequiredRevision();
@@ -81,22 +88,21 @@ public interface ICFSecPubISOLang
 	public void setOptionalISO6391Code( String value );
 	public String getRequiredEnglishName();
 	public void setRequiredEnglishName( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubISOLang src );
+
 	public void setISOLang( ICFSecPubISOLang src );
+
 	public void set( ICFSecPubISOLangH src );
+
 	public void setISOLang( ICFSecPubISOLangH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

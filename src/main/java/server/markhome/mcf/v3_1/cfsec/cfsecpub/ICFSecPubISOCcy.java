@@ -60,18 +60,25 @@ public interface ICFSecPubISOCcy
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public Short getPKey();
 	public void setPKey(Short requiredISOCcyId);
-	
 	public List<ICFSecPubISOCtryCcy> getOptionalChildrenCtry();
+
 	public short getRequiredISOCcyId();
 	public void setRequiredISOCcyId( short value );
 	public int getRequiredRevision();
@@ -85,22 +92,21 @@ public interface ICFSecPubISOCcy
 	public void setOptionalUnitSymbol( String value );
 	public short getRequiredPrecis();
 	public void setRequiredPrecis( short value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubISOCcy src );
+
 	public void setISOCcy( ICFSecPubISOCcy src );
+
 	public void set( ICFSecPubISOCcyH src );
+
 	public void setISOCcy( ICFSecPubISOCcyH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

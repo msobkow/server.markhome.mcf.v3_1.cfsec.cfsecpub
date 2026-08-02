@@ -57,19 +57,27 @@ public interface ICFSecPubISOCtry
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public Short getPKey();
 	public void setPKey(Short requiredISOCtryId);
-	
 	public List<ICFSecPubISOCtryCcy> getOptionalComponentsCcy();
+
 	public List<ICFSecPubISOCtryLang> getOptionalComponentsLang();
+
 	public short getRequiredISOCtryId();
 	public void setRequiredISOCtryId( short value );
 	public int getRequiredRevision();
@@ -79,22 +87,21 @@ public interface ICFSecPubISOCtry
 	public void setRequiredISOCode( String value );
 	public String getRequiredName();
 	public void setRequiredName( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubISOCtry src );
+
 	public void setISOCtry( ICFSecPubISOCtry src );
+
 	public void set( ICFSecPubISOCtryH src );
+
 	public void setISOCtry( ICFSecPubISOCtryH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

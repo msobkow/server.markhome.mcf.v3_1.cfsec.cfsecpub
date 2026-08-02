@@ -56,17 +56,23 @@ public interface ICFSecPubSecSysRole
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredSecSysRoleId);
-	
 	public CFLibDbKeyHash256 getRequiredSecSysRoleId();
 	public void setRequiredSecSysRoleId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
@@ -74,22 +80,21 @@ public interface ICFSecPubSecSysRole
 
 	public String getRequiredName();
 	public void setRequiredName( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubSecSysRole src );
+
 	public void setSecSysRole( ICFSecPubSecSysRole src );
+
 	public void set( ICFSecPubSecSysRoleH src );
+
 	public void setSecSysRole( ICFSecPubSecSysRoleH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

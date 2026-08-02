@@ -48,6 +48,8 @@ public interface ICFSecPubSecSession
 	public static final String S_SECUSERID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
 	public static final CFLibDbKeyHash256 SECUSERID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_SECUSERID_INIT_VALUE );
 	public static final LocalDateTime START_INIT_VALUE = CFLibXmlUtil.parseTimestamp("2020-01-01T00:00:00");
+	public static final String S_SECPROXYID_INIT_VALUE = "0000000000000000000000000000000000000000000000000000000000000000";
+	public static final CFLibDbKeyHash256 SECPROXYID_INIT_VALUE = CFLibDbKeyHash256.fromHex( S_SECPROXYID_INIT_VALUE );
 	public final static int CLASS_CODE = 0xa01e;
 	public final static String S_CLASS_CODE = "a01e";
 
@@ -55,7 +57,6 @@ public interface ICFSecPubSecSession
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredSecSessionId);
-	
 	public CFLibDbKeyHash256 getRequiredSecSessionId();
 	public void setRequiredSecSessionId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
@@ -67,22 +68,21 @@ public interface ICFSecPubSecSession
 	public void setRequiredStart( LocalDateTime value );
 	public LocalDateTime getOptionalFinish();
 	public void setOptionalFinish( LocalDateTime value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubSecSession src );
+
 	public void setSecSession( ICFSecPubSecSession src );
+
 	public void set( ICFSecPubSecSessionH src );
+
 	public void setSecSession( ICFSecPubSecSessionH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

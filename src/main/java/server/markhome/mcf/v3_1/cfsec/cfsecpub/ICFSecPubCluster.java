@@ -57,19 +57,27 @@ public interface ICFSecPubCluster
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredId);
-	
 	public List<ICFSecPubTenant> getOptionalComponentsTenant();
+
 	public List<ICFSecPubSysCluster> getOptionalComponentsSysCluster();
+
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
@@ -79,22 +87,21 @@ public interface ICFSecPubCluster
 	public void setRequiredFullDomName( String value );
 	public String getRequiredDescription();
 	public void setRequiredDescription( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubCluster src );
+
 	public void setCluster( ICFSecPubCluster src );
+
 	public void set( ICFSecPubClusterH src );
+
 	public void setCluster( ICFSecPubClusterH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }

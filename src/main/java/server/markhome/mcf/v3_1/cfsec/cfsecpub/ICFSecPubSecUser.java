@@ -56,23 +56,30 @@ public interface ICFSecPubSecUser
 	public static final String DFLTSYSGRPNAME_INIT_VALUE = new String( "" );
 	public static final String DFLTCLUSGRPNAME_INIT_VALUE = new String( "" );
 	public static final String DFLTTENTGRPNAME_INIT_VALUE = new String( "" );
+	public static final String EMAILADDRESS_INIT_VALUE = new String( "" );
 	public final static int CLASS_CODE = 0xa009;
 	public final static String S_CLASS_CODE = "a009";
 
 	public int getClassCode();
 
 	public CFLibDbKeyHash256 getCreatedByUserId();
+
 	public void setCreatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getCreatedAt();
+
 	public void setCreatedAt( LocalDateTime value );
+
 	public CFLibDbKeyHash256 getUpdatedByUserId();
+
 	public void setUpdatedByUserId( CFLibDbKeyHash256 value );
+
 	public LocalDateTime getUpdatedAt();
+
 	public void setUpdatedAt( LocalDateTime value );
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredSecUserId);
-	
 	public CFLibDbKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
@@ -88,22 +95,21 @@ public interface ICFSecPubSecUser
 	public void setOptionalDfltClusGrpName( String value );
 	public String getOptionalDfltTentGrpName();
 	public void setOptionalDfltTentGrpName( String value );
-	@Override
 	public boolean equals( Object obj );
-	
-	@Override
+
 	public int hashCode();
 
-	//@Override not necessary because interfaces aren't able to implement Comparable, but they can double-team on the requirement
 	public int compareTo( Object obj );
 
 	public void set( ICFSecPubSecUser src );
+
 	public void setSecUser( ICFSecPubSecUser src );
+
 	public void set( ICFSecPubSecUserH src );
+
 	public void setSecUser( ICFSecPubSecUserH src );
 
 	public String getXmlAttrFragment();
 
-	@Override
 	public String toString();
 }
