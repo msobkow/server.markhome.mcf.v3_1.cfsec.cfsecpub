@@ -56,7 +56,7 @@ public interface ICFSecPubISOCtryCcyPKey
 	public int hashCode();
 
 	//@Override
-	public int compareTo( ICFSecPubISOCtryCcyPKey rhs );
+	public int compareTo( Object rhs );
 
 	public String getXmlAttrFragment();
 
