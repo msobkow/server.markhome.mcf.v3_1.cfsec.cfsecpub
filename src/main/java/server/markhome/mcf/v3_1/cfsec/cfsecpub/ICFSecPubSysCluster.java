@@ -66,6 +66,7 @@ public interface ICFSecPubSysCluster
 	public void setRequiredContainerCluster(CFLibDbKeyHash256 argClusterId);
 
 	public CFLibDbKeyHash256 getRequiredClusterId();
+	public void setRequiredClusterId( CFLibDbKeyHash256 value );
 	public boolean equals( Object obj );
 
 	public int hashCode();

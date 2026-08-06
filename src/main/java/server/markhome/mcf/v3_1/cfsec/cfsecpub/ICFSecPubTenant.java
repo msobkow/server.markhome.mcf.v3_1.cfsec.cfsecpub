@@ -86,6 +86,7 @@ public interface ICFSecPubTenant
 	public void setRequiredContainerCluster(CFLibDbKeyHash256 argClusterId);
 
 	public CFLibDbKeyHash256 getRequiredClusterId();
+	public void setRequiredClusterId( CFLibDbKeyHash256 value );
 	public String getRequiredTenantName();
 	public void setRequiredTenantName( String value );
 	public boolean equals( Object obj );
