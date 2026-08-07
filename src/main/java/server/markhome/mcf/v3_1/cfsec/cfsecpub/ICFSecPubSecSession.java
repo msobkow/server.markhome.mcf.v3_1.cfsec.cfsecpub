@@ -62,6 +62,11 @@ public interface ICFSecPubSecSession
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
+	public ICFSecPubSecUser getRequiredContainerSecUser();
+
+	public void setRequiredContainerSecUser(ICFSecPubSecUser argObj);
+	public void setRequiredContainerSecUser(CFLibDbKeyHash256 argSecUserId);
+
 	public CFLibDbKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( CFLibDbKeyHash256 value );
 	public LocalDateTime getRequiredStart();

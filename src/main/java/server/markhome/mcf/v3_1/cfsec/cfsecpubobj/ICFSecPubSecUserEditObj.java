@@ -107,6 +107,13 @@ public interface ICFSecPubSecUserEditObj
 	void setUpdatedAt( LocalDateTime value );
 
 	/**
+	 *	Get a list ICFSecPubSecSessionObj instances referenced by the SecSess key.
+	 *
+	 *	@return	The (potentially empty) list of ICFSecPubSecSessionObj instances referenced by the SecSess key.
+	 */
+	List<ICFSecPubSecSessionObj> getOptionalComponentsSecSess();
+
+	/**
 	 *	Get the required CFLibDbKeyHash256 attribute SecUserId.
 	 *
 	 *	@return	The required CFLibDbKeyHash256 attribute SecUserId.

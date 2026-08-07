@@ -80,6 +80,8 @@ public interface ICFSecPubSecUser
 
 	public CFLibDbKeyHash256 getPKey();
 	public void setPKey(CFLibDbKeyHash256 requiredSecUserId);
+	public List<ICFSecPubSecSession> getOptionalComponentsSecSess();
+
 	public CFLibDbKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();

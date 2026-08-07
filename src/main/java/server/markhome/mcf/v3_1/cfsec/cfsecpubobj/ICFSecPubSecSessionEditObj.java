@@ -79,6 +79,27 @@ public interface ICFSecPubSecSessionEditObj
 	ICFSecPubSecSessionEditObj deleteInstance();
 
 	/**
+	 *	Get the ICFSecPubSecUserObj instance referenced by the SecUser key.
+	 *
+	 *	@return	The ICFSecPubSecUserObj instance referenced by the SecUser key.
+	 */
+	ICFSecPubSecUserObj getRequiredContainerSecUser();
+
+	/**
+	 *	Get the required ICFSecPubSecUserObj instance referenced by the SecUser key.
+	 *
+	 *	@return	The required ICFSecPubSecUserObj instance referenced by the SecUser key.
+	 */
+	ICFSecPubSecUserObj getRequiredContainerSecUser( boolean forceRead );
+
+	/**
+	 *	Set the ICFSecPubSecUserObj instance referenced by the SecUser key.
+	 *
+	 *	@param	value	the ICFSecPubSecUserObj instance to be referenced by the SecUser key.
+	 */
+	void setRequiredContainerSecUser( ICFSecPubSecUserObj value );
+
+	/**
 	 *	Get the required CFLibDbKeyHash256 attribute SecSessionId.
 	 *
 	 *	@return	The required CFLibDbKeyHash256 attribute SecSessionId.
@@ -98,13 +119,6 @@ public interface ICFSecPubSecSessionEditObj
 	 *	@return	The required CFLibDbKeyHash256 attribute SecUserId.
 	 */
 	CFLibDbKeyHash256 getRequiredSecUserId();
-
-	/**
-	 *	Set the required CFLibDbKeyHash256 attribute SecUserId.
-	 *
-	 *	@param value The required CFLibDbKeyHash256 attribute SecUserId value to be applied.
-	 */
-	void setRequiredSecUserId(CFLibDbKeyHash256 value);
 
 	/**
 	 *	Get the required LocalDateTime attribute Start.
