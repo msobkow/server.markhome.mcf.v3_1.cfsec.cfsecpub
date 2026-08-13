@@ -158,7 +158,7 @@ public interface ICFSecPubSchema
 		final static ArrayList<ICFSecPubSchema.ClassMapEntry> entries = new ArrayList<>();
 		final static HashMap<Integer,ICFSecPubSchema.ClassMapEntry> mapBackingClassCodeToEntry = new HashMap<>();
 		final static HashMap<Integer,ICFSecPubSchema.ClassMapEntry> mapRuntimeClassCodeToEntry = new HashMap<>();
-		final static AtomicReference<ICFSecPubSchema> backingCFSecPubSchema = new AtomicReference<>();
+		final static AtomicReference<ICFSecPubSchema> backingCFSec = new AtomicReference<>();
 	final static AtomicReference<ICFSecPubAuthorizationCallback> authorizationCallback = new AtomicReference<>();
 	
 	public static ICFSecPubAuthorizationCallback getAuthorizationCallback() {
@@ -598,17 +598,17 @@ public interface ICFSecPubSchema
 		}
 	}
 
-		public static ICFSecPubSchema getBackingCFSecPubSchema() {
-			return( ICFSecPubSchema.backingCFSecPubSchema.get() );
+		public static ICFSecPubSchema getBackingCFSec() {
+			return( ICFSecPubSchema.backingCFSec.get() );
 		}
 		
-		public static void setBackingCFSecPubSchema(ICFSecPubSchema backingSchema) {
-			ICFSecPubSchema.backingCFSecPubSchema.set(backingSchema);
+		public static void setBackingPubSchema(ICFSecPubSchema backingSchema) {
+			ICFSecPubSchema.backingCFSec.set(backingSchema);
 		}
 		
-		public ICFSecPubSchema getCFSecPubSchema();
-		public void setCFSecPubSchema(ICFSecPubSchema schema);
-		
+		public ICFSecPubSchema getCFSecSchema();
+		public void setCFSecSchema(ICFSecPubSchema schema);
+
 		public static int doInitClassMapEntries(int value) {
 			if (ICFSecPubSchema.entries.isEmpty()) {
 				ICFSecPubSchema.ClassMapEntry entry;
