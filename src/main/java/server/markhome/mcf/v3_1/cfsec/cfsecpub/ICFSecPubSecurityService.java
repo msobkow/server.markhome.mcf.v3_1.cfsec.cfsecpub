@@ -28,7 +28,7 @@
 package server.markhome.mcf.v3_1.cfsec.cfsecpub;
 
 import server.markhome.mcf.v3_1.cflib.dbutil.*;
-import server.markhome.mcf.v3_1.cflib.keyhash.CFLibDbKeyHash256;
+import server.markhome.mcf.v3_1.cflib.keyhash.*;
 
 /*
  *	An ICFSecPubSecurityService is the public service interface used by

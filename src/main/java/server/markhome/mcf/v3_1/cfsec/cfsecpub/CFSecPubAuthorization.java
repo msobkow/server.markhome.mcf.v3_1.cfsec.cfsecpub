@@ -55,7 +55,7 @@ public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializab
 	protected CFLibDbKeyHash256 secTenantId;
 
 	public CFSecPubAuthorization() {
-		authUuid6 = ICFLibUuid6.generateUuid6();
+		authUuid6 = CFLibUuid6.generateUuid6();
 		authUuid6Str = authUuid6.toString();
 		secSessionId = CFLibDbKeyHash256.nullGet();
 		secUserId = CFLibDbKeyHash256.nullGet();
@@ -73,7 +73,7 @@ public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializab
 	}
 
 	public CFSecPubAuthorization(ICFSecPubAuthorization src) {
-		authUuid6 = new ICFLibUuid6(src.getAuthUuid6().getBytes());
+		authUuid6 = new CFLibUuid6(src.getAuthUuid6().getBytes());
 		authUuid6Str = authUuid6.toString();
 		secSessionId = new CFLibDbKeyHash256(src.getSecSessionId());
 		secUserId = new CFLibDbKeyHash256(src.getSecUserId());
