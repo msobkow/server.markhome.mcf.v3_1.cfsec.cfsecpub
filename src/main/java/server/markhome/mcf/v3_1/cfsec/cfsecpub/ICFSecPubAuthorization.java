@@ -45,7 +45,7 @@ import server.markhome.mcf.v3_1.cflib.keyhash.*;
  */
 public interface ICFSecPubAuthorization
 {
-	public CFLibUuid6 getAuthUuid6();
+	public ICFLibUuid6 getAuthUuid6();
 	public String getAuthUuid6Str();
 
 	public CFLibDbKeyHash256 getSecSessionId();

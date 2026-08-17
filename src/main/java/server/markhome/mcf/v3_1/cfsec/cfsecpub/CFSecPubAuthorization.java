@@ -46,7 +46,7 @@ import server.markhome.mcf.v3_1.cflib.keyhash.*;
  */
 public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializable
 {
-	protected CFLibUuid6 authUuid6;
+	protected ICFLibUuid6 authUuid6;
 	protected String authUuid6Str;
 
 	protected CFLibDbKeyHash256 secSessionId;
@@ -55,7 +55,7 @@ public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializab
 	protected CFLibDbKeyHash256 secTenantId;
 
 	public CFSecPubAuthorization() {
-		authUuid6 = CFLibUuid6.generateUuid6();
+		authUuid6 = ICFLibUuid6.generateUuid6();
 		authUuid6Str = authUuid6.toString();
 		secSessionId = CFLibDbKeyHash256.nullGet();
 		secUserId = CFLibDbKeyHash256.nullGet();
@@ -63,7 +63,7 @@ public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializab
 		secTenantId = CFLibDbKeyHash256.nullGet();
 	}
 
-	public CFSecPubAuthorization(CFLibUuid6 authUuid6, CFLibDbKeyHash256 secSessionId, CFLibDbKeyHash256 secUserId, CFLibDbKeyHash256 secClusterId, CFLibDbKeyHash256 secTenantId) {
+	public CFSecPubAuthorization(ICFLibUuid6 authUuid6, CFLibDbKeyHash256 secSessionId, CFLibDbKeyHash256 secUserId, CFLibDbKeyHash256 secClusterId, CFLibDbKeyHash256 secTenantId) {
 		this.authUuid6 = authUuid6;
 		this.authUuid6Str = this.authUuid6.toString();
 		this.secSessionId = secSessionId;
@@ -73,7 +73,7 @@ public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializab
 	}
 
 	public CFSecPubAuthorization(ICFSecPubAuthorization src) {
-		authUuid6 = new CFLibUuid6(src.getAuthUuid6().getBytes());
+		authUuid6 = new ICFLibUuid6(src.getAuthUuid6().getBytes());
 		authUuid6Str = authUuid6.toString();
 		secSessionId = new CFLibDbKeyHash256(src.getSecSessionId());
 		secUserId = new CFLibDbKeyHash256(src.getSecUserId());
@@ -81,7 +81,7 @@ public class CFSecPubAuthorization implements ICFSecPubAuthorization, Serializab
 		secTenantId = new CFLibDbKeyHash256(src.getSecTenantId());
 	}
 
-	public CFLibUuid6 getAuthUuid6() {
+	public ICFLibUuid6 getAuthUuid6() {
 		return( authUuid6 );
 	}
 
