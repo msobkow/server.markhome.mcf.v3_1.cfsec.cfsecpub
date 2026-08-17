@@ -61,8 +61,8 @@ public interface ICFSecPubTableInfo
 
 	public int getClassCode();
 
-	public $implJavaOptAtomType$ getPKey();
-	public void setPKey($implJavaOptAtomType$ requiredTableInfoId);
+	public Integer getPKey();
+	public void setPKey(Integer requiredTableInfoId);
 	public int getRequiredTableInfoId();
 	public void setRequiredTableInfoId( int value );
 	public int getRequiredRevision();

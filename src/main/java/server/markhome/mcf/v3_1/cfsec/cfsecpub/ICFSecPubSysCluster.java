@@ -53,8 +53,8 @@ public interface ICFSecPubSysCluster
 
 	public int getClassCode();
 
-	public $implJavaOptAtomType$ getPKey();
-	public void setPKey($implJavaOptAtomType$ requiredSingletonId);
+	public Integer getPKey();
+	public void setPKey(Integer requiredSingletonId);
 	public int getRequiredSingletonId();
 	public void setRequiredSingletonId( int value );
 	public int getRequiredRevision();

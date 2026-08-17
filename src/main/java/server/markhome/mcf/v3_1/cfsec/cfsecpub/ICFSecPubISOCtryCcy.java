@@ -80,13 +80,13 @@ public interface ICFSecPubISOCtryCcy
 	public ICFSecPubISOCcy getRequiredParentCcy();
 
 	public void setRequiredParentCcy(ICFSecPubISOCcy argObj);
-	public $implJavaAtomType$ getRequiredISOCtryId();
+	public short getRequiredISOCtryId();
 
-	public void setRequiredISOCtryId($implJavaAtomType$ value);
+	public void setRequiredISOCtryId(short value);
 
-	public $implJavaAtomType$ getRequiredISOCcyId();
+	public short getRequiredISOCcyId();
 
-	public void setRequiredISOCcyId($implJavaAtomType$ value);
+	public void setRequiredISOCcyId(short value);
 
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );

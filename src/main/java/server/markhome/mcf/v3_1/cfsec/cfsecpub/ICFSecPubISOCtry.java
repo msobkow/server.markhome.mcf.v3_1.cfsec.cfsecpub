@@ -72,8 +72,8 @@ public interface ICFSecPubISOCtry
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public $implJavaOptAtomType$ getPKey();
-	public void setPKey($implJavaOptAtomType$ requiredISOCtryId);
+	public Short getPKey();
+	public void setPKey(Short requiredISOCtryId);
 	public List<ICFSecPubISOCtryCcy> getOptionalComponentsCcy();
 
 	public List<ICFSecPubISOCtryLang> getOptionalComponentsLang();

@@ -78,8 +78,8 @@ public interface ICFSecPubSecUser
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public $implJavaOptAtomType$ getPKey();
-	public void setPKey($implJavaOptAtomType$ requiredSecUserId);
+	public ICFLibKeyHash256 getPKey();
+	public void setPKey(ICFLibKeyHash256 requiredSecUserId);
 	public List<ICFSecPubSecSession> getOptionalComponentsSecSess();
 
 	public CFLibDbKeyHash256 getRequiredSecUserId();

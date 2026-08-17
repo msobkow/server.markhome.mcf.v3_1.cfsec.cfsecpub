@@ -80,8 +80,8 @@ public interface ICFSecPubISOTZone
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public $implJavaOptAtomType$ getPKey();
-	public void setPKey($implJavaOptAtomType$ requiredISOTZoneId);
+	public Short getPKey();
+	public void setPKey(Short requiredISOTZoneId);
 	public short getRequiredISOTZoneId();
 	public void setRequiredISOTZoneId( short value );
 	public int getRequiredRevision();

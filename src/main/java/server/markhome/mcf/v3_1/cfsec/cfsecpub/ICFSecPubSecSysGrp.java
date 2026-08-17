@@ -74,8 +74,8 @@ public interface ICFSecPubSecSysGrp
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public $implJavaOptAtomType$ getPKey();
-	public void setPKey($implJavaOptAtomType$ requiredSecSysGrpId);
+	public ICFLibKeyHash256 getPKey();
+	public void setPKey(ICFLibKeyHash256 requiredSecSysGrpId);
 	public ICFSecPubSecSysRole getOptionalComponentsImplSysRole();
 
 	public CFLibDbKeyHash256 getRequiredSecSysGrpId();
