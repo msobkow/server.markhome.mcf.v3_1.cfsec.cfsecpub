@@ -73,8 +73,8 @@ public interface ICFSecPubISOLang
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public Short getPKey();
-	public void setPKey(Short requiredISOLangId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredISOLangId);
 	public List<ICFSecPubISOCtryLang> getOptionalChildrenCtry();
 
 	public short getRequiredISOLangId();

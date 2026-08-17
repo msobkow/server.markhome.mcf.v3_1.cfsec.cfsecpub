@@ -371,8 +371,8 @@ public interface ICFSecPubSecSessionTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubSecSession[] pubpageRecBySecUserIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 SecUserId,
-		CFLibDbKeyHash256 priorSecSessionId );
+		ICFLibKeyHash256 SecUserId,
+		ICFLibKeyHash256 priorSecSessionId );
 
 	/**
 	 *	Read a page array of the specific SecSession record instances identified by the duplicate key FinishIdx.
@@ -388,7 +388,7 @@ public interface ICFSecPubSecSessionTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubSecSession[] pubpageRecByFinishIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 SecUserId,
+		ICFLibKeyHash256 SecUserId,
 		LocalDateTime Finish,
-		CFLibDbKeyHash256 priorSecSessionId );
+		ICFLibKeyHash256 priorSecSessionId );
 }

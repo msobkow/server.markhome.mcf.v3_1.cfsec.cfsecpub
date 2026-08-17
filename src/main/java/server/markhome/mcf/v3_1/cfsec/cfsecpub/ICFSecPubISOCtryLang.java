@@ -80,13 +80,13 @@ public interface ICFSecPubISOCtryLang
 	public ICFSecPubISOLang getRequiredParentLang();
 
 	public void setRequiredParentLang(ICFSecPubISOLang argObj);
-	public short getRequiredISOCtryId();
+	public $implJavaAtomType$ getRequiredISOCtryId();
 
-	public void setRequiredISOCtryId(short value);
+	public void setRequiredISOCtryId($implJavaAtomType$ value);
 
-	public short getRequiredISOLangId();
+	public $implJavaAtomType$ getRequiredISOLangId();
 
-	public void setRequiredISOLangId(short value);
+	public void setRequiredISOLangId($implJavaAtomType$ value);
 
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );

@@ -67,8 +67,8 @@ public interface ICFSecPubTenantH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public CFLibDbKeyHash256 getRequiredId();
-	public void setRequiredId( CFLibDbKeyHash256 requiredId );
+	public $implJavaAtomType$ getRequiredId();
+	public void setRequiredId( $implJavaAtomType$ requiredId );
 
 	public CFLibDbKeyHash256 getRequiredClusterId();
 	public void setRequiredClusterId( CFLibDbKeyHash256 value );

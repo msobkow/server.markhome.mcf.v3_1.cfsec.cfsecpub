@@ -73,8 +73,8 @@ public interface ICFSecPubTenant
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPKey();
-	public void setPKey(CFLibDbKeyHash256 requiredId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredId);
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
@@ -83,7 +83,7 @@ public interface ICFSecPubTenant
 	public ICFSecPubCluster getRequiredContainerCluster();
 
 	public void setRequiredContainerCluster(ICFSecPubCluster argObj);
-	public void setRequiredContainerCluster(CFLibDbKeyHash256 argClusterId);
+	public void setRequiredContainerCluster(ICFLibKeyHash256 argClusterId);
 
 	public CFLibDbKeyHash256 getRequiredClusterId();
 	public void setRequiredClusterId( CFLibDbKeyHash256 value );

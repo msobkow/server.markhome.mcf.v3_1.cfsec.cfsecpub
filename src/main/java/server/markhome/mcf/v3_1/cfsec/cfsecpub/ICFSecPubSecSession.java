@@ -55,8 +55,8 @@ public interface ICFSecPubSecSession
 
 	public int getClassCode();
 
-	public CFLibDbKeyHash256 getPKey();
-	public void setPKey(CFLibDbKeyHash256 requiredSecSessionId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredSecSessionId);
 	public CFLibDbKeyHash256 getRequiredSecSessionId();
 	public void setRequiredSecSessionId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();
@@ -65,7 +65,7 @@ public interface ICFSecPubSecSession
 	public ICFSecPubSecUser getRequiredContainerSecUser();
 
 	public void setRequiredContainerSecUser(ICFSecPubSecUser argObj);
-	public void setRequiredContainerSecUser(CFLibDbKeyHash256 argSecUserId);
+	public void setRequiredContainerSecUser(ICFLibKeyHash256 argSecUserId);
 
 	public CFLibDbKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( CFLibDbKeyHash256 value );

@@ -71,8 +71,8 @@ public interface ICFSecPubSecSysRole
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPKey();
-	public void setPKey(CFLibDbKeyHash256 requiredSecSysRoleId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredSecSysRoleId);
 	public CFLibDbKeyHash256 getRequiredSecSysRoleId();
 	public void setRequiredSecSysRoleId( CFLibDbKeyHash256 value );
 	public int getRequiredRevision();

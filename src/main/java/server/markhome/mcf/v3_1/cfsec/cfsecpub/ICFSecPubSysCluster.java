@@ -53,8 +53,8 @@ public interface ICFSecPubSysCluster
 
 	public int getClassCode();
 
-	public Integer getPKey();
-	public void setPKey(Integer requiredSingletonId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredSingletonId);
 	public int getRequiredSingletonId();
 	public void setRequiredSingletonId( int value );
 	public int getRequiredRevision();
@@ -63,7 +63,7 @@ public interface ICFSecPubSysCluster
 	public ICFSecPubCluster getRequiredContainerCluster();
 
 	public void setRequiredContainerCluster(ICFSecPubCluster argObj);
-	public void setRequiredContainerCluster(CFLibDbKeyHash256 argClusterId);
+	public void setRequiredContainerCluster(ICFLibKeyHash256 argClusterId);
 
 	public CFLibDbKeyHash256 getRequiredClusterId();
 	public void setRequiredClusterId( CFLibDbKeyHash256 value );

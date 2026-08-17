@@ -72,8 +72,8 @@ public interface ICFSecPubCluster
 
 	public void setUpdatedAt( LocalDateTime value );
 
-	public CFLibDbKeyHash256 getPKey();
-	public void setPKey(CFLibDbKeyHash256 requiredId);
+	public $implJavaOptAtomType$ getPKey();
+	public void setPKey($implJavaOptAtomType$ requiredId);
 	public List<ICFSecPubTenant> getOptionalComponentsTenant();
 
 	public List<ICFSecPubSysCluster> getOptionalComponentsSysCluster();
