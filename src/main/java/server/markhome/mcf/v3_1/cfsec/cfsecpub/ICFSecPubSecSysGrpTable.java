@@ -90,7 +90,7 @@ public interface ICFSecPubSecSysGrpTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteSecSysGrpByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the SecSysGrp instances identified by the key UNameIdx.
 	 *
@@ -142,7 +142,7 @@ public interface ICFSecPubSecSysGrpTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubSecSysGrp pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived SecSysGrp record instance by primary key.
@@ -155,7 +155,7 @@ public interface ICFSecPubSecSysGrpTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubSecSysGrp publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all SecSysGrp instances.
@@ -217,7 +217,7 @@ public interface ICFSecPubSecSysGrpTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubSecSysGrp pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific SecSysGrp record instance identified by the primary key.
@@ -232,7 +232,7 @@ public interface ICFSecPubSecSysGrpTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubSecSysGrp publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific SecSysGrp record instances.

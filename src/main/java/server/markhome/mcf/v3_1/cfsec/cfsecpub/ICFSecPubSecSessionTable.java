@@ -90,7 +90,7 @@ public interface ICFSecPubSecSessionTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteSecSessionByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the SecSession instances identified by the key SecUserIdx.
 	 *
@@ -167,7 +167,7 @@ public interface ICFSecPubSecSessionTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubSecSession pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived SecSession record instance by primary key.
@@ -180,7 +180,7 @@ public interface ICFSecPubSecSessionTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubSecSession publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all SecSession instances.
@@ -260,7 +260,7 @@ public interface ICFSecPubSecSessionTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubSecSession pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific SecSession record instance identified by the primary key.
@@ -275,7 +275,7 @@ public interface ICFSecPubSecSessionTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubSecSession publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific SecSession record instances.

@@ -90,7 +90,7 @@ public interface ICFSecPubSecUserTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteSecUserByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the SecUser instances identified by the key ULoginIdx.
 	 *
@@ -123,7 +123,7 @@ public interface ICFSecPubSecUserTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubSecUser pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived SecUser record instance by primary key.
@@ -136,7 +136,7 @@ public interface ICFSecPubSecUserTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubSecUser publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all SecUser instances.
@@ -186,7 +186,7 @@ public interface ICFSecPubSecUserTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubSecUser pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific SecUser record instance identified by the primary key.
@@ -201,7 +201,7 @@ public interface ICFSecPubSecUserTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubSecUser publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific SecUser record instances.

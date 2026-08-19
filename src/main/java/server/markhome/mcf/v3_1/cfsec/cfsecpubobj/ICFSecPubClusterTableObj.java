@@ -97,7 +97,7 @@ public interface ICFSecPubClusterTableObj
 	 *	@return	The Cluster-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubClusterObj readCluster( CFLibDbKeyHash256 pkey );
+	ICFSecPubClusterObj readCluster( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Cluster-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFSecPubClusterTableObj
 	 *	@return	The Cluster-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubClusterObj readCluster( CFLibDbKeyHash256 pkey,
+	ICFSecPubClusterObj readCluster( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFSecPubClusterObj readCachedCluster( CFLibDbKeyHash256 pkey );
+	ICFSecPubClusterObj readCachedCluster( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeCluster( ICFSecPubClusterObj obj );
 
-	void deepDisposeCluster( CFLibDbKeyHash256 pkey );
+	void deepDisposeCluster( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFSecPubClusterObj lockCluster( CFLibDbKeyHash256 pkey );
+	ICFSecPubClusterObj lockCluster( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Cluster-derived instances in the database.

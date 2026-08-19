@@ -97,7 +97,7 @@ public interface ICFSecPubSecSysGrpTableObj
 	 *	@return	The SecSysGrp-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubSecSysGrpObj readSecSysGrp( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecSysGrpObj readSecSysGrp( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a SecSysGrp-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFSecPubSecSysGrpTableObj
 	 *	@return	The SecSysGrp-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubSecSysGrpObj readSecSysGrp( CFLibDbKeyHash256 pkey,
+	ICFSecPubSecSysGrpObj readSecSysGrp( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFSecPubSecSysGrpObj readCachedSecSysGrp( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecSysGrpObj readCachedSecSysGrp( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeSecSysGrp( ICFSecPubSecSysGrpObj obj );
 
-	void deepDisposeSecSysGrp( CFLibDbKeyHash256 pkey );
+	void deepDisposeSecSysGrp( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFSecPubSecSysGrpObj lockSecSysGrp( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecSysGrpObj lockSecSysGrp( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the SecSysGrp-derived instances in the database.

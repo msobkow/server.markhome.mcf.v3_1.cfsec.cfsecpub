@@ -97,7 +97,7 @@ public interface ICFSecPubSecSessionTableObj
 	 *	@return	The SecSession-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubSecSessionObj readSecSession( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecSessionObj readSecSession( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a SecSession-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFSecPubSecSessionTableObj
 	 *	@return	The SecSession-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubSecSessionObj readSecSession( CFLibDbKeyHash256 pkey,
+	ICFSecPubSecSessionObj readSecSession( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFSecPubSecSessionObj readCachedSecSession( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecSessionObj readCachedSecSession( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeSecSession( ICFSecPubSecSessionObj obj );
 
-	void deepDisposeSecSession( CFLibDbKeyHash256 pkey );
+	void deepDisposeSecSession( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFSecPubSecSessionObj lockSecSession( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecSessionObj lockSecSession( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the SecSession-derived instances in the database.

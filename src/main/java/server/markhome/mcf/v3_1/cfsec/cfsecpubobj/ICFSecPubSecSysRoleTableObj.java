@@ -97,7 +97,7 @@ public interface ICFSecPubSecSysRoleTableObj
 	 *	@return	The SecSysRole-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubSecSysRoleObj readSecSysRole( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecSysRoleObj readSecSysRole( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a SecSysRole-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFSecPubSecSysRoleTableObj
 	 *	@return	The SecSysRole-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubSecSysRoleObj readSecSysRole( CFLibDbKeyHash256 pkey,
+	ICFSecPubSecSysRoleObj readSecSysRole( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFSecPubSecSysRoleObj readCachedSecSysRole( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecSysRoleObj readCachedSecSysRole( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeSecSysRole( ICFSecPubSecSysRoleObj obj );
 
-	void deepDisposeSecSysRole( CFLibDbKeyHash256 pkey );
+	void deepDisposeSecSysRole( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFSecPubSecSysRoleObj lockSecSysRole( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecSysRoleObj lockSecSysRole( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the SecSysRole-derived instances in the database.

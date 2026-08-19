@@ -90,7 +90,7 @@ public interface ICFSecPubClusterTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteClusterByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Cluster instances identified by the key UDomNameIdx.
 	 *
@@ -142,7 +142,7 @@ public interface ICFSecPubClusterTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubCluster pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Cluster record instance by primary key.
@@ -155,7 +155,7 @@ public interface ICFSecPubClusterTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubCluster publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Cluster instances.
@@ -218,7 +218,7 @@ public interface ICFSecPubClusterTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubCluster pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Cluster record instance identified by the primary key.
@@ -233,7 +233,7 @@ public interface ICFSecPubClusterTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubCluster publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Cluster record instances.

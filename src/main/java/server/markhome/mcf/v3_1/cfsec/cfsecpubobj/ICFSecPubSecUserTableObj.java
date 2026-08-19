@@ -97,7 +97,7 @@ public interface ICFSecPubSecUserTableObj
 	 *	@return	The SecUser-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubSecUserObj readSecUser( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecUserObj readSecUser( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a SecUser-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFSecPubSecUserTableObj
 	 *	@return	The SecUser-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubSecUserObj readSecUser( CFLibDbKeyHash256 pkey,
+	ICFSecPubSecUserObj readSecUser( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFSecPubSecUserObj readCachedSecUser( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecUserObj readCachedSecUser( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeSecUser( ICFSecPubSecUserObj obj );
 
-	void deepDisposeSecUser( CFLibDbKeyHash256 pkey );
+	void deepDisposeSecUser( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFSecPubSecUserObj lockSecUser( CFLibDbKeyHash256 pkey );
+	ICFSecPubSecUserObj lockSecUser( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the SecUser-derived instances in the database.

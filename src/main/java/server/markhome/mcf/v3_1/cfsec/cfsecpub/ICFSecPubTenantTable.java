@@ -90,7 +90,7 @@ public interface ICFSecPubTenantTable
 	 *	@param	argKey	The primary key identifying the instance to be deleted.
 	 */
 	public void pubdeleteTenantByIdIdx( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 argKey );
+		ICFLibKeyHash256 argKey );
 	/**
 	 *	Delete the Tenant instances identified by the key ClusterIdx.
 	 *
@@ -145,7 +145,7 @@ public interface ICFSecPubTenantTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubTenant pubreadDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the derived Tenant record instance by primary key.
@@ -158,7 +158,7 @@ public interface ICFSecPubTenantTable
 	 *		no such existing key value.
 	 */
 	public ICFSecPubTenant publockDerived( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all Tenant instances.
@@ -223,7 +223,7 @@ public interface ICFSecPubTenantTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubTenant pubreadRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Lock the specific Tenant record instance identified by the primary key.
@@ -238,7 +238,7 @@ public interface ICFSecPubTenantTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubTenant publockRec( ICFSecPubAuthorization Authorization,
-		CFLibDbKeyHash256 PKey );
+		ICFLibKeyHash256 PKey );
 
 	/**
 	 *	Read all the specific Tenant record instances.

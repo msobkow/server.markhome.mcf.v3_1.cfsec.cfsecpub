@@ -97,7 +97,7 @@ public interface ICFSecPubTenantTableObj
 	 *	@return	The Tenant-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubTenantObj readTenant( CFLibDbKeyHash256 pkey );
+	ICFSecPubTenantObj readTenant( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Read a Tenant-derived instance by it's primary key.
@@ -107,19 +107,19 @@ public interface ICFSecPubTenantTableObj
 	 *	@return	The Tenant-derived instance identified by the primary key,
 	 *		or null if no such key value exists.
 	 */
-	ICFSecPubTenantObj readTenant( CFLibDbKeyHash256 pkey,
+	ICFSecPubTenantObj readTenant( ICFLibKeyHash256 pkey,
 		boolean forceRead );
 
-	ICFSecPubTenantObj readCachedTenant( CFLibDbKeyHash256 pkey );
+	ICFSecPubTenantObj readCachedTenant( ICFLibKeyHash256 pkey );
 
 	public void reallyDeepDisposeTenant( ICFSecPubTenantObj obj );
 
-	void deepDisposeTenant( CFLibDbKeyHash256 pkey );
+	void deepDisposeTenant( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Internal use only.
 	 */
-	ICFSecPubTenantObj lockTenant( CFLibDbKeyHash256 pkey );
+	ICFSecPubTenantObj lockTenant( ICFLibKeyHash256 pkey );
 
 	/**
 	 *	Return a sorted list of all the Tenant-derived instances in the database.
