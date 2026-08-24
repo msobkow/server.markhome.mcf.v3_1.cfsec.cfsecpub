@@ -68,7 +68,7 @@ public interface ICFSecPubSecSysRoleH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public ICFLibKeyHash256 getRequiredSecSysRoleId();
+	public $implIJavaAtomType first implIJavaAtomType each implCommaIJavaAtomType empty empty )$ getRequiredSecSysRoleId();
 	public void setRequiredSecSysRoleId( ICFLibKeyHash256 requiredSecSysRoleId );
 
 	public String getRequiredName();

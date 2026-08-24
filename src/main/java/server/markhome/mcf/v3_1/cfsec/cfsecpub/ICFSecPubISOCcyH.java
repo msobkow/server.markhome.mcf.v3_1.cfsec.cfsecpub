@@ -68,7 +68,7 @@ public interface ICFSecPubISOCcyH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public short getRequiredISOCcyId();
+	public $implIJavaAtomType first implIJavaAtomType each implCommaIJavaAtomType empty empty )$ getRequiredISOCcyId();
 	public void setRequiredISOCcyId( short requiredISOCcyId );
 
 	public String getRequiredISOCode();

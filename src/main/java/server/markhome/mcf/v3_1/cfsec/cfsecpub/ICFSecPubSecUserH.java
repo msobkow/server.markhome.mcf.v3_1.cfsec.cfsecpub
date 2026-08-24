@@ -68,7 +68,7 @@ public interface ICFSecPubSecUserH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public ICFLibKeyHash256 getRequiredSecUserId();
+	public $implIJavaAtomType first implIJavaAtomType each implCommaIJavaAtomType empty empty )$ getRequiredSecUserId();
 	public void setRequiredSecUserId( ICFLibKeyHash256 requiredSecUserId );
 
 	public String getRequiredLoginId();

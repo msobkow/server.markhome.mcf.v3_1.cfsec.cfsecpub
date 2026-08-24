@@ -319,5 +319,5 @@ public interface ICFSecPubTenantTable
 	 */
 	public ICFSecPubTenant[] pubpageRecByClusterIdx( ICFSecPubAuthorization Authorization,
 		ICFLibKeyHash256 ClusterId,
-		ICFLibKeyHash256 priorId );
+		$implCommaIJavaOptAtomType$ priorId );
 }
