@@ -112,7 +112,7 @@ public interface ICFSecPubSecUserEditObj
 	 *
 	 *	@return	The (potentially empty) list of ICFSecPubSecSessionObj instances referenced by the SecSess key.
 	 */
-	List<ICFSecPubSecSessionObj> get$OptionalOrRequired$ComponentsSecSess();
+	List<ICFSecPubSecSessionObj> getOptionalComponentsSecSess();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute SecUserId.

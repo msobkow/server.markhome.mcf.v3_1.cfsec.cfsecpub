@@ -76,7 +76,7 @@ public interface ICFSecPubISOLang
 
 	public Short getPKey();
 	public void setPKey(Short requiredISOLangId);
-	public List<ICFSecPubISOCtryLang> get$OptionalOrRequired$ChildrenCtry();
+	public List<ICFSecPubISOCtryLang> getOptionalChildrenCtry();
 
 	public short getRequiredISOLangId();
 	public void setRequiredISOLangId( short value );

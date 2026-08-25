@@ -112,42 +112,42 @@ public interface ICFSecPubISOCtryLangEditObj
 	 *
 	 *	@return	The ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 */
-	ICFSecPubISOCtryObj get$OptionalOrRequired$ContainerCtry();
+	ICFSecPubISOCtryObj getRequiredContainerCtry();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubISOCtryObj instance referenced by the Ctry key.
+	 *	Get the required ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryObj instance referenced by the Ctry key.
+	 *	@return	The required ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 */
-	ICFSecPubISOCtryObj get$OptionalOrRequired$ContainerCtry( boolean forceRead );
+	ICFSecPubISOCtryObj getRequiredContainerCtry( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 *
 	 *	@param	value	the ICFSecPubISOCtryObj instance to be referenced by the Ctry key.
 	 */
-	void set$OptionalOrRequired$ContainerCtry( ICFSecPubISOCtryObj value );
+	void setRequiredContainerCtry( ICFSecPubISOCtryObj value );
 
 	/**
 	 *	Get the ICFSecPubISOLangObj instance referenced by the Lang key.
 	 *
 	 *	@return	The ICFSecPubISOLangObj instance referenced by the Lang key.
 	 */
-	ICFSecPubISOLangObj get$OptionalOrRequired$ParentLang();
+	ICFSecPubISOLangObj getRequiredParentLang();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubISOLangObj instance referenced by the Lang key.
+	 *	Get the required ICFSecPubISOLangObj instance referenced by the Lang key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubISOLangObj instance referenced by the Lang key.
+	 *	@return	The required ICFSecPubISOLangObj instance referenced by the Lang key.
 	 */
-	ICFSecPubISOLangObj get$OptionalOrRequired$ParentLang( boolean forceRead );
+	ICFSecPubISOLangObj getRequiredParentLang( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubISOLangObj instance referenced by the Lang key.
 	 *
 	 *	@param	value	the ICFSecPubISOLangObj instance to be referenced by the Lang key.
 	 */
-	void set$OptionalOrRequired$ParentLang( ICFSecPubISOLangObj value );
+	void setRequiredParentLang( ICFSecPubISOLangObj value );
 
 	/**
 	 *	Get the required short attribute ISOCtryId.

@@ -214,32 +214,32 @@ public interface ICFSecPubISOCtryCcyObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubISOCtryObj instance referenced by the Ctry key.
+	 *	Get the required ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryObj instance referenced by the Ctry key.
+	 *	@return	The required ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 */
-	ICFSecPubISOCtryObj get$OptionalOrRequired$ContainerCtry();
+	ICFSecPubISOCtryObj getRequiredContainerCtry();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubISOCtryObj instance referenced by the Ctry key.
+	 *	Get the required ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryObj instance referenced by the Ctry key.
+	 *	@return	The required ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 */
-	ICFSecPubISOCtryObj get$OptionalOrRequired$ContainerCtry( boolean forceRead );
+	ICFSecPubISOCtryObj getRequiredContainerCtry( boolean forceRead );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubISOCcyObj instance referenced by the Ccy key.
+	 *	Get the required ICFSecPubISOCcyObj instance referenced by the Ccy key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubISOCcyObj instance referenced by the Ccy key.
+	 *	@return	The required ICFSecPubISOCcyObj instance referenced by the Ccy key.
 	 */
-	ICFSecPubISOCcyObj get$OptionalOrRequired$ParentCcy();
+	ICFSecPubISOCcyObj getRequiredParentCcy();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubISOCcyObj instance referenced by the Ccy key.
+	 *	Get the required ICFSecPubISOCcyObj instance referenced by the Ccy key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubISOCcyObj instance referenced by the Ccy key.
+	 *	@return	The required ICFSecPubISOCcyObj instance referenced by the Ccy key.
 	 */
-	ICFSecPubISOCcyObj get$OptionalOrRequired$ParentCcy( boolean forceRead );
+	ICFSecPubISOCcyObj getRequiredParentCcy( boolean forceRead );
 
 	/**
 	 *	Get the required short attribute ISOCtryId.

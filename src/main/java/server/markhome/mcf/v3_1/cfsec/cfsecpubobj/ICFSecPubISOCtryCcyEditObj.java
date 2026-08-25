@@ -112,42 +112,42 @@ public interface ICFSecPubISOCtryCcyEditObj
 	 *
 	 *	@return	The ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 */
-	ICFSecPubISOCtryObj get$OptionalOrRequired$ContainerCtry();
+	ICFSecPubISOCtryObj getRequiredContainerCtry();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubISOCtryObj instance referenced by the Ctry key.
+	 *	Get the required ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryObj instance referenced by the Ctry key.
+	 *	@return	The required ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 */
-	ICFSecPubISOCtryObj get$OptionalOrRequired$ContainerCtry( boolean forceRead );
+	ICFSecPubISOCtryObj getRequiredContainerCtry( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubISOCtryObj instance referenced by the Ctry key.
 	 *
 	 *	@param	value	the ICFSecPubISOCtryObj instance to be referenced by the Ctry key.
 	 */
-	void set$OptionalOrRequired$ContainerCtry( ICFSecPubISOCtryObj value );
+	void setRequiredContainerCtry( ICFSecPubISOCtryObj value );
 
 	/**
 	 *	Get the ICFSecPubISOCcyObj instance referenced by the Ccy key.
 	 *
 	 *	@return	The ICFSecPubISOCcyObj instance referenced by the Ccy key.
 	 */
-	ICFSecPubISOCcyObj get$OptionalOrRequired$ParentCcy();
+	ICFSecPubISOCcyObj getRequiredParentCcy();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubISOCcyObj instance referenced by the Ccy key.
+	 *	Get the required ICFSecPubISOCcyObj instance referenced by the Ccy key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubISOCcyObj instance referenced by the Ccy key.
+	 *	@return	The required ICFSecPubISOCcyObj instance referenced by the Ccy key.
 	 */
-	ICFSecPubISOCcyObj get$OptionalOrRequired$ParentCcy( boolean forceRead );
+	ICFSecPubISOCcyObj getRequiredParentCcy( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubISOCcyObj instance referenced by the Ccy key.
 	 *
 	 *	@param	value	the ICFSecPubISOCcyObj instance to be referenced by the Ccy key.
 	 */
-	void set$OptionalOrRequired$ParentCcy( ICFSecPubISOCcyObj value );
+	void setRequiredParentCcy( ICFSecPubISOCcyObj value );
 
 	/**
 	 *	Get the required short attribute ISOCtryId.

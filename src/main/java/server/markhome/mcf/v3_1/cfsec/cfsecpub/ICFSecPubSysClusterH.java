@@ -59,7 +59,7 @@ public interface ICFSecPubSysClusterH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public $implIJavaAtomType$ getRequiredSingletonId();
+	public int getRequiredSingletonId();
 	public void setRequiredSingletonId( int requiredSingletonId );
 
 	public CFLibDbKeyHash256 getRequiredClusterId();

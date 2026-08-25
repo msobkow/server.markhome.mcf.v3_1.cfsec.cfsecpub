@@ -78,7 +78,7 @@ public interface ICFSecPubISOCcy
 
 	public Short getPKey();
 	public void setPKey(Short requiredISOCcyId);
-	public List<ICFSecPubISOCtryCcy> get$OptionalOrRequired$ChildrenCtry();
+	public List<ICFSecPubISOCtryCcy> getOptionalChildrenCtry();
 
 	public short getRequiredISOCcyId();
 	public void setRequiredISOCcyId( short value );

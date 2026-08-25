@@ -69,12 +69,12 @@ public interface ICFSecPubTableInfo
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFSecPubTableInfo get$OptionalOrRequired$ParentSuperRef();
+	public ICFSecPubTableInfo getOptionalParentSuperRef();
 
-	public void set$OptionalOrRequired$ParentSuperRef(ICFSecPubTableInfo argObj);
-	public void set$OptionalOrRequired$ParentSuperRef($implIJavaAtomType$ argSuperName);
+	public void setOptionalParentSuperRef(ICFSecPubTableInfo argObj);
+	public void setOptionalParentSuperRef(String argSuperName);
 
-	public List<ICFSecPubTableInfo> get$OptionalOrRequired$ChildrenSubRefs();
+	public List<ICFSecPubTableInfo> getOptionalChildrenSubRefs();
 
 	public String getRequiredSchemaName();
 	public void setRequiredSchemaName( String value );

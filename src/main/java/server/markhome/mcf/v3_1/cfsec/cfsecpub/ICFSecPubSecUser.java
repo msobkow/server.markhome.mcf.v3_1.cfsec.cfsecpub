@@ -81,7 +81,7 @@ public interface ICFSecPubSecUser
 
 	public ICFLibKeyHash256 getPKey();
 	public void setPKey(ICFLibKeyHash256 requiredSecUserId);
-	public List<ICFSecPubSecSession> get$OptionalOrRequired$ComponentsSecSess();
+	public List<ICFSecPubSecSession> getOptionalComponentsSecSess();
 
 	public CFLibDbKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( CFLibDbKeyHash256 value );
@@ -90,7 +90,7 @@ public interface ICFSecPubSecUser
 
 	public String getRequiredLoginId();
 	public void setRequiredLoginId( String value );
-	public $implIJavaAtomType$ getRequiredAccountStatus();
+	public ICFSecPubSchema.SecAccountStatusEnum getRequiredAccountStatus();
 	public void setRequiredAccountStatus( ICFSecPubSchema.SecAccountStatusEnum value );
 	public String getOptionalDfltSysGrpName();
 	public void setOptionalDfltSysGrpName( String value );

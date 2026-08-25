@@ -214,18 +214,18 @@ public interface ICFSecPubSecUserObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the array of $optionalorrequired$ ICFSecPubSecSessionObj array of instances referenced by the SecSess key.
+	 *	Get the array of optional ICFSecPubSecSessionObj array of instances referenced by the SecSess key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubSecSessionObj[] array of instances referenced by the SecSess key.
+	 *	@return	The optional ICFSecPubSecSessionObj[] array of instances referenced by the SecSess key.
 	 */
-	List<ICFSecPubSecSessionObj> get$OptionalOrRequired$ComponentsSecSess();
+	List<ICFSecPubSecSessionObj> getOptionalComponentsSecSess();
 
 	/**
-	 *	Get the array of $optionalorrequired$ ICFSecPubSecSessionObj array of instances referenced by the SecSess key.
+	 *	Get the array of optional ICFSecPubSecSessionObj array of instances referenced by the SecSess key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubSecSessionObj[] array of instances referenced by the SecSess key.
+	 *	@return	The optional ICFSecPubSecSessionObj[] array of instances referenced by the SecSess key.
 	 */
-	List<ICFSecPubSecSessionObj> get$OptionalOrRequired$ComponentsSecSess( boolean forceRead );
+	List<ICFSecPubSecSessionObj> getOptionalComponentsSecSess( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute SecUserId.

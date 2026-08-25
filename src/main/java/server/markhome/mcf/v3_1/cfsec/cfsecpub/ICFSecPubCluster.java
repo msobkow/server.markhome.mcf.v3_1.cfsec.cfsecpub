@@ -75,9 +75,9 @@ public interface ICFSecPubCluster
 
 	public ICFLibKeyHash256 getPKey();
 	public void setPKey(ICFLibKeyHash256 requiredId);
-	public List<ICFSecPubTenant> get$OptionalOrRequired$ComponentsTenant();
+	public List<ICFSecPubTenant> getOptionalComponentsTenant();
 
-	public List<ICFSecPubSysCluster> get$OptionalOrRequired$ComponentsSysCluster();
+	public List<ICFSecPubSysCluster> getOptionalComponentsSysCluster();
 
 	public CFLibDbKeyHash256 getRequiredId();
 	public void setRequiredId( CFLibDbKeyHash256 value );

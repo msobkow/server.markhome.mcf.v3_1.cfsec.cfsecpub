@@ -68,12 +68,12 @@ public interface ICFSecPubSecUserH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public $implIJavaAtomType$ getRequiredSecUserId();
+	public ICFLibKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( ICFLibKeyHash256 requiredSecUserId );
 
 	public String getRequiredLoginId();
 	public void setRequiredLoginId( String value );
-	public $implIJavaAtomType$ getRequiredAccountStatus();
+	public ICFSecPubSchema.SecAccountStatusEnum getRequiredAccountStatus();
 	public void setRequiredAccountStatus( ICFSecPubSchema.SecAccountStatusEnum value );
 	public String getOptionalDfltSysGrpName();
 	public void setOptionalDfltSysGrpName( String value );

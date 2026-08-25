@@ -187,18 +187,18 @@ public interface ICFSecPubSysClusterObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	Get the required ICFSecPubClusterObj instance referenced by the Cluster key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	@return	The required ICFSecPubClusterObj instance referenced by the Cluster key.
 	 */
-	ICFSecPubClusterObj get$OptionalOrRequired$ContainerCluster();
+	ICFSecPubClusterObj getRequiredContainerCluster();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	Get the required ICFSecPubClusterObj instance referenced by the Cluster key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	@return	The required ICFSecPubClusterObj instance referenced by the Cluster key.
 	 */
-	ICFSecPubClusterObj get$OptionalOrRequired$ContainerCluster( boolean forceRead );
+	ICFSecPubClusterObj getRequiredContainerCluster( boolean forceRead );
 
 	/**
 	 *	Get the required int attribute SingletonId.

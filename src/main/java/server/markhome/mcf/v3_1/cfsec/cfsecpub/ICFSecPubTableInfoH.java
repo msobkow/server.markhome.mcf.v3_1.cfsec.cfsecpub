@@ -59,7 +59,7 @@ public interface ICFSecPubTableInfoH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public $implIJavaAtomType$ getRequiredTableInfoId();
+	public int getRequiredTableInfoId();
 	public void setRequiredTableInfoId( int requiredTableInfoId );
 
 	public String getRequiredSchemaName();

@@ -68,10 +68,10 @@ public interface ICFSecPubISOCtryCcyH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public $implIJavaAtomType$ getRequiredISOCtryId();
+	public short getRequiredISOCtryId();
 	public void setRequiredISOCtryId( short requiredISOCtryId );
 
-	public $implIJavaAtomType$ getRequiredISOCcyId();
+	public short getRequiredISOCcyId();
 	public void setRequiredISOCcyId( short requiredISOCcyId );
 
 	@Override

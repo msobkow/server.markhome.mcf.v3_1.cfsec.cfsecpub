@@ -61,10 +61,10 @@ public interface ICFSecPubSysCluster
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFSecPubCluster get$OptionalOrRequired$ContainerCluster();
+	public ICFSecPubCluster getRequiredContainerCluster();
 
-	public void set$OptionalOrRequired$ContainerCluster(ICFSecPubCluster argObj);
-	public void set$OptionalOrRequired$ContainerCluster($implIJavaAtomType$ argClusterId);
+	public void setRequiredContainerCluster(ICFSecPubCluster argObj);
+	public void setRequiredContainerCluster(ICFLibKeyHash256 argClusterId);
 
 	public CFLibDbKeyHash256 getRequiredClusterId();
 	public void setRequiredClusterId( CFLibDbKeyHash256 value );

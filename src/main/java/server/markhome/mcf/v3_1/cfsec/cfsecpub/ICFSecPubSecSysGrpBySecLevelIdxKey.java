@@ -44,7 +44,7 @@ import server.markhome.mcf.v3_1.cflib.xml.CFLibXmlUtil;
  */
 public interface ICFSecPubSecSysGrpBySecLevelIdxKey
 {
-	public $implIJavaAtomType$ getRequiredSecLevel();
+	public ICFSecPubSchema.SecLevelEnum getRequiredSecLevel();
 	public void setRequiredSecLevel( ICFSecPubSchema.SecLevelEnum value );
 	@Override
 	public boolean equals( Object obj );

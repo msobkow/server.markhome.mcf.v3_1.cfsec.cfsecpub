@@ -112,21 +112,21 @@ public interface ICFSecPubTenantEditObj
 	 *
 	 *	@return	The ICFSecPubClusterObj instance referenced by the Cluster key.
 	 */
-	ICFSecPubClusterObj get$OptionalOrRequired$ContainerCluster();
+	ICFSecPubClusterObj getRequiredContainerCluster();
 
 	/**
-	 *	Get the $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	Get the required ICFSecPubClusterObj instance referenced by the Cluster key.
 	 *
-	 *	@return	The $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	@return	The required ICFSecPubClusterObj instance referenced by the Cluster key.
 	 */
-	ICFSecPubClusterObj get$OptionalOrRequired$ContainerCluster( boolean forceRead );
+	ICFSecPubClusterObj getRequiredContainerCluster( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubClusterObj instance referenced by the Cluster key.
 	 *
 	 *	@param	value	the ICFSecPubClusterObj instance to be referenced by the Cluster key.
 	 */
-	void set$OptionalOrRequired$ContainerCluster( ICFSecPubClusterObj value );
+	void setRequiredContainerCluster( ICFSecPubClusterObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

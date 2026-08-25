@@ -77,7 +77,7 @@ public interface ICFSecPubSecSysGrp
 
 	public ICFLibKeyHash256 getPKey();
 	public void setPKey(ICFLibKeyHash256 requiredSecSysGrpId);
-	public ICFSecPubSecSysRole get$OptionalOrRequired$ComponentsImplSysRole();
+	public ICFSecPubSecSysRole getOptionalComponentsImplSysRole();
 
 	public CFLibDbKeyHash256 getRequiredSecSysGrpId();
 	public void setRequiredSecSysGrpId( CFLibDbKeyHash256 value );
@@ -86,7 +86,7 @@ public interface ICFSecPubSecSysGrp
 
 	public String getRequiredName();
 	public void setRequiredName( String value );
-	public $implIJavaAtomType$ getRequiredSecLevel();
+	public ICFSecPubSchema.SecLevelEnum getRequiredSecLevel();
 	public void setRequiredSecLevel( ICFSecPubSchema.SecLevelEnum value );
 	public boolean equals( Object obj );
 
