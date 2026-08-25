@@ -75,12 +75,12 @@ public interface ICFSecPubISOCtryLang
 
 	public ICFSecPubISOCtryLangPKey getPKey();
 	public void setPKey(ICFSecPubISOCtryLangPKey pkey );
-	public ICFSecPubISOCtry getRequiredContainerCtry();
+	public ICFSecPubISOCtry get$OptionalOrRequired$ContainerCtry();
 
-	public void setRequiredContainerCtry(ICFSecPubISOCtry argObj);
-	public ICFSecPubISOLang getRequiredParentLang();
+	public void set$OptionalOrRequired$ContainerCtry(ICFSecPubISOCtry argObj);
+	public ICFSecPubISOLang get$OptionalOrRequired$ParentLang();
 
-	public void setRequiredParentLang(ICFSecPubISOLang argObj);
+	public void set$OptionalOrRequired$ParentLang(ICFSecPubISOLang argObj);
 	public short getRequiredISOCtryId();
 
 	public void setRequiredISOCtryId(short value);

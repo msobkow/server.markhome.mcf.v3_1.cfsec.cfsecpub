@@ -84,21 +84,21 @@ public interface ICFSecPubSysClusterEditObj
 	 *
 	 *	@return	The ICFSecPubClusterObj instance referenced by the Cluster key.
 	 */
-	ICFSecPubClusterObj getRequiredContainerCluster();
+	ICFSecPubClusterObj get$OptionalOrRequired$ContainerCluster();
 
 	/**
-	 *	Get the required ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	Get the $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
 	 *
-	 *	@return	The required ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	@return	The $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
 	 */
-	ICFSecPubClusterObj getRequiredContainerCluster( boolean forceRead );
+	ICFSecPubClusterObj get$OptionalOrRequired$ContainerCluster( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubClusterObj instance referenced by the Cluster key.
 	 *
 	 *	@param	value	the ICFSecPubClusterObj instance to be referenced by the Cluster key.
 	 */
-	void setRequiredContainerCluster( ICFSecPubClusterObj value );
+	void set$OptionalOrRequired$ContainerCluster( ICFSecPubClusterObj value );
 
 	/**
 	 *	Get the required int attribute SingletonId.

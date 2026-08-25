@@ -187,32 +187,32 @@ public interface ICFSecPubTableInfoObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 *	Get the $optionalorrequired$ ICFSecPubTableInfoObj instance referenced by the SuperRef key.
 	 *
-	 *	@return	The optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTableInfoObj instance referenced by the SuperRef key.
 	 */
-	ICFSecPubTableInfoObj getOptionalParentSuperRef();
+	ICFSecPubTableInfoObj get$OptionalOrRequired$ParentSuperRef();
 
 	/**
-	 *	Get the optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 *	Get the $optionalorrequired$ ICFSecPubTableInfoObj instance referenced by the SuperRef key.
 	 *
-	 *	@return	The optional ICFSecPubTableInfoObj instance referenced by the SuperRef key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTableInfoObj instance referenced by the SuperRef key.
 	 */
-	ICFSecPubTableInfoObj getOptionalParentSuperRef( boolean forceRead );
+	ICFSecPubTableInfoObj get$OptionalOrRequired$ParentSuperRef( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFSecPubTableInfoObj array of instances referenced by the SubRefs key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubTableInfoObj array of instances referenced by the SubRefs key.
 	 *
-	 *	@return	The optional ICFSecPubTableInfoObj[] array of instances referenced by the SubRefs key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTableInfoObj[] array of instances referenced by the SubRefs key.
 	 */
-	List<ICFSecPubTableInfoObj> getOptionalChildrenSubRefs();
+	List<ICFSecPubTableInfoObj> get$OptionalOrRequired$ChildrenSubRefs();
 
 	/**
-	 *	Get the array of optional ICFSecPubTableInfoObj array of instances referenced by the SubRefs key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubTableInfoObj array of instances referenced by the SubRefs key.
 	 *
-	 *	@return	The optional ICFSecPubTableInfoObj[] array of instances referenced by the SubRefs key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTableInfoObj[] array of instances referenced by the SubRefs key.
 	 */
-	List<ICFSecPubTableInfoObj> getOptionalChildrenSubRefs( boolean forceRead );
+	List<ICFSecPubTableInfoObj> get$OptionalOrRequired$ChildrenSubRefs( boolean forceRead );
 
 	/**
 	 *	Get the required int attribute TableInfoId.

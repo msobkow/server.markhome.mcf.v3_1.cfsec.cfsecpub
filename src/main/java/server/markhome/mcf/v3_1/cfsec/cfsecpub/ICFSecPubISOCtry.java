@@ -75,9 +75,9 @@ public interface ICFSecPubISOCtry
 
 	public Short getPKey();
 	public void setPKey(Short requiredISOCtryId);
-	public List<ICFSecPubISOCtryCcy> getOptionalComponentsCcy();
+	public List<ICFSecPubISOCtryCcy> get$OptionalOrRequired$ComponentsCcy();
 
-	public List<ICFSecPubISOCtryLang> getOptionalComponentsLang();
+	public List<ICFSecPubISOCtryLang> get$OptionalOrRequired$ComponentsLang();
 
 	public short getRequiredISOCtryId();
 	public void setRequiredISOCtryId( short value );

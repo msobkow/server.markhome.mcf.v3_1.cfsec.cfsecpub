@@ -318,6 +318,6 @@ public interface ICFSecPubTenantTable
 	 *	@throws	CFLibNotSupportedException thrown by client-side implementations.
 	 */
 	public ICFSecPubTenant[] pubpageRecByClusterIdx( ICFSecPubAuthorization Authorization,
-		ICFLibKeyHash256 ClusterId,
-		$implCommaIJavaOptAtomType$ priorId );
+		$implIJavaAtomType$ ClusterId,
+		$implIJavaOptAtomType$ priorId );
 }

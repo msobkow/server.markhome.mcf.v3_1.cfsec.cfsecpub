@@ -214,32 +214,32 @@ public interface ICFSecPubISOCtryObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the array of optional ICFSecPubISOCtryCcyObj array of instances referenced by the Ccy key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubISOCtryCcyObj array of instances referenced by the Ccy key.
 	 *
-	 *	@return	The optional ICFSecPubISOCtryCcyObj[] array of instances referenced by the Ccy key.
+	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryCcyObj[] array of instances referenced by the Ccy key.
 	 */
-	List<ICFSecPubISOCtryCcyObj> getOptionalComponentsCcy();
+	List<ICFSecPubISOCtryCcyObj> get$OptionalOrRequired$ComponentsCcy();
 
 	/**
-	 *	Get the array of optional ICFSecPubISOCtryCcyObj array of instances referenced by the Ccy key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubISOCtryCcyObj array of instances referenced by the Ccy key.
 	 *
-	 *	@return	The optional ICFSecPubISOCtryCcyObj[] array of instances referenced by the Ccy key.
+	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryCcyObj[] array of instances referenced by the Ccy key.
 	 */
-	List<ICFSecPubISOCtryCcyObj> getOptionalComponentsCcy( boolean forceRead );
+	List<ICFSecPubISOCtryCcyObj> get$OptionalOrRequired$ComponentsCcy( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFSecPubISOCtryLangObj array of instances referenced by the Lang key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubISOCtryLangObj array of instances referenced by the Lang key.
 	 *
-	 *	@return	The optional ICFSecPubISOCtryLangObj[] array of instances referenced by the Lang key.
+	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryLangObj[] array of instances referenced by the Lang key.
 	 */
-	List<ICFSecPubISOCtryLangObj> getOptionalComponentsLang();
+	List<ICFSecPubISOCtryLangObj> get$OptionalOrRequired$ComponentsLang();
 
 	/**
-	 *	Get the array of optional ICFSecPubISOCtryLangObj array of instances referenced by the Lang key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubISOCtryLangObj array of instances referenced by the Lang key.
 	 *
-	 *	@return	The optional ICFSecPubISOCtryLangObj[] array of instances referenced by the Lang key.
+	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryLangObj[] array of instances referenced by the Lang key.
 	 */
-	List<ICFSecPubISOCtryLangObj> getOptionalComponentsLang( boolean forceRead );
+	List<ICFSecPubISOCtryLangObj> get$OptionalOrRequired$ComponentsLang( boolean forceRead );
 
 	/**
 	 *	Get the required short attribute ISOCtryId.

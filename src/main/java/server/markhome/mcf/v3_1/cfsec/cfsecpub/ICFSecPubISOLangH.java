@@ -68,7 +68,7 @@ public interface ICFSecPubISOLangH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public $implIJavaAtomType first implIJavaAtomType each implCommaIJavaAtomType empty empty )$ getRequiredISOLangId();
+	public $implIJavaAtomType$ getRequiredISOLangId();
 	public void setRequiredISOLangId( short requiredISOLangId );
 
 	public String getRequiredISO6392Code();

@@ -214,18 +214,18 @@ public interface ICFSecPubISOLangObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the array of optional ICFSecPubISOCtryLangObj array of instances referenced by the Ctry key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubISOCtryLangObj array of instances referenced by the Ctry key.
 	 *
-	 *	@return	The optional ICFSecPubISOCtryLangObj[] array of instances referenced by the Ctry key.
+	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryLangObj[] array of instances referenced by the Ctry key.
 	 */
-	List<ICFSecPubISOCtryLangObj> getOptionalChildrenCtry();
+	List<ICFSecPubISOCtryLangObj> get$OptionalOrRequired$ChildrenCtry();
 
 	/**
-	 *	Get the array of optional ICFSecPubISOCtryLangObj array of instances referenced by the Ctry key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubISOCtryLangObj array of instances referenced by the Ctry key.
 	 *
-	 *	@return	The optional ICFSecPubISOCtryLangObj[] array of instances referenced by the Ctry key.
+	 *	@return	The $optionalorrequired$ ICFSecPubISOCtryLangObj[] array of instances referenced by the Ctry key.
 	 */
-	List<ICFSecPubISOCtryLangObj> getOptionalChildrenCtry( boolean forceRead );
+	List<ICFSecPubISOCtryLangObj> get$OptionalOrRequired$ChildrenCtry( boolean forceRead );
 
 	/**
 	 *	Get the required short attribute ISOLangId.

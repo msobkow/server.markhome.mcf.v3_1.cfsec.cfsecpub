@@ -68,12 +68,12 @@ public interface ICFSecPubSecSysGrpH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public $implIJavaAtomType first implIJavaAtomType each implCommaIJavaAtomType empty empty )$ getRequiredSecSysGrpId();
+	public $implIJavaAtomType$ getRequiredSecSysGrpId();
 	public void setRequiredSecSysGrpId( ICFLibKeyHash256 requiredSecSysGrpId );
 
 	public String getRequiredName();
 	public void setRequiredName( String value );
-	public ICFSecPubSchema.SecLevelEnum getRequiredSecLevel();
+	public $implIJavaAtomType$ getRequiredSecLevel();
 	public void setRequiredSecLevel( ICFSecPubSchema.SecLevelEnum value );
 	@Override
 	public boolean equals( Object obj );

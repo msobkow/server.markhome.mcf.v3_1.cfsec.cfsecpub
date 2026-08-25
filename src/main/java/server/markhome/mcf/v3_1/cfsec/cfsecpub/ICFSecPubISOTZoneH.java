@@ -68,7 +68,7 @@ public interface ICFSecPubISOTZoneH
 	public CFLibDbKeyHash256 getAuditSessionId();
 	public void setAuditSessionId(CFLibDbKeyHash256 auditSessionId);
 
-	public $implIJavaAtomType first implIJavaAtomType each implCommaIJavaAtomType empty empty )$ getRequiredISOTZoneId();
+	public $implIJavaAtomType$ getRequiredISOTZoneId();
 	public void setRequiredISOTZoneId( short requiredISOTZoneId );
 
 	public String getRequiredIso8601();

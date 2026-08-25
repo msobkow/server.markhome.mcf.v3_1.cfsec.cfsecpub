@@ -63,10 +63,10 @@ public interface ICFSecPubSecSession
 	public int getRequiredRevision();
 	public void setRequiredRevision( int value );
 
-	public ICFSecPubSecUser getRequiredContainerSecUser();
+	public ICFSecPubSecUser get$OptionalOrRequired$ContainerSecUser();
 
-	public void setRequiredContainerSecUser(ICFSecPubSecUser argObj);
-	public void setRequiredContainerSecUser(ICFLibKeyHash256 argSecUserId);
+	public void set$OptionalOrRequired$ContainerSecUser(ICFSecPubSecUser argObj);
+	public void set$OptionalOrRequired$ContainerSecUser($implIJavaAtomType$ argSecUserId);
 
 	public CFLibDbKeyHash256 getRequiredSecUserId();
 	public void setRequiredSecUserId( CFLibDbKeyHash256 value );

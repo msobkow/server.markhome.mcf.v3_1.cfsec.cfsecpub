@@ -214,18 +214,18 @@ public interface ICFSecPubTenantObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the required ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	Get the $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
 	 *
-	 *	@return	The required ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	@return	The $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
 	 */
-	ICFSecPubClusterObj getRequiredContainerCluster();
+	ICFSecPubClusterObj get$OptionalOrRequired$ContainerCluster();
 
 	/**
-	 *	Get the required ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	Get the $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
 	 *
-	 *	@return	The required ICFSecPubClusterObj instance referenced by the Cluster key.
+	 *	@return	The $optionalorrequired$ ICFSecPubClusterObj instance referenced by the Cluster key.
 	 */
-	ICFSecPubClusterObj getRequiredContainerCluster( boolean forceRead );
+	ICFSecPubClusterObj get$OptionalOrRequired$ContainerCluster( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

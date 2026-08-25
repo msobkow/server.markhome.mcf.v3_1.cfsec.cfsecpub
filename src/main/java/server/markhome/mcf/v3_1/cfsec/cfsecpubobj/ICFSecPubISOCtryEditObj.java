@@ -112,14 +112,14 @@ public interface ICFSecPubISOCtryEditObj
 	 *
 	 *	@return	The (potentially empty) list of ICFSecPubISOCtryCcyObj instances referenced by the Ccy key.
 	 */
-	List<ICFSecPubISOCtryCcyObj> getOptionalComponentsCcy();
+	List<ICFSecPubISOCtryCcyObj> get$OptionalOrRequired$ComponentsCcy();
 
 	/**
 	 *	Get a list ICFSecPubISOCtryLangObj instances referenced by the Lang key.
 	 *
 	 *	@return	The (potentially empty) list of ICFSecPubISOCtryLangObj instances referenced by the Lang key.
 	 */
-	List<ICFSecPubISOCtryLangObj> getOptionalComponentsLang();
+	List<ICFSecPubISOCtryLangObj> get$OptionalOrRequired$ComponentsLang();
 
 	/**
 	 *	Get the required short attribute ISOCtryId.

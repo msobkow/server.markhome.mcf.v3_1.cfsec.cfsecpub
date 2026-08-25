@@ -112,14 +112,14 @@ public interface ICFSecPubClusterEditObj
 	 *
 	 *	@return	The (potentially empty) list of ICFSecPubTenantObj instances referenced by the Tenant key.
 	 */
-	List<ICFSecPubTenantObj> getOptionalComponentsTenant();
+	List<ICFSecPubTenantObj> get$OptionalOrRequired$ComponentsTenant();
 
 	/**
 	 *	Get a list ICFSecPubSysClusterObj instances referenced by the SysCluster key.
 	 *
 	 *	@return	The (potentially empty) list of ICFSecPubSysClusterObj instances referenced by the SysCluster key.
 	 */
-	List<ICFSecPubSysClusterObj> getOptionalComponentsSysCluster();
+	List<ICFSecPubSysClusterObj> get$OptionalOrRequired$ComponentsSysCluster();
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.

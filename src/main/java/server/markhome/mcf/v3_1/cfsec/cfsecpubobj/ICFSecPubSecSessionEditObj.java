@@ -84,21 +84,21 @@ public interface ICFSecPubSecSessionEditObj
 	 *
 	 *	@return	The ICFSecPubSecUserObj instance referenced by the SecUser key.
 	 */
-	ICFSecPubSecUserObj getRequiredContainerSecUser();
+	ICFSecPubSecUserObj get$OptionalOrRequired$ContainerSecUser();
 
 	/**
-	 *	Get the required ICFSecPubSecUserObj instance referenced by the SecUser key.
+	 *	Get the $optionalorrequired$ ICFSecPubSecUserObj instance referenced by the SecUser key.
 	 *
-	 *	@return	The required ICFSecPubSecUserObj instance referenced by the SecUser key.
+	 *	@return	The $optionalorrequired$ ICFSecPubSecUserObj instance referenced by the SecUser key.
 	 */
-	ICFSecPubSecUserObj getRequiredContainerSecUser( boolean forceRead );
+	ICFSecPubSecUserObj get$OptionalOrRequired$ContainerSecUser( boolean forceRead );
 
 	/**
 	 *	Set the ICFSecPubSecUserObj instance referenced by the SecUser key.
 	 *
 	 *	@param	value	the ICFSecPubSecUserObj instance to be referenced by the SecUser key.
 	 */
-	void setRequiredContainerSecUser( ICFSecPubSecUserObj value );
+	void set$OptionalOrRequired$ContainerSecUser( ICFSecPubSecUserObj value );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute SecSessionId.

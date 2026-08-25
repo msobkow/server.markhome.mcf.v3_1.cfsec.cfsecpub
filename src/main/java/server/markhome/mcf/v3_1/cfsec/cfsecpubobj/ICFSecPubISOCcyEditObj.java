@@ -112,7 +112,7 @@ public interface ICFSecPubISOCcyEditObj
 	 *
 	 *	@return	The (potentially empty) list of ICFSecPubISOCtryCcyObj instances referenced by the Ctry key.
 	 */
-	List<ICFSecPubISOCtryCcyObj> getOptionalChildrenCtry();
+	List<ICFSecPubISOCtryCcyObj> get$OptionalOrRequired$ChildrenCtry();
 
 	/**
 	 *	Get the required short attribute ISOCcyId.

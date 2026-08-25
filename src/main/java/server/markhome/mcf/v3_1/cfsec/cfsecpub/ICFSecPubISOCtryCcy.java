@@ -75,12 +75,12 @@ public interface ICFSecPubISOCtryCcy
 
 	public ICFSecPubISOCtryCcyPKey getPKey();
 	public void setPKey(ICFSecPubISOCtryCcyPKey pkey );
-	public ICFSecPubISOCtry getRequiredContainerCtry();
+	public ICFSecPubISOCtry get$OptionalOrRequired$ContainerCtry();
 
-	public void setRequiredContainerCtry(ICFSecPubISOCtry argObj);
-	public ICFSecPubISOCcy getRequiredParentCcy();
+	public void set$OptionalOrRequired$ContainerCtry(ICFSecPubISOCtry argObj);
+	public ICFSecPubISOCcy get$OptionalOrRequired$ParentCcy();
 
-	public void setRequiredParentCcy(ICFSecPubISOCcy argObj);
+	public void set$OptionalOrRequired$ParentCcy(ICFSecPubISOCcy argObj);
 	public short getRequiredISOCtryId();
 
 	public void setRequiredISOCtryId(short value);

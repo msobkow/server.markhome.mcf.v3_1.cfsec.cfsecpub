@@ -214,32 +214,32 @@ public interface ICFSecPubClusterObj
 	void setIsNew( boolean value );
 
 	/**
-	 *	Get the array of optional ICFSecPubTenantObj array of instances referenced by the Tenant key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubTenantObj array of instances referenced by the Tenant key.
 	 *
-	 *	@return	The optional ICFSecPubTenantObj[] array of instances referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj[] array of instances referenced by the Tenant key.
 	 */
-	List<ICFSecPubTenantObj> getOptionalComponentsTenant();
+	List<ICFSecPubTenantObj> get$OptionalOrRequired$ComponentsTenant();
 
 	/**
-	 *	Get the array of optional ICFSecPubTenantObj array of instances referenced by the Tenant key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubTenantObj array of instances referenced by the Tenant key.
 	 *
-	 *	@return	The optional ICFSecPubTenantObj[] array of instances referenced by the Tenant key.
+	 *	@return	The $optionalorrequired$ ICFSecPubTenantObj[] array of instances referenced by the Tenant key.
 	 */
-	List<ICFSecPubTenantObj> getOptionalComponentsTenant( boolean forceRead );
+	List<ICFSecPubTenantObj> get$OptionalOrRequired$ComponentsTenant( boolean forceRead );
 
 	/**
-	 *	Get the array of optional ICFSecPubSysClusterObj array of instances referenced by the SysCluster key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubSysClusterObj array of instances referenced by the SysCluster key.
 	 *
-	 *	@return	The optional ICFSecPubSysClusterObj[] array of instances referenced by the SysCluster key.
+	 *	@return	The $optionalorrequired$ ICFSecPubSysClusterObj[] array of instances referenced by the SysCluster key.
 	 */
-	List<ICFSecPubSysClusterObj> getOptionalComponentsSysCluster();
+	List<ICFSecPubSysClusterObj> get$OptionalOrRequired$ComponentsSysCluster();
 
 	/**
-	 *	Get the array of optional ICFSecPubSysClusterObj array of instances referenced by the SysCluster key.
+	 *	Get the array of $optionalorrequired$ ICFSecPubSysClusterObj array of instances referenced by the SysCluster key.
 	 *
-	 *	@return	The optional ICFSecPubSysClusterObj[] array of instances referenced by the SysCluster key.
+	 *	@return	The $optionalorrequired$ ICFSecPubSysClusterObj[] array of instances referenced by the SysCluster key.
 	 */
-	List<ICFSecPubSysClusterObj> getOptionalComponentsSysCluster( boolean forceRead );
+	List<ICFSecPubSysClusterObj> get$OptionalOrRequired$ComponentsSysCluster( boolean forceRead );
 
 	/**
 	 *	Get the required CFLibDbKeyHash256 attribute Id.
